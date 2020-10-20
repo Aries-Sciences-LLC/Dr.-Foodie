@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +13,80 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WelcomeBackground" translatesAutoresizingMaskIntoConstraints="NO" id="IGU-cA-5LK">
+                                <rect key="frame" x="0.0" y="0.0" width="1593" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IGU-cA-5LK" secondAttribute="height" multiplier="1593:896" id="fL7-ZX-iOh"/>
+                                </constraints>
+                            </imageView>
+                            <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UV3-lx-Wzg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7d8-4F-2ne">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KVA-bl-apH">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Foodie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7U-IM-ZLv">
+                                            <rect key="frame" x="111.5" y="425.5" width="191.5" height="45.5"/>
+                                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="35"/>
+                                            <color key="textColor" name="LabelColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nY7-8n-Glx">
+                                            <rect key="frame" x="0.0" y="0.0" width="174" height="768"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="cqg-eV-uWv">
+                                                <rect key="frame" x="0.0" y="0.0" width="174" height="768"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="regular"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="j7U-IM-ZLv" firstAttribute="centerY" secondItem="KVA-bl-apH" secondAttribute="centerY" id="dV1-sn-Ndr"/>
+                                        <constraint firstItem="j7U-IM-ZLv" firstAttribute="centerX" secondItem="KVA-bl-apH" secondAttribute="centerX" id="zFC-fJ-2cs"/>
+                                    </constraints>
+                                </view>
+                                <vibrancyEffect style="label">
+                                    <blurEffect style="systemChromeMaterial"/>
+                                </vibrancyEffect>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IGU-cA-5LK" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="1Vo-sn-M8k"/>
+                            <constraint firstItem="UV3-lx-Wzg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="I0s-YV-mLJ"/>
+                            <constraint firstItem="7d8-4F-2ne" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nzi-1p-jmd"/>
+                            <constraint firstItem="UV3-lx-Wzg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PWc-ZZ-UQ1"/>
+                            <constraint firstItem="UV3-lx-Wzg" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="eHd-WI-Weg"/>
+                            <constraint firstItem="7d8-4F-2ne" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="hvV-x3-Cpc"/>
+                            <constraint firstItem="IGU-cA-5LK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kAY-mS-Ip1"/>
+                            <constraint firstItem="7d8-4F-2ne" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mAT-8h-sgp"/>
+                            <constraint firstAttribute="bottom" secondItem="7d8-4F-2ne" secondAttribute="bottom" id="pjy-gX-Q2H"/>
+                            <constraint firstAttribute="bottom" secondItem="UV3-lx-Wzg" secondAttribute="bottom" id="wtF-EN-a5b"/>
+                            <constraint firstAttribute="bottom" secondItem="IGU-cA-5LK" secondAttribute="bottom" id="wyp-Wh-bJZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="50.724637681159422" y="374.33035714285711"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="WelcomeBackground" width="1280" height="720"/>
+        <namedColor name="LabelColor">
+            <color red="0.047058823529411764" green="0.14509803921568629" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

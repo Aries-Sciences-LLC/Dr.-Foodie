@@ -7,7 +7,25 @@
 		<key>Dr. Foodie.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>30</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>F7865D79250A4DEC00911426</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F7865D8F250A4DEE00911426</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F7865D9A250A4DEE00911426</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
