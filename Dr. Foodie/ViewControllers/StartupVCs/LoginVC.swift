@@ -13,6 +13,7 @@ import AuthenticationServices
 class LoginVC: UIViewController {
     
     public var cancelHandler: (() -> Void)?
+    private var createdCredentials: ASAuthorizationAppleIDCredential?
 
     @IBOutlet weak var authentificationSection: AuthorizationButtons!
     
@@ -40,6 +41,10 @@ extension LoginVC {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination.isKind(of: SignUpAreaVC.self) {
             (segue.destination as! SignUpAreaVC).delegate = self
+            (segue.destination as! SignUpAreaVC).style = .signup
+        } else if segue.destination.isKind(of: UserBodySelectionVC.self) {
+            (segue.destination as! UserBodySelectionVC).delegate = self
+            (segue.destination as! UserBodySelectionVC).style = .signup
         }
     }
     
@@ -55,9 +60,8 @@ extension LoginVC: AuthorizationButtonsDelegate {
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
         switch authorization.credential {
         case let credentials as ASAuthorizationAppleIDCredential:
-            _ = User(credentials: credentials) {
-                self.success()
-            }
+            createdCredentials = credentials
+            performSegue(withIdentifier: "bodySelectionShortcut", sender: self)
         default:
             break
         }
@@ -79,10 +83,19 @@ extension LoginVC: ASAuthorizationControllerPresentationContextProviding {
     }
 }
 
-// MARK: SignUpAreaDelegate
+// MARK: SignUpAreaVCDelegate
 extension LoginVC: SignUpAreaVCDelegate {
-    func submittedInformation(firstName: String, lastName: String, email: String) {
-        _ = User(firstName: firstName, lastName: firstName, contact: email) {
+    func submittedInformation(firstName: String?, lastName: String?, email: String?, sex: String?, age: Int, weight: Int, height: Int) {
+        _ = User(firstName: firstName!, lastName: firstName!, contact: email!, sex: sex!, age: age, height: height, weight: weight) {
+            self.success()
+        }
+    }
+}
+
+// MARK: LoginVC: UserBodySelectionVCDelegate
+extension LoginVC: UserBodySelectionVCDelegate {
+    func submittedInformation(sex: String, age: Int, weight: Int, height: Int) {
+        _ = User(credentials: createdCredentials!, sex: sex, age: age, weight: weight, height: height) {
             self.success()
         }
     }

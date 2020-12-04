@@ -17,6 +17,8 @@ class ContainerVC: UIViewController {
     @IBOutlet weak var quickAdd: UICollectionView!
     @IBOutlet weak var whiteBottomView: UIView!
     @IBOutlet weak var navigationView: ContainerTableView!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var emptyMessage: UILabel!
     
     private var tableCarouselView: TableCarouselView?
     private var buttonCarouselView: ButtonCarouselView?
@@ -39,10 +41,16 @@ class ContainerVC: UIViewController {
         
         welcomeLbl.text! += "\n\(User.authorized()?.firstName ?? "my guy")?"
         
-        CloudKitManager.quickAdd(action: .fetch) {
-            DispatchQueue.main.async {
-                self.quickAdd.reloadData()
-                // (self.children[0] as! HomeVC).foodSet()
+        QuickAddData.handler = {
+            self.loadingIndicator.stopAnimating()
+            self.quickAdd.reloadData()
+            
+            UIView.animate(withDuration: 0.3) {
+                self.navigationView.alpha = 1
+                
+                if QuickAddData.containers.count == 0 {
+                    self.emptyMessage.alpha = 1
+                }
             }
         }
     }

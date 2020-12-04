@@ -149,11 +149,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>TextFieldEffects.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>gRPC-Swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>

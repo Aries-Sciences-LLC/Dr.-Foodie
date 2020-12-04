@@ -2,25 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>In order to find some yummy local restraunts, please allow location.</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>In order to find some yummy local restraunts, please allow location.</string>
-	<key>NSFaceIDUsageDescription</key>
-	<string>Please confirm to logout.</string>
-	<key>Nutritionix</key>
-	<dict>
-		<key>APIKEY</key>
-		<string>e9953124369b9c9ab4b07f51b7efca64</string>
-		<key>APPID</key>
-		<string>d9f0dfb1</string>
-	</dict>
-	<key>ClarifaiAPIKEY</key>
-	<string>864127cb443a42a0b22b64925b89a507</string>
-	<key>NSCameraUsageDescription</key>
-	<string>To be able to take a picture of your meal, please authorize this app.</string>
-	<key>NSHealthShareUsageDescription</key>
-	<string>For the full scope of our technology, using iCloud will be the most efficient and secure.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -36,9 +17,33 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>ClarifaiAPIKEY</key>
+	<string>864127cb443a42a0b22b64925b89a507</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>comgooglemaps</string>
+		<string>maps</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>To be able to take a picture of your meal, please authorize this app.</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Please confirm to logout.</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>For the full scope of our technology, using iCloud will be the most efficient and secure.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>In order to find some yummy local restraunts, please allow location.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>In order to find some yummy local restraunts, please allow location.</string>
+	<key>Nutritionix</key>
+	<dict>
+		<key>APIKEY</key>
+		<string>e9953124369b9c9ab4b07f51b7efca64</string>
+		<key>APPID</key>
+		<string>d9f0dfb1</string>
+	</dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

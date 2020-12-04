@@ -29,9 +29,7 @@ extension Data {
         do {
             return try NSKeyedUnarchiver.unarchivedObject(ofClass: User.self, from: self)!
         } catch {
-            return User(firstName: "", lastName: "", contact: "") {
-                
-            }
+            return User.zero
         }
     }
 }

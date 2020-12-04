@@ -8,7 +8,7 @@
 
 import UIKit
 import MapKit
-//import GooglePlaces
+import GooglePlaces
 
 // MARK: IBOutlets
 class RestaurantMapVC: UIViewController {
@@ -19,7 +19,10 @@ class RestaurantMapVC: UIViewController {
     private var editingMode = false
     private let locationManager = CLLocationManager()
 
-//    private var placesClient: GMSPlacesClient!
+    private var placesClient: GMSPlacesClient!
+    
+    private var locations: [MKMapItem]?
+    private var selectedLocation: Int?
 }
 
 // MARK: Methods
@@ -29,7 +32,7 @@ extension RestaurantMapVC {
 
         // Do any additional setup after loading the view.
         
-//        placesClient = GMSPlacesClient.shared()
+        placesClient = GMSPlacesClient.shared()
         
         CloudKitManager.categories(action: .fetch) { (names) in
             DispatchQueue.main.async {
@@ -63,6 +66,8 @@ extension RestaurantMapVC {
                 if let error = error {
                     print(error.localizedDescription)
                 } else {
+                    self.locations = response?.mapItems
+                    self.selectedLocation = 0
                     response?.mapItems.forEach({ (mapItem) in
                         self.mapView.addAnnotation(mapItem.placemark)
                     })
@@ -150,12 +155,20 @@ extension RestaurantMapVC: CLLocationManagerDelegate {
     
 }
 
-//// MARK MKMapViewDelegate
-//extension RestaurantMapVC: MKMapViewDelegate {
-//    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-//        view.annotation.
-//    }
-//}
+// MARK MKMapViewDelegate
+extension RestaurantMapVC: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        var counter = 0
+        for location in locations! {
+            if location.placemark.coordinate.equals(view.annotation!.coordinate) {
+                selectedLocation = counter
+                break
+            }
+            counter += 1
+        }
+        performSegue(withIdentifier: "selectResource", sender: parent)
+    }
+}
 
 // MARK: Methods
 extension RestaurantMapVC {
@@ -175,5 +188,22 @@ extension RestaurantMapVC {
 
             completionHandler(response, error)
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! UINavigationController
+        if let controller = (destination.topViewController as? ThirdPartyMapSelectorVC) {
+            controller.delegate = self
+            controller.dismiss = {
+                self.mapView.deselectAnnotation(self.mapView.selectedAnnotations.first!, animated: true)
+            }
+        }
+    }
+}
+
+// MARK: ThirdPartyMapsSelectorDelegate
+extension RestaurantMapVC: ThirdPartyMapsSelectorVCDelegate {
+    func selectedAnnotation() -> MKMapItem {
+        return locations![selectedLocation!]
     }
 }

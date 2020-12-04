@@ -13,6 +13,7 @@ class JournalManager {
     private(set) static var meals: [Food] = []
     private(set) static var history: [String: [Food]] = [:]
     
+    private static var started: Bool = false
     private static var buffer: Int = 0
     private static var historyCounter: [String] = []
     
@@ -46,7 +47,7 @@ extension JournalManager {
             let formatted = formatter.string(from: meal.time)
             if history[formatted] == nil {
                 history[formatted] = [meal]
-                historyCounter.append(formatted)
+                historyCounter.insert(formatted, at: 0)
             } else {
                 history[formatted]!.append(meal)
             }
@@ -54,9 +55,13 @@ extension JournalManager {
     }
     
     public static func getLatest() -> [Food] {
-        buffer = buffer == 0 ? historyCounter.count - 1 : buffer
+        if !started {
+            buffer = historyCounter.count - 1
+            started = true
+        }
+        
         let selected = history[historyCounter[buffer]]
-        buffer -= -1
+        buffer -= 1
         return selected!
     }
 }

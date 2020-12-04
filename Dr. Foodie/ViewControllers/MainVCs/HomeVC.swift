@@ -27,10 +27,18 @@ class HomeVC: UIViewController {
     var meals: [Meal] = []
     var nutritionOverviewDelegate: NutritionOverviewVCDelegate?
     var currentItem = 0
+    var messageMode: MessageMode?
     
+    enum MessageMode {
+        case both, meals, history
+    }
+    
+    @IBOutlet weak var emptyMessage: UILabel!
     @IBOutlet weak var todayPage: UIView!
     @IBOutlet weak var fullJournal: UITableView!
+    @IBOutlet weak var emptyArea: UIView!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet var cardsListener: UITapGestureRecognizer!
     
     @IBOutlet weak var fullX: NSLayoutConstraint!
     @IBOutlet weak var todayX: NSLayoutConstraint!
@@ -49,16 +57,24 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func rightSwipe(_ sender: Any) {
+        cardsListener.isEnabled = true
         todayX.constant = 0
         fullX.constant = view.bounds.width
         pageControl.currentPage = 0
+        UIView.animate(withDuration: 0.3) {
+            self.emptyMessage.alpha = self.messageMode == .both || self.messageMode == .meals ? 1 : 0
+        }
         update()
     }
     
     @IBAction func leftSwipe(_ sender: Any) {
+        cardsListener.isEnabled = false
         todayX.constant = -view.bounds.width
         fullX.constant = 20
         pageControl.currentPage = 1
+        UIView.animate(withDuration: 0.3) {
+            self.emptyMessage.alpha = self.messageMode == .both || self.messageMode == .history ? 1 : 0
+        }
         update()
     }
     
@@ -71,6 +87,12 @@ class HomeVC: UIViewController {
 extension HomeVC {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.gestureRecognizers?.forEach({ (recognizer) in
+            recognizer.isEnabled = false
+        })
+        
+        fullX.constant = view.bounds.width
         
         CloudKitManager.meals(action: .fetch) {
             JournalManager.meals.forEach { (meal) in
@@ -89,28 +111,42 @@ extension HomeVC {
             self.meals.reverse()
             
             DispatchQueue.main.async {
-                self.fullJournal.dataSource = self
+                let shouldPopulateMeals = self.meals.count > 0
+                let shouldPopulateHistory = JournalManager.history.count > 0
                 
-                self.cardSlider = CardSliderViewController.with(dataSource: self)
-                self.cardSlider!.title = "Today's Journal"
-                self.addChild(self.cardSlider!)
-                self.todayPage.addSubview(self.cardSlider!.view)
-                self.cardSlider!.collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .left, animated: true)
-                self.cardSlider!.didMove(toParent: self)
+                if !shouldPopulateMeals && !shouldPopulateHistory {
+                    self.messageMode = .both
+                } else if !shouldPopulateMeals {
+                    self.messageMode = .meals
+                } else if !shouldPopulateHistory {
+                    self.messageMode = .history
+                }
+                
+                UIView.animate(withDuration: 0.3) {
+                    self.todayPage.alpha = shouldPopulateMeals ? 1 : 0
+                    self.fullJournal.alpha = shouldPopulateHistory ? 1 : 0
+                    self.emptyArea.alpha = shouldPopulateHistory || shouldPopulateMeals ? 1 : 0
+                    self.emptyMessage.alpha = shouldPopulateMeals ? 0 : 1
+                }
+                
+                self.view.gestureRecognizers?.forEach({ (recognizer) in
+                    recognizer.isEnabled = true
+                })
+                
+                if shouldPopulateHistory {
+                    self.fullJournal.reloadData()
+                }
+                
+                if shouldPopulateMeals {
+                    self.cardSlider = CardSliderViewController.with(dataSource: self)
+                    self.cardSlider!.title = "Today's Journal"
+                    self.addChild(self.cardSlider!)
+                    self.todayPage.addSubview(self.cardSlider!.view)
+                    self.cardSlider!.collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .left, animated: true)
+                    self.cardSlider!.didMove(toParent: self)
+                }
             }
         }
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        rightSwipe(pageControl!)
-        todayPage.layoutSubviews()
-        cardSlider?.collectionView.reloadData()
-        update()
-    }
-    
-    override func viewWillLayoutSubviews() {
-        cardSlider?.collectionView.reloadData()
-        update()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -175,7 +211,7 @@ extension HomeVC: UITableViewDelegate {
     }
 }
 
-// MARK:
+// MARK: CompleteDayCellDelegate
 extension HomeVC: CompleteDayCellDelegate {
     func onUserClicked(selected nutrition: NutritionOutput) {
         performSegue(withIdentifier: "displayNutrition", sender: self)

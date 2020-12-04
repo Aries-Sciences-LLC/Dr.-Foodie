@@ -8,8 +8,6 @@
 
 import Foundation
 
-// MARK: Sub-Classes
-
 // MARK: NutritionOutput
 public class NutritionOutput: NSObject, NSCoding, NSSecureCoding {
     public static var supportsSecureCoding: Bool = true
@@ -72,14 +70,140 @@ public class NutritionOutput: NSObject, NSCoding, NSSecureCoding {
     var dietaryFiber: Item?
     var sugars: Item?
     var protein: Item?
-    var vitaminA: Item?
-    var vitaminC: Item?
     var calcium: Item?
     var iron: Item?
+    var alcohol: Item?
+    var caffeine: Item?
+    var copper: Item?
+    var cysteine: Item?
+    var energy: Item?
+    var lactose: Item?
+    var magnesium: Item?
+    var phosphorus: Item?
+    var starch: Item?
+    var valine: Item?
+    var zinc: Item?
+    var vitaminA: Item?
+    var vitaminB: Item?
+    var vitaminC: Item?
+    var vitaminD: Item?
+    var vitaminE: Item?
+    var vitaminK: Item?
     
     public var amount: Int {
         get {
             return 17
+        }
+    }
+    
+    public var dictionary: [[String: Any]] {
+        get {
+            return [
+                [
+                    "name": "Calories",
+                    "value": calories?.rawValue,
+                ],
+                [
+                    "name": "Calcium",
+                    "value": calcium?.rawValue,
+                ],
+                [
+                    "name": "Total Fat",
+                    "value": totalFat?.rawValue,
+                ],
+                [
+                    "name": "Iron",
+                    "value": iron?.rawValue,
+                ],
+                [
+                    "name": "Fiber",
+                    "value": dietaryFiber?.rawValue,
+                ],
+                [
+                    "name": "Potassium",
+                    "value": potassium?.rawValue,
+                ],
+                [
+                    "name": "Sodium",
+                    "value": sodium?.rawValue,
+                ],
+                [
+                    "name": "Protein",
+                    "value": protein?.rawValue,
+                ],
+                [
+                    "name": "Sugars",
+                    "value": sugars?.rawValue,
+                ],
+                [
+                    "name": "Vitamin A",
+                    "value": vitaminA?.rawValue,
+                ],
+                [
+                    "name": "Vitamin B",
+                    "value": vitaminB?.rawValue,
+                ],
+                [
+                    "name": "Vitamin C",
+                    "value": vitaminC?.rawValue,
+                ],
+                [
+                    "name": "Vitamin D",
+                    "value": vitaminD?.rawValue,
+                ],
+                [
+                    "name": "Vitamin E",
+                    "value": vitaminE?.rawValue,
+                ],
+                [
+                    "name": "Vitamin K",
+                    "value": vitaminK?.rawValue,
+                ],
+                [
+                    "name": "Alcohol",
+                    "value": alcohol?.rawValue,
+                ],
+                [
+                    "name": "Caffeine",
+                    "value": caffeine?.rawValue,
+                ],
+                [
+                    "name": "Copper",
+                    "value": copper?.rawValue,
+                ],
+                [
+                    "name": "Cysteine",
+                    "value": cysteine?.rawValue,
+                ],
+                [
+                    "name": "Energy",
+                    "value": energy?.rawValue,
+                ],
+                [
+                    "name": "Lactose",
+                    "value": lactose?.rawValue,
+                ],
+                [
+                    "name": "Magnesium",
+                    "value": magnesium?.rawValue,
+                ],
+                [
+                    "name": "Phosphorus",
+                    "value": phosphorus?.rawValue,
+                ],
+                [
+                    "name": "Starch",
+                    "value": starch?.rawValue,
+                ],
+                [
+                    "name": "Valine",
+                    "value": valine?.rawValue,
+                ],
+                [
+                    "name": "Zinc",
+                    "value": zinc?.rawValue,
+                ],
+            ]
         }
     }
 }
@@ -112,9 +236,20 @@ public class Item: NSObject, NSCoding, NSSecureCoding {
         }
     }
     
+    var rawValue: Double {
+        get {
+            return _value
+        }
+    }
+    
     public init(amount: Double, requirement: Double = 0) {
         _value = amount.roundToDecimal(2)
         _percent = requirement > 0 ? (((_value / requirement)) * 100).roundToDecimal(2) : 0
+    }
+    
+    public func update(by amount: Double? = nil, requirement: Double? = nil) {
+        _value += amount?.roundToDecimal(2) ?? _value
+        _percent = (requirement ?? _percent) > 0 ? (((_value / (requirement ?? _percent))) * 100).roundToDecimal(2) : 0
     }
 }
 
@@ -197,7 +332,7 @@ extension NutritionInformation {
                 //create json object from data
                 if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
                     let parsed = (json["foods"] as! [Dictionary<String, Any>])[0]
-                    var output = NutritionOutput()
+                    let output = NutritionOutput()
                     output.calories = .init(amount: parsed["nf_calories"] as! Double)
                     (parsed["full_nutrients"] as! [Dictionary<String, Double>]).forEach { (data) in
                         switch data["attr_id"] {
@@ -231,8 +366,46 @@ extension NutritionInformation {
                             output.polysaturatedFat = .init(amount: data["value"]!)
                         case 318:
                             output.vitaminA = .init(amount: data["value"]!, requirement: 800)
+                        case 578, 418, 415:
+                            if output.vitaminB == nil {
+                                output.vitaminB = .init(amount: data["value"]!, requirement: 82.5)
+                            } else {
+                                output.vitaminB?.update(by: data["value"])
+                            }
                         case 401:
                             output.vitaminC = .init(amount: data["value"]!, requirement: 82.5)
+                        case 324:
+                            output.vitaminD = .init(amount: data["value"]!, requirement: 82.5)
+                        case 573, 323:
+                            if output.vitaminE == nil {
+                                output.vitaminE = .init(amount: data["value"]!, requirement: 82.5)
+                            } else {
+                                output.vitaminE?.update(by: data["value"])
+                            }
+                        case 430:
+                            output.vitaminK = .init(amount: data["value"]!, requirement: 82.5)
+                        case 221:
+                            output.alcohol = .init(amount: data["value"]!)
+                        case 262:
+                            output.caffeine = .init(amount: data["value"]!)
+                        case 312:
+                            output.copper = .init(amount: data["value"]!)
+                        case 507:
+                            output.cysteine = .init(amount: data["value"]!)
+                        case 268:
+                            output.energy = .init(amount: data["value"]!)
+                        case 213:
+                            output.lactose = .init(amount: data["value"]!)
+                        case 304:
+                            output.magnesium = .init(amount: data["value"]!)
+                        case 305:
+                            output.phosphorus = .init(amount: data["value"]!)
+                        case 209:
+                            output.starch = .init(amount: data["value"]!)
+                        case 510:
+                            output.valine = .init(amount: data["value"]!)
+                        case 309:
+                            output.zinc = .init(amount: data["value"]!)
                         default:
                             break
                         }

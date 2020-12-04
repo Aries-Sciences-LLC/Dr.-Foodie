@@ -7,21 +7,21 @@
 //
 
 import UIKit
-import TextFieldEffects
 
-// MARK: SignUpAreaDelegate
+// MARK: SignUpAreaVCDelegate
 protocol SignUpAreaVCDelegate {
-    func submittedInformation(firstName: String, lastName: String, email: String)
+    func submittedInformation(firstName: String?, lastName: String?, email: String?, sex: String?, age: Int, weight: Int, height: Int)
 }
 
-// MARK: IBOutlets, Properties, Entrance Methods, & IBActions
+// MARK: IBOutlets, Properties, & IBActions
 class SignUpAreaVC: UIViewController {
 
+    @IBOutlet weak var heading: UILabel!
     @IBOutlet weak var goBack: UIButton!
     @IBOutlet weak var errorMessage: UILabel!
-    @IBOutlet weak var firstName: YoshikoTextField!
-    @IBOutlet weak var lastName: YoshikoTextField!
-    @IBOutlet weak var email: YoshikoTextField!
+    @IBOutlet weak var firstName: UITextField!
+    @IBOutlet weak var lastName: UITextField!
+    @IBOutlet weak var email: UITextField!
     @IBOutlet weak var finished: UIButton!
     
     public var delegate: SignUpAreaVCDelegate?
@@ -29,16 +29,6 @@ class SignUpAreaVC: UIViewController {
     
     enum Style {
         case signup, update
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
-        firstName.placeholder = "First Name"
-        lastName.placeholder = "Last Name"
-        email.placeholder = "Email"
     }
     
     @IBAction func userCancelled(_ sender: Any) {
@@ -56,22 +46,25 @@ class SignUpAreaVC: UIViewController {
     @IBAction func emailHandle(_ sender: Any) {
         updateInformation()
     }
-    
-    @IBAction func userSubmitted(_ sender: Any) {
-        dismiss(animated: true, completion: {
-            if let handler = self.delegate {
-                handler.submittedInformation(
-                    firstName: self.firstName.text!,
-                    lastName: self.lastName.text!,
-                    email: self.email.text!
-                )
-            }
-        })
-    }
 }
 
 // MARK: Methods
 extension SignUpAreaVC {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        
+        switch style {
+        case .signup:
+            heading.text = "Sign Up"
+        case .update:
+            heading.text = "Edit Account"
+        case .none:
+            break
+        }
+    }
+    
     private func updateInformation() {
         switch style {
         case .update:
@@ -81,5 +74,30 @@ extension SignUpAreaVC {
         case .none:
             break
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination.isKind(of: UserBodySelectionVC.self) {
+            (segue.destination as! UserBodySelectionVC).style = style
+            (segue.destination as! UserBodySelectionVC).delegate = self
+        }
+    }
+}
+
+// MARK: UserBodySelectionVC
+extension SignUpAreaVC: UserBodySelectionVCDelegate {
+    func submittedInformation(sex: String, age: Int, weight: Int, height: Int) {
+        if let handler = self.delegate {
+            handler.submittedInformation(
+                firstName: self.firstName.text,
+                lastName: self.lastName.text,
+                email: self.email.text,
+                sex: sex,
+                age: age,
+                weight: weight,
+                height: height
+            )
+        }
+        userCancelled(goBack as Any)
     }
 }

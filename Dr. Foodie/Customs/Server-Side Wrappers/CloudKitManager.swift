@@ -46,11 +46,13 @@ extension CloudKitManager {
                 
                 if let information = record {
                     user.login(firstName: information["firstName"]!, lastName: information["lastName"]!, email: information["email"]!)
+                    user.login(sex: information["sex"]!, age: information["age"]!, weight: information["weight"]!, height: information["height"]!)
+                    _ = User.authorized(account: user)
+                    
+                    completion()
+                } else {
+                    print("no information provided?")
                 }
-                
-                _ = User.authorized(account: user)
-                
-                completion()
             }
         case .signup:
             let record = CKRecord(recordType: "UserInfo", recordID: recordID)
@@ -59,10 +61,16 @@ extension CloudKitManager {
             record["lastName"] = user.lastName
             record["email"] = user.email
             record["id"] = user.id
+            record["sex"] = user.sex
+            record["age"] = user.age
+            record["height"] = user.height
+            record["weight"] = user.weight
             
             DATABASE.save(record) { (_, _) in
                 completion()
             }
+            
+            _ = User.authorized(account: user)
         case .update:
             DATABASE.fetch(withRecordID: recordID) { (record, error) in
                 if let record = record {
@@ -70,6 +78,10 @@ extension CloudKitManager {
                     record["lastName"] = user.lastName
                     record["email"] = user.email
                     record["id"] = user.id
+                    record["sex"] = user.sex
+                    record["age"] = user.age
+                    record["height"] = user.height
+                    record["weight"] = user.weight
 
                     let modifyOperation = CKModifyRecordsOperation(recordsToSave: [record], recordIDsToDelete: nil)
                     modifyOperation.savePolicy = .allKeys
@@ -137,9 +149,7 @@ extension CloudKitManager {
                     print(error.localizedDescription)
                 }
                 
-                guard let results = results else { return }
-                
-                results.forEach { (result) in
+                results!.forEach { (result) in
                     if result.recordID.recordName.contains(User.authorized()?.id ?? "") {
                         do {
                             let names = result["names"] as! [String]
@@ -189,6 +199,7 @@ extension CloudKitManager {
             DATABASE.fetch(withRecordID: recordID) { (record, error) in
                 if let error = error {
                     print(error.localizedDescription)
+                    return
                 }
                 
                 completion(record!["names"]! as! [String])

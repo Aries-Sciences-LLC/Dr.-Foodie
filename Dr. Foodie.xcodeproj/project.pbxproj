@@ -17,7 +17,6 @@
 		F70969CA253BD4EF00D3AA0B /* extensions.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70969C3253BD4EF00D3AA0B /* extensions.pb.swift */; };
 		F70969CB253BD4EF00D3AA0B /* test_proto.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70969C4253BD4EF00D3AA0B /* test_proto.pb.swift */; };
 		F70969CC253BD4EF00D3AA0B /* resources.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70969C5253BD4EF00D3AA0B /* resources.pb.swift */; };
-		F7282860253D873D0075A81A /* CompleteJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728285F253D873D0075A81A /* CompleteJournal.swift */; };
 		F7321F252530B5F2006998C3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7321F242530B5F2006998C3 /* LoginVC.swift */; };
 		F7321F272530B983006998C3 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7321F262530B983006998C3 /* ContainerVC.swift */; };
 		F7321F2925312BA7006998C3 /* BottomCardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7321F2825312BA7006998C3 /* BottomCardSegue.swift */; };
@@ -48,6 +47,13 @@
 		F75B4EA9253C98E50020E5B7 /* NutritionOverviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B4EA8253C98E50020E5B7 /* NutritionOverviewVC.swift */; };
 		F75B4EAB253CEB090020E5B7 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B4EAA253CEB090020E5B7 /* Double.swift */; };
 		F75B4EAD253CF0A10020E5B7 /* JournalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B4EAC253CF0A10020E5B7 /* JournalManager.swift */; };
+		F75FE607256DE333005CE320 /* CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75FE606256DE333005CE320 /* CoreLocation.swift */; };
+		F75FE609256DE563005CE320 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75FE608256DE563005CE320 /* UIAlertController.swift */; };
+		F75FE60B256DEF07005CE320 /* ThirdPartyMapSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75FE60A256DEF07005CE320 /* ThirdPartyMapSelectorVC.swift */; };
+		F75FE60D2572858D005CE320 /* UserNutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75FE60C2572858D005CE320 /* UserNutrition.swift */; };
+		F75FE60F2573FAB1005CE320 /* NutritionConsumedTodayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75FE60E2573FAB0005CE320 /* NutritionConsumedTodayVC.swift */; };
+		F75FE6112573FB0F005CE320 /* TotalNutritionConsumedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75FE6102573FB0F005CE320 /* TotalNutritionConsumedVC.swift */; };
+		F75FE6152573FC72005CE320 /* NutritionFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75FE6142573FC72005CE320 /* NutritionFacts.swift */; };
 		F77676B52532AD5E00E6C26A /* EmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77676B42532AD5E00E6C26A /* EmailValidation.swift */; };
 		F77676D125339B8C00E6C26A /* CarouselData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77676B825339B8A00E6C26A /* CarouselData.swift */; };
 		F77676D225339B8C00E6C26A /* ViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77676BA25339B8B00E6C26A /* ViewConstants.swift */; };
@@ -76,6 +82,7 @@
 		F7971BD1252AA3CF006FED0C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7971BD0252AA3CF006FED0C /* User.swift */; };
 		F7971BD3252AAB64006FED0C /* AuthorizationButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7971BD2252AAB64006FED0C /* AuthorizationButtons.swift */; };
 		F7971BD5252BF57C006FED0C /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7971BD4252BF57C006FED0C /* UIButton.swift */; };
+		F79BCB9B2574C25500918B92 /* UserBodySelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79BCB9A2574C25500918B92 /* UserBodySelectionVC.swift */; };
 		F7EB46122519ADDE00E25600 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EB46112519ADDE00E25600 /* HomeVC.swift */; };
 		F7EB46142519ADF600E25600 /* RestaurantMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EB46132519ADF600E25600 /* RestaurantMapVC.swift */; };
 		F7EB46162519AE4200E25600 /* SnapMealVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EB46152519AE4200E25600 /* SnapMealVC.swift */; };
@@ -115,7 +122,6 @@
 		F70969C3253BD4EF00D3AA0B /* extensions.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.pb.swift; sourceTree = "<group>"; };
 		F70969C4253BD4EF00D3AA0B /* test_proto.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test_proto.pb.swift; sourceTree = "<group>"; };
 		F70969C5253BD4EF00D3AA0B /* resources.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resources.pb.swift; sourceTree = "<group>"; };
-		F728285F253D873D0075A81A /* CompleteJournal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteJournal.swift; sourceTree = "<group>"; };
 		F7321F242530B5F2006998C3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F7321F262530B983006998C3 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
 		F7321F2825312BA7006998C3 /* BottomCardSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCardSegue.swift; sourceTree = "<group>"; };
@@ -147,6 +153,13 @@
 		F75B4EA8253C98E50020E5B7 /* NutritionOverviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionOverviewVC.swift; sourceTree = "<group>"; };
 		F75B4EAA253CEB090020E5B7 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		F75B4EAC253CF0A10020E5B7 /* JournalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalManager.swift; sourceTree = "<group>"; };
+		F75FE606256DE333005CE320 /* CoreLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocation.swift; sourceTree = "<group>"; };
+		F75FE608256DE563005CE320 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		F75FE60A256DEF07005CE320 /* ThirdPartyMapSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartyMapSelectorVC.swift; sourceTree = "<group>"; };
+		F75FE60C2572858D005CE320 /* UserNutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNutrition.swift; sourceTree = "<group>"; };
+		F75FE60E2573FAB0005CE320 /* NutritionConsumedTodayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionConsumedTodayVC.swift; sourceTree = "<group>"; };
+		F75FE6102573FB0F005CE320 /* TotalNutritionConsumedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalNutritionConsumedVC.swift; sourceTree = "<group>"; };
+		F75FE6142573FC72005CE320 /* NutritionFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFacts.swift; sourceTree = "<group>"; };
 		F77676B42532AD5E00E6C26A /* EmailValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidation.swift; sourceTree = "<group>"; };
 		F77676B825339B8A00E6C26A /* CarouselData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselData.swift; sourceTree = "<group>"; };
 		F77676BA25339B8B00E6C26A /* ViewConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
@@ -181,6 +194,7 @@
 		F7971BD0252AA3CF006FED0C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F7971BD2252AAB64006FED0C /* AuthorizationButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationButtons.swift; sourceTree = "<group>"; };
 		F7971BD4252BF57C006FED0C /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		F79BCB9A2574C25500918B92 /* UserBodySelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBodySelectionVC.swift; sourceTree = "<group>"; };
 		F7EB46112519ADDE00E25600 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		F7EB46132519ADF600E25600 /* RestaurantMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMapVC.swift; sourceTree = "<group>"; };
 		F7EB46152519AE4200E25600 /* SnapMealVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapMealVC.swift; sourceTree = "<group>"; };
@@ -284,6 +298,7 @@
 				F7321F2825312BA7006998C3 /* BottomCardSegue.swift */,
 				F738E00D253A5F86000CC1C5 /* ShadowView.swift */,
 				F738E015253A9F38000CC1C5 /* CameraView.swift */,
+				F75FE6142573FC72005CE320 /* NutritionFacts.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -299,6 +314,7 @@
 				F75B4EA6253C8C0E0020E5B7 /* NutritionInformation.swift */,
 				F75B4EAC253CF0A10020E5B7 /* JournalManager.swift */,
 				F74D2416253DFBCA00E21E76 /* RestaurantCategories.swift */,
+				F75FE60C2572858D005CE320 /* UserNutrition.swift */,
 			);
 			path = "Server-Side Wrappers";
 			sourceTree = "<group>";
@@ -364,6 +380,8 @@
 				F738E00F253A73A8000CC1C5 /* Date.swift */,
 				F738E011253A83BA000CC1C5 /* UIImage.swift */,
 				F75B4EAA253CEB090020E5B7 /* Double.swift */,
+				F75FE606256DE333005CE320 /* CoreLocation.swift */,
+				F75FE608256DE563005CE320 /* UIAlertController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -489,7 +507,9 @@
 				F738E013253A9C97000CC1C5 /* SnapMealHelpVC.swift */,
 				F75B4EA2253BEB150020E5B7 /* CategorySelectionVC.swift */,
 				F75B4EA8253C98E50020E5B7 /* NutritionOverviewVC.swift */,
-				F728285F253D873D0075A81A /* CompleteJournal.swift */,
+				F75FE60A256DEF07005CE320 /* ThirdPartyMapSelectorVC.swift */,
+				F75FE60E2573FAB0005CE320 /* NutritionConsumedTodayVC.swift */,
+				F75FE6102573FB0F005CE320 /* TotalNutritionConsumedVC.swift */,
 			);
 			path = SecondaryVCs;
 			sourceTree = "<group>";
@@ -502,6 +522,7 @@
 				F7321F242530B5F2006998C3 /* LoginVC.swift */,
 				F7321F262530B983006998C3 /* ContainerVC.swift */,
 				F7321F2B2531CF0E006998C3 /* SignUpAreaVC.swift */,
+				F79BCB9A2574C25500918B92 /* UserBodySelectionVC.swift */,
 			);
 			path = StartupVCs;
 			sourceTree = "<group>";
@@ -797,15 +818,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7321F252530B5F2006998C3 /* LoginVC.swift in Sources */,
+				F75FE6112573FB0F005CE320 /* TotalNutritionConsumedVC.swift in Sources */,
 				F77676F22535D76E00E6C26A /* QuickAddData.swift in Sources */,
 				F752F08C25202C530025D8A5 /* WelcomeVC.swift in Sources */,
+				F75FE607256DE333005CE320 /* CoreLocation.swift in Sources */,
 				F70969C6253BD4EF00D3AA0B /* status_code.pb.swift in Sources */,
-				F7282860253D873D0075A81A /* CompleteJournal.swift in Sources */,
 				F77676E92534E5A900E6C26A /* QuickAddItem.swift in Sources */,
 				F738E012253A83BA000CC1C5 /* UIImage.swift in Sources */,
 				F7971BD5252BF57C006FED0C /* UIButton.swift in Sources */,
 				F7949451253DF36B00866A04 /* RestaurantCategoryCell.swift in Sources */,
+				F75FE60F2573FAB1005CE320 /* NutritionConsumedTodayVC.swift in Sources */,
 				F75B4EA3253BEB150020E5B7 /* CategorySelectionVC.swift in Sources */,
+				F75FE60B256DEF07005CE320 /* ThirdPartyMapSelectorVC.swift in Sources */,
 				F794944F253DC09400866A04 /* CompleteDayCell.swift in Sources */,
 				F70969CC253BD4EF00D3AA0B /* resources.pb.swift in Sources */,
 				F748551625167D8F00B31F0E /* PageIndicator.swift in Sources */,
@@ -819,12 +843,15 @@
 				F77676D125339B8C00E6C26A /* CarouselData.swift in Sources */,
 				F74D2417253DFBCA00E21E76 /* RestaurantCategories.swift in Sources */,
 				F7865D7E250A4DEC00911426 /* AppDelegate.swift in Sources */,
+				F75FE60D2572858D005CE320 /* UserNutrition.swift in Sources */,
 				F7EB46142519ADF600E25600 /* RestaurantMapVC.swift in Sources */,
 				F77676D425339B8C00E6C26A /* TableCarouselView.swift in Sources */,
 				F77676D925339B8C00E6C26A /* RoundedButtonView.swift in Sources */,
 				F748551225167B8100B31F0E /* OnboardingViewDataSource.swift in Sources */,
 				F74D2419253E194A00E21E76 /* EditCell.swift in Sources */,
 				F75B4EA9253C98E50020E5B7 /* NutritionOverviewVC.swift in Sources */,
+				F75FE609256DE563005CE320 /* UIAlertController.swift in Sources */,
+				F79BCB9B2574C25500918B92 /* UserBodySelectionVC.swift in Sources */,
 				F738E016253A9F38000CC1C5 /* CameraView.swift in Sources */,
 				F7EB46182519AE5C00E25600 /* DailyInformationVC.swift in Sources */,
 				F7488EC1252D5521005D3A62 /* CurvedHeaderView.swift in Sources */,
@@ -849,6 +876,7 @@
 				F738E018253BB930000CC1C5 /* FoodRecognition.swift in Sources */,
 				F7321F272530B983006998C3 /* ContainerVC.swift in Sources */,
 				F7321F2C2531CF0E006998C3 /* SignUpAreaVC.swift in Sources */,
+				F75FE6152573FC72005CE320 /* NutritionFacts.swift in Sources */,
 				F77676D225339B8C00E6C26A /* ViewConstants.swift in Sources */,
 				F70969CB253BD4EF00D3AA0B /* test_proto.pb.swift in Sources */,
 				F7971BD1252AA3CF006FED0C /* User.swift in Sources */,
@@ -944,6 +972,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1004,6 +1033,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1031,6 +1061,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Dr. Foodie/Registrations/Dr. Foodie.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = QXNMG5R4EQ;
 				INFOPLIST_FILE = "Dr. Foodie/Registrations/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1052,6 +1083,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Dr. Foodie/Registrations/Dr. Foodie.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = QXNMG5R4EQ;
 				INFOPLIST_FILE = "Dr. Foodie/Registrations/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

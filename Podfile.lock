@@ -63,7 +63,6 @@ PODS:
     - SwiftNIOFoundationCompat (< 3, >= 2.22.0)
     - SwiftNIOTLS (< 3, >= 2.22.0)
   - SwiftProtobuf (1.12.0)
-  - TextFieldEffects (1.6.0)
 
 DEPENDENCIES:
   - CardSlider
@@ -73,7 +72,6 @@ DEPENDENCIES:
   - SnapKit (~> 4.0)
   - SwiftNIO (~> 2.23)
   - SwiftProtobuf (~> 1.0)
-  - TextFieldEffects
 
 SPEC REPOS:
   trunk:
@@ -103,7 +101,6 @@ SPEC REPOS:
     - SwiftNIOTLS
     - SwiftNIOTransportServices
     - SwiftProtobuf
-    - TextFieldEffects
 
 SPEC CHECKSUMS:
   CardSlider: 0a8f5f17f5a76701771794b07fdaeddc512358c8
@@ -132,8 +129,7 @@ SPEC CHECKSUMS:
   SwiftNIOTLS: 905a7e7e26a3f7d9661da34e0edf01be086c596d
   SwiftNIOTransportServices: 801923921fbecdcde1e1c1ff38e812167d01ead1
   SwiftProtobuf: 4ef85479c18ca85b5482b343df9c319c62bda699
-  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: e380edaae0f9c444872ebf77009a466dddb95fdb
+PODFILE CHECKSUM: 752874a58a66ea41733b37c82d5fb8a59101df10
 
 COCOAPODS: 1.9.3

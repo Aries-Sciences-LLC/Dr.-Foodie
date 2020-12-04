@@ -6,7 +6,6 @@ target 'Dr. Foodie' do
   use_frameworks!
   pod 'SnapKit', '~> 4.0'
   pod 'CircularCarousel'
-  pod 'TextFieldEffects'
   pod 'SwiftProtobuf', '~> 1.0'
   pod 'SwiftNIO', '~> 2.23'
   pod 'gRPC-Swift', '~> 1.0.0-alpha.20'

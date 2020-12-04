@@ -43,6 +43,7 @@ extension AccountVC {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination.isKind(of: SignUpAreaVC.self) {
             (segue.destination as! SignUpAreaVC).delegate = self
+            (segue.destination as! SignUpAreaVC).style = .update
         }
     }
     
@@ -73,8 +74,9 @@ extension AccountVC {
 
 // MARK:
 extension AccountVC: SignUpAreaVCDelegate {
-    func submittedInformation(firstName: String, lastName: String, email: String) {
-        User.updateInformation(firstName: firstName, lastName: firstName, email: email)
+    func submittedInformation(firstName: String?, lastName: String?, email: String?, sex: String?, age: Int, weight: Int, height: Int) {
+        User.updateInformation(firstName: firstName == "" ? nil : firstName, lastName: lastName == "" ? nil : lastName, email: email == "" ? nil : email)
+        User.updateInformation(sex: sex == "" ? nil : sex, age: age, weight: weight, height: height)
         fillValues()
     }
 }

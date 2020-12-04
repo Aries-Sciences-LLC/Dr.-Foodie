@@ -13,6 +13,8 @@ import CloudKit
 struct QuickAddData {
     static private(set) var containers: [QuickAddContainer] = []
     
+    static public var handler: (() -> Void)?
+    
     struct Package {
         var names: [String]
         var images: [CKAsset?]
@@ -47,6 +49,14 @@ extension QuickAddData {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let containerVC = storyboard.instantiateViewController(withIdentifier: "ContainerVC") as! ContainerVC
                 containerVC.updateQuickAdd()
+            }
+        }
+    }
+    
+    public static func fetch() {
+        CloudKitManager.quickAdd(action: .fetch) {
+            DispatchQueue.main.async {
+                handler?()
             }
         }
     }

@@ -12,26 +12,26 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-//        if let windowScene = scene as? UIWindowScene {
-//            let window = UIWindow(windowScene: windowScene)
-//
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            var initialViewController = storyboard.instantiateInitialViewController()
-//            if UserDefaults.standard.object(forKey: User.key) != nil {
-//                _ = User.authorized(account: (UserDefaults.standard.object(forKey: User.key) as! Data).unwrap())
-//                initialViewController = storyboard.instantiateViewController(withIdentifier: "ContainerVC")
-//            }
-//
-//            window.rootViewController = initialViewController
-//
-//            self.window = window
-//            window.makeKeyAndVisible()
-//        }
+        if let windowScene = scene as? UIWindowScene {
+            let window = UIWindow(windowScene: windowScene)
+
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            var initialViewController = storyboard.instantiateInitialViewController()
+            
+            if UserDefaults.standard.object(forKey: User.key) != nil {
+                _ = User.authorized(account: (UserDefaults.standard.object(forKey: User.key) as! Data).unwrap())
+                initialViewController = storyboard.instantiateViewController(withIdentifier: "ContainerVC")
+            }
+
+            window.rootViewController = initialViewController
+
+            self.window = window
+            window.makeKeyAndVisible()
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -61,7 +61,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
 }
-
