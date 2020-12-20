@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK: IBOutlets & IBActions
-class DailyInformationVC: UIViewController {
+class DailyInformationVC: BaseVC {
 
     @IBOutlet weak var sectionSegmentControl: UISegmentedControl!
     @IBOutlet weak var todayView: UIView!

@@ -16,7 +16,7 @@ protocol ThirdPartyMapsSelectorVCDelegate {
 }
 
 // MARK: IBOutlets & Properties
-class ThirdPartyMapSelectorVC: UIViewController {
+class ThirdPartyMapSelectorVC: DRFVC {
     @IBOutlet weak var googleMaps: UIButton!
     @IBOutlet weak var appleMaps: UIButton!
     @IBOutlet weak var cancel: UIButton!
@@ -33,9 +33,6 @@ extension ThirdPartyMapSelectorVC {
         // Do any additional setup after loading the view.
         
         pop()
-        
-        googleMaps.isEnabled = UIApplication.shared.canOpenURL(URL(string: "comgooglemaps://")!)
-        appleMaps.isEnabled = UIApplication.shared.canOpenURL(URL(string: "maps://")!)
     }
 }
 

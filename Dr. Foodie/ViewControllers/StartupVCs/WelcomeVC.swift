@@ -9,53 +9,61 @@
 import UIKit
 
 // MARK: IBOutlets & IBActions
-class WelcomeVC: UIViewController {
+class WelcomeVC: DRFVC {
 
     @IBOutlet weak var welcomeBackground: UIImageView!
-    @IBOutlet weak var backgroundOverlay: UIVisualEffectView!
-    @IBOutlet weak var titleLbl: UILabel!
-    @IBOutlet weak var welcomeLbl: UILabel!
-    @IBOutlet weak var welcomeDiv: UIView!
-    @IBOutlet weak var welcomeDescription: UILabel!
-    @IBOutlet weak var beginBtn: UIButton!
+    @IBOutlet weak var placeholder: UIVisualEffectView!
+    @IBOutlet weak var replacer: UIVisualEffectView!
+    @IBOutlet weak var loadingAnimator: UILabel!
+    @IBOutlet weak var titleHit: UILabel!
+    
+    @IBOutlet weak var launchScreenPlaceholderLocation: NSLayoutConstraint!
+    @IBOutlet weak var loadingAnimationLocation: NSLayoutConstraint!
+    
+    private var loader: Timer!
+    private var loaderCounter: Int = 0
 }
 
 // MARK: Entrance Methods
 extension WelcomeVC {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        beginBtn.space(with: 8)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        beginBtn.indicate(with: [6, 10], for: 0)
-        
-        backgroundOverlay.contentView.constraints.forEach { (constraint) in
-            if constraint.identifier == "titleLbl.y" {
-                constraint.constant = -(self.view.frame.height / 2.75)
-            }
-        }
-        
-        UIView.animate(withDuration: 0.3, delay: 0.2, options: .curveEaseOut, animations: {
-            self.titleLbl.font = self.titleLbl.font.withSize(20)
-            self.view.layoutIfNeeded()
-        }) { _ in
-            self.animateBackground(direction: .left)
-            UIView.animate(withDuration: 0.3) {
-                self.welcomeLbl.alpha = 0.75
-                self.welcomeDiv.alpha = 0.8
-                self.welcomeDescription.alpha = 0.95
-                self.beginBtn.alpha = 1
-            }
-        }
+        switchToApp()
     }
 }
 
 // MARK: Methods
 extension WelcomeVC {
+    func switchToApp() {
+        launchScreenPlaceholderLocation.constant = view.bounds.size.width
+        loadingAnimationLocation.constant = -view.bounds.size.width
+        
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        } completion: { _ in
+            self.loader = Timer.scheduledTimer(timeInterval: 0.25, target: self, selector: #selector(self.incrementLoader(_:)), userInfo: nil, repeats: true)
+        }
+    }
+    
+    @objc func incrementLoader(_ sender: Any!) {
+        if loaderCounter == 3 {
+            loader.invalidate()
+            UIView.animate(withDuration: 0.3, animations: {
+                self.replacer.alpha = 0
+            }) { _ in
+                self.animateBackground(direction: .left)
+            }
+        } else {
+            loadingAnimator.text! += " ."
+            loaderCounter += 1
+        }
+    }
+    
     func animateBackground(direction: AnimationDirection) {
         if presentingViewController == nil {
             view.constraints.forEach { (constraint) in

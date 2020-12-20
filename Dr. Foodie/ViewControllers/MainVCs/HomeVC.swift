@@ -22,7 +22,7 @@ struct Meal: CardSliderItem {
 }
 
 // MARK: Properties, IBOutlets, & IBActions
-class HomeVC: UIViewController {
+class HomeVC: BaseVC {
     
     var meals: [Meal] = []
     var nutritionOverviewDelegate: NutritionOverviewVCDelegate?

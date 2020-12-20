@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK: Entrance Methods & IBActions
-class SnapMealHelpVC: UIViewController {
+class SnapMealHelpVC: DRFVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -14,7 +14,7 @@ protocol SignUpAreaVCDelegate {
 }
 
 // MARK: IBOutlets, Properties, & IBActions
-class SignUpAreaVC: UIViewController {
+class SignUpAreaVC: DRFVC {
 
     @IBOutlet weak var heading: UILabel!
     @IBOutlet weak var goBack: UIButton!

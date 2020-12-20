@@ -10,7 +10,7 @@ import UIKit
 import AuthenticationServices
 
 // MARK: Properties, IBOutlets, Override Methods, & IBActions
-class LoginVC: UIViewController {
+class LoginVC: DRFVC {
     
     public var cancelHandler: (() -> Void)?
     private var createdCredentials: ASAuthorizationAppleIDCredential?
@@ -86,7 +86,7 @@ extension LoginVC: ASAuthorizationControllerPresentationContextProviding {
 // MARK: SignUpAreaVCDelegate
 extension LoginVC: SignUpAreaVCDelegate {
     func submittedInformation(firstName: String?, lastName: String?, email: String?, sex: String?, age: Int, weight: Int, height: Int) {
-        _ = User(firstName: firstName!, lastName: firstName!, contact: email!, sex: sex!, age: age, height: height, weight: weight) {
+        _ = User(firstName: firstName!, lastName: lastName!, contact: email!, sex: sex!, age: age, height: height, weight: weight) {
             self.success()
         }
     }

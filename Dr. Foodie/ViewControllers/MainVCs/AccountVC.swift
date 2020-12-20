@@ -10,7 +10,7 @@ import UIKit
 import LocalAuthentication
 
 // MARK: IBOutlets & IBActions
-class AccountVC: UIViewController {
+class AccountVC: BaseVC {
 
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var email: UILabel!

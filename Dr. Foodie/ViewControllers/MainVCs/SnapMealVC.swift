@@ -13,7 +13,7 @@ protocol SnapMealVCDelegate {
 }
 
 // MARK: IBOutlets, Properties, & IBActions
-class SnapMealVC: UIViewController {
+class SnapMealVC: BaseVC {
     @IBOutlet weak var titleContainer: UIVisualEffectView!
     @IBOutlet weak var cameraView: CameraView!
     @IBOutlet weak var activityIndicator: UIView!

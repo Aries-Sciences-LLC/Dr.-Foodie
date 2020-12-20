@@ -11,11 +11,10 @@ import UIKit
 @IBDesignable class CurvedHeaderView: UIView {
 
     @IBInspectable var curveHeight:CGFloat = 50.0
-    
+        
     var curvedLayer = CAShapeLayer()
     
     override func draw(_ rect: CGRect) {
-        
         let path = UIBezierPath()
         path.move(to: CGPoint(x: 0, y: 0))
         path.addLine(to: CGPoint(x: rect.width, y: 0))
@@ -32,9 +31,8 @@ import UIKit
         
         self.layer.insertSublayer(curvedLayer, at: 0)
         
-        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowColor = UIColor.systemBackground.cgColor
         self.layer.shadowRadius = 10.0
         self.layer.shadowOpacity = 0.7
     }
-    
 }

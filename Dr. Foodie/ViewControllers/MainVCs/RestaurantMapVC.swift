@@ -11,7 +11,7 @@ import MapKit
 import GooglePlaces
 
 // MARK: IBOutlets
-class RestaurantMapVC: UIViewController {
+class RestaurantMapVC: BaseVC {
 
     @IBOutlet weak var categories: UICollectionView!
     @IBOutlet weak var mapView: MKMapView!
@@ -36,12 +36,10 @@ extension RestaurantMapVC {
         
         CloudKitManager.categories(action: .fetch) { (names) in
             DispatchQueue.main.async {
-                RestaurantCategories.create(with: names)
                 self.categories.reloadData()
             }
         }
         
-        locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
 
         // Check for Location Services
@@ -56,22 +54,13 @@ extension RestaurantMapVC {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
         mapView.isScrollEnabled = true
 
-        if let userLocation = locationManager.location?.coordinate {
-            let viewRegion = MKCoordinateRegion(center: userLocation, latitudinalMeters: 400, longitudinalMeters: 400)
-            mapView.setRegion(viewRegion, animated: true)
-            
-            searchBy(naturalLanguageQuery: "restaurants", region: viewRegion, coordinates: userLocation) { (response, error) in
-                if let error = error {
-                    print(error.localizedDescription)
-                } else {
-                    self.locations = response?.mapItems
-                    self.selectedLocation = 0
-                    response?.mapItems.forEach({ (mapItem) in
-                        self.mapView.addAnnotation(mapItem.placemark)
-                    })
-                }
+        if (CLLocationManager.locationServicesEnabled()) {
+            if let userLocation = locationManager.location?.coordinate {
+                addPlaces(near: userLocation)
             }
         }
     }
@@ -150,12 +139,7 @@ extension RestaurantMapVC: EditCellDelegate {
     }
 }
 
-// MARK CLLocationManagerDelegate
-extension RestaurantMapVC: CLLocationManagerDelegate {
-    
-}
-
-// MARK MKMapViewDelegate
+// MARK: MKMapViewDelegate
 extension RestaurantMapVC: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         var counter = 0
@@ -168,10 +152,34 @@ extension RestaurantMapVC: MKMapViewDelegate {
         }
         performSegue(withIdentifier: "selectResource", sender: parent)
     }
+    
+    func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
+        mapView.removeAnnotations(mapView.annotations)
+        if let userLocation = locationManager.location?.coordinate {
+            addPlaces(near: userLocation)
+        }
+    }
 }
 
 // MARK: Methods
 extension RestaurantMapVC {
+    func addPlaces(near location: CLLocationCoordinate2D) {
+        let viewRegion = MKCoordinateRegion(center: location, latitudinalMeters: 400, longitudinalMeters: 400)
+        mapView.setRegion(viewRegion, animated: true)
+        
+        searchBy(naturalLanguageQuery: "restaurants", region: viewRegion, coordinates: location) { (response, error) in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                self.locations = response?.mapItems
+                self.selectedLocation = 0
+                response?.mapItems.forEach({ (mapItem) in
+                    self.mapView.addAnnotation(mapItem.placemark)
+                })
+            }
+        }
+    }
+    
     func searchBy(naturalLanguageQuery: String, region: MKCoordinateRegion, coordinates: CLLocationCoordinate2D, completionHandler: @escaping (_ response: MKLocalSearch.Response?, _ error: Error?) -> Void) {
 
         let request = MKLocalSearch.Request()

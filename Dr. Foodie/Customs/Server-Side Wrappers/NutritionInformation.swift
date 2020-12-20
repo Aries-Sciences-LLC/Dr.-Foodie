@@ -270,8 +270,8 @@ class NutritionInformation {
             public func package() -> Dictionary<String, String> {
                 return [
                     "Content-Type": contentType,
-                    "x-app-key": authentification["APIKEY"]!,
-                    "x-app-id": authentification["APPID"]!
+                    "x-app-key": authentification["API Key"]!,
+                    "x-app-id": authentification["App ID"]!
                 ]
             }
         }

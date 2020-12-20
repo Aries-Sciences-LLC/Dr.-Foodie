@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK: Properties, IBOutlets, & IBActions
-class CategorySelectionVC: UIViewController {
+class CategorySelectionVC: DRFVC {
     
     private var categories: FoodRecognition.Response?
     private var cells: [CategoryCell] = []

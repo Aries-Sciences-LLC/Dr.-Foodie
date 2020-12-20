@@ -10,7 +10,7 @@ import UIKit
 import CircularCarousel
 
 // MARK: IBOutlets, Properties, Override Methods
-class ContainerVC: UIViewController {
+class ContainerVC: DRFVC {
 
     @IBOutlet weak var bg: UIImageView!
     @IBOutlet weak var welcomeLbl: UILabel!

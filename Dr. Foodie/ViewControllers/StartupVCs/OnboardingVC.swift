@@ -9,12 +9,14 @@
 import UIKit
 
 // MARK: Properties, Child Controller Handlers, & Swipe Gesture Recognizers
-class OnboardingVC: UIViewController {
+class OnboardingVC: DRFVC {
     
     @IBOutlet weak var onboardingView: OnboardingView!
     @IBOutlet weak var skipButton: UIButton!
     @IBOutlet weak var finishedButton: UIButton!
     @IBOutlet weak var overlay: UIVisualEffectView!
+    
+    @IBOutlet weak var backButtonLocation: NSLayoutConstraint!
     
     fileprivate let items: [OnboardingItemInfo] = [
         OnboardingItemInfo(
@@ -93,6 +95,10 @@ class OnboardingVC: UIViewController {
             self.overlay.alpha = 1
         }
     }
+    
+    @IBAction func goBack(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 // MARK: Actions
@@ -103,6 +109,11 @@ extension OnboardingVC {
         // Do any additional setup after loading the view.
         
         onboardingView.dataSource = self
+        
+        backButtonLocation.constant = 30
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
     }
 }
 

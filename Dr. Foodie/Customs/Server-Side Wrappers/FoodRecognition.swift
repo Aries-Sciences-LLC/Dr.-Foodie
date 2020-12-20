@@ -19,7 +19,7 @@ class FoodRecognition {
     public init() {
         let group = MultiThreadedEventLoopGroup(numberOfThreads: 1)
         let channel = ClientConnection.secure(group: group).connect(host: "api.clarifai.com", port: 443)
-        let authHeaders: HPACKHeaders = ["Authorization": "Key \(Bundle.main.object(forInfoDictionaryKey: "ClarifaiAPIKEY") as! String)"]
+        let authHeaders: HPACKHeaders = ["Authorization": "Key \((Bundle.main.object(forInfoDictionaryKey: "Clarifai") as! Dictionary<String, String>)["API Key"] ?? "")"]
         
         client = Clarifai_Api_V2Client(channel: channel, defaultCallOptions: CallOptions(customMetadata: authHeaders))
     }
@@ -40,7 +40,7 @@ extension FoodRecognition {
         do {
             let response = try client.postModelOutputs(
                 Clarifai_Api_PostModelOutputsRequest.with {
-                    $0.modelID = "bd367be194cf45149e75f01d59f77ba7";
+                    $0.modelID = (Bundle.main.object(forInfoDictionaryKey: "Clarifai") as! Dictionary<String, String>)["Model ID"] ?? "";
                     $0.inputs = [
                         Clarifai_Api_Input.with {
                             $0.data = Clarifai_Api_Data.with {

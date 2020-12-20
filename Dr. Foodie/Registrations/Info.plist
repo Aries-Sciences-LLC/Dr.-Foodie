@@ -18,8 +18,18 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
-	<key>ClarifaiAPIKEY</key>
-	<string>864127cb443a42a0b22b64925b89a507</string>
+	<key>Clarifai</key>
+	<dict>
+		<key>API Key</key>
+		<string>864127cb443a42a0b22b64925b89a507</string>
+		<key>Model ID</key>
+		<string>bd367be194cf45149e75f01d59f77ba7</string>
+	</dict>
+	<key>Google Places</key>
+	<dict>
+		<key>API Key</key>
+		<string>AIzaSyDadKyeWiz0f3QNTFjVNIu5djkxI0Z6AMY</string>
+	</dict>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>comgooglemaps</string>
@@ -31,17 +41,15 @@
 	<string>To be able to take a picture of your meal, please authorize this app.</string>
 	<key>NSFaceIDUsageDescription</key>
 	<string>Please confirm to logout.</string>
-	<key>NSHealthShareUsageDescription</key>
-	<string>For the full scope of our technology, using iCloud will be the most efficient and secure.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>In order to find some yummy local restraunts, please allow location.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>In order to find some yummy local restraunts, please allow location.</string>
 	<key>Nutritionix</key>
 	<dict>
-		<key>APIKEY</key>
+		<key>API Key</key>
 		<string>e9953124369b9c9ab4b07f51b7efca64</string>
-		<key>APPID</key>
+		<key>App ID</key>
 		<string>d9f0dfb1</string>
 	</dict>
 	<key>UIApplicationSceneManifest</key>
@@ -74,6 +82,7 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

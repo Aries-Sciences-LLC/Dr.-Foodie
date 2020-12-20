@@ -132,7 +132,7 @@ extension User {
         let mode: CloudKitManager.AccountAction = email == "" ? .login : .signup
         CloudKitManager.account(for: self, action: mode) {
             if mode == .signup {
-                RestaurantCategories.create(with: ["sushi", "pizza", "indian", "deli", "café", "brasserie", "asian", "american"])
+                RestaurantCategories.create(with: ["sushi", "pizza", "deli", "café", "brasserie", "asian", "american"])
             }
             QuickAddData.fetch()
             DispatchQueue.main.async {

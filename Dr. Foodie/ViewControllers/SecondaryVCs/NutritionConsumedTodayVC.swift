@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK: IBOutlets & IBActions
-class NutritionConsumedTodayVC: UIViewController {
+class NutritionConsumedTodayVC: DRFVC {
     
     @IBOutlet weak var dataContainer: NutritionFacts!
     @IBOutlet weak var moveLeft: UIButton!

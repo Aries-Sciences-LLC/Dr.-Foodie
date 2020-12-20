@@ -14,7 +14,7 @@ protocol UserBodySelectionVCDelegate {
 }
 
 // MARK: IBOutlets, Properties, & IBActions
-class UserBodySelectionVC: UIViewController {
+class UserBodySelectionVC: DRFVC {
     
     @IBOutlet weak var goBack: UIButton!
     @IBOutlet weak var sex: UIPickerView!
