@@ -261,7 +261,7 @@
 		3616F05507100E6D8D514B468A4B0D3D /* a_sign.c in Sources */ = {isa = PBXBuildFile; fileRef = C053BE96F952AD916AF539241667F7DA /* a_sign.c */; };
 		3669651CF3EBC319B3B543204C879647 /* cmac.c in Sources */ = {isa = PBXBuildFile; fileRef = B81CDC0586F6D66A0CC348F0E7661103 /* cmac.c */; };
 		367441DAE9B2BECE21D07E19ED5A3DAC /* e_aesgcmsiv.c in Sources */ = {isa = PBXBuildFile; fileRef = 33F0235B2FA24441CCF5A32714443490 /* e_aesgcmsiv.c */; };
-		3694580E7B1D17A8ECD701C5EE2A7E63 /* Pods-Dr. FoodieTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EA0474546E2B9054EBF74B4FDB6AEE /* Pods-Dr. FoodieTests-dummy.m */; };
+		3694580E7B1D17A8ECD701C5EE2A7E63 /* Pods-Dr. FoodieTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C45E1503892B2218389E1BC8B024327 /* Pods-Dr. FoodieTests-dummy.m */; };
 		3704AE2A10D44A7E156921E0EEB0B86E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C9A9367299C8A393031E5CEF86638B /* Foundation.framework */; };
 		375F8E6B3D0F50214E384A60E306A48C /* bn.c in Sources */ = {isa = PBXBuildFile; fileRef = 47D1A1BC54C5672B5E6E207B44FAB003 /* bn.c */; };
 		376474A2C3FEA48557CD6C584B52C749 /* UnaryCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA27BAFB61211F0AE18B9F6A482E7F3 /* UnaryCall.swift */; };
@@ -555,7 +555,7 @@
 		7568F63DA9AB06B9C3B041929A6AA586 /* fuchsia.c in Sources */ = {isa = PBXBuildFile; fileRef = F6686893BB9060473FC2F8CE9B27110B /* fuchsia.c */; };
 		759C00FB10983B102667A3C3B3F1767E /* tasn_typ.c in Sources */ = {isa = PBXBuildFile; fileRef = A2BD97DAB221CFE138023E4773A80483 /* tasn_typ.c */; };
 		75BAE4BC1433BAE8957F2705C2BAEB22 /* e_tls.c in Sources */ = {isa = PBXBuildFile; fileRef = AA497A0C50C1389C4F49AA119A461306 /* e_tls.c */; };
-		75CADD9181A0BBA5E5B71B948A5D8896 /* Pods-Dr. FoodieTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B49326B72B4E74EFB1BF3DB9B4F1D82 /* Pods-Dr. FoodieTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75CADD9181A0BBA5E5B71B948A5D8896 /* Pods-Dr. FoodieTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28B5D1288D874CE34CEE376962B50877 /* Pods-Dr. FoodieTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76D0250B2962AE506D142E0CDAA7467C /* SecurityFrameworkCertificateVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F830BB00FCFAA4EDB1EF5092FCCBE584 /* SecurityFrameworkCertificateVerification.swift */; };
 		772A14CDF559DACF90F62920C803F27E /* Bootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39FA47815408C331C87A13686B1D354 /* Bootstrap.swift */; };
 		7786BCE8D42F8784BCCC4C0F47800745 /* DOSHeuristics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C347D94EA6ECD1DE6B5E600EB310B3 /* DOSHeuristics.swift */; };
@@ -567,7 +567,6 @@
 		78D53B72BF1127FB096155F7CCD04295 /* v3_genn.c in Sources */ = {isa = PBXBuildFile; fileRef = 502FC9AF852623E67807BD54EFBEC124 /* v3_genn.c */; };
 		792DD7D0D718451B7A87B16335E3FE1F /* chacha.c in Sources */ = {isa = PBXBuildFile; fileRef = 34CA9B0CB4A62AF4377D54C708DBD5F1 /* chacha.c */; };
 		7932EBA8D54C4571E4E3D4B0ACAA71A0 /* CardSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC6C55B7521BCC1F1858FDE6C6F052D8 /* CardSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		793329E6EA341B3ABE4AB386C5CF2C0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C9A9367299C8A393031E5CEF86638B /* Foundation.framework */; };
 		794DFA1DA2975C7E5568FDBE63573E63 /* md5-586.linux.x86.S in Sources */ = {isa = PBXBuildFile; fileRef = C0EBE67578B3FC24E0B72DF782632495 /* md5-586.linux.x86.S */; };
 		7991B5DD9EC26A02FAD576E8E4D37E78 /* CNIOBoringSSL_chacha.h in Headers */ = {isa = PBXBuildFile; fileRef = C301DF008702AC6762498DA1020FD9A7 /* CNIOBoringSSL_chacha.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A78B2519D79EA4FD4024EFB1D407217 /* StreamStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB366E83C9A317EA3E4AA238DCCDF1 /* StreamStateMachine.swift */; };
@@ -630,7 +629,7 @@
 		87B401C395755E87968E4EC1C4E0795A /* e_aesctrhmac.c in Sources */ = {isa = PBXBuildFile; fileRef = E26FEE8F2436AEE420CA9A01436D03E6 /* e_aesctrhmac.c */; };
 		880860B6D7A115D25565BD983EF957FA /* CNIOBoringSSL_poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 98E5811884E465B8C2189CF14CC8A9CE /* CNIOBoringSSL_poly1305.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		880CA6F5B0C94807298170BE174EDA4E /* CNIOBoringSSLShims-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F694FA8A90D9AEFBEAB3DA6C2971312B /* CNIOBoringSSLShims-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88479D99FF08F6463040334DABB41B90 /* Pods-Dr. Foodie-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC931D5D13E50A92DADDBC50F318050 /* Pods-Dr. Foodie-dummy.m */; };
+		88479D99FF08F6463040334DABB41B90 /* Pods-Dr. Foodie-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C60B764BC6C2F58545DC3444486F144E /* Pods-Dr. Foodie-dummy.m */; };
 		888C455D34E42B5BE0AA1B056DBD9744 /* TCPOptions+SocketChannelOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB31A8325DD85E07259EE2A25CDD5C1 /* TCPOptions+SocketChannelOption.swift */; };
 		894991A33BE752BF738DB37A002E3E6F /* CNIOBoringSSL_curve25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 475FC58AEC47E0EC1F4366063BA2B397 /* CNIOBoringSSL_curve25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89516ADACDC80B737F496DE55C1FAD72 /* EmbeddedGRPCChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC4A131943A926981FBBFD1BC488E5 /* EmbeddedGRPCChannel.swift */; };
@@ -822,7 +821,6 @@
 		B842732EB93046F0098589A424FEC0DC /* v3_bitst.c in Sources */ = {isa = PBXBuildFile; fileRef = 53A42F55C03FFC87BFEE441EC70D1BFA /* v3_bitst.c */; };
 		B854C22AE55EAE06EE644178DF443564 /* cpu-arm-linux.h in Headers */ = {isa = PBXBuildFile; fileRef = CD78557A80EA0AA778B311BDE8099FB8 /* cpu-arm-linux.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B86AEC4E279FB15C690ED296DA4F08FC /* CNIOBoringSSL_md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 35CB77D1A4B3063BA5D9A5914AD122AF /* CNIOBoringSSL_md5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B8B67C692DA610D51E5E61C26DEC1DB1 /* Pods-Dr. Foodie-Dr. Foodie App Clip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDF3798BD99EA05487247D8682DB92B0 /* Pods-Dr. Foodie-Dr. Foodie App Clip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B937330EC160D3E34BDAD9B4DE444194 /* Message+JSONAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1282B476C58FA9D3E251B48CAD702 /* Message+JSONAdditions.swift */; };
 		BA1FE43310D361469E278FE2726B3CBE /* InboundWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8AA394F3F47931A3E41A0307DE53E8 /* InboundWindowManager.swift */; };
 		BA6B7A59B4C8A11BDA490C9D587996DF /* key_wrap.c in Sources */ = {isa = PBXBuildFile; fileRef = CCE096018F9347B07EC078BD6574E734 /* key_wrap.c */; };
@@ -835,7 +833,7 @@
 		BBCB391D9121E6398DDDBD59875461A5 /* CompressionAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F27AD1F5E0BA2C56CB79935B005FA5 /* CompressionAlgorithm.swift */; };
 		BC1A65A2B2C1911404B2C736D01A3FC6 /* vpaes-x86.linux.x86.S in Sources */ = {isa = PBXBuildFile; fileRef = 6CBB94745D5DCF232507B3FF7E81EEB9 /* vpaes-x86.linux.x86.S */; };
 		BC2D6A2714D6C28094BED0CECCA8B1EC /* x509_vpm.c in Sources */ = {isa = PBXBuildFile; fileRef = B7DC75EE218F7BD6EE17348BDE161CD8 /* x509_vpm.c */; };
-		BCA7B5F0D006B5EA86C75B2E12524E11 /* Pods-Dr. Foodie-Dr. FoodieUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E78D6710B7E2B48138EEC330F4BC66A /* Pods-Dr. Foodie-Dr. FoodieUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCA7B5F0D006B5EA86C75B2E12524E11 /* Pods-Dr. Foodie-Dr. FoodieUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E675BECD47F8117942882CC49EA8E5F2 /* Pods-Dr. Foodie-Dr. FoodieUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD1E7B74CC5D5A380365FB16FFFD31AA /* internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A73E91792BFE18983E29C60CFB0781E1 /* internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BD5FB7D946EED67744026077E7E32681 /* v3_conf.c in Sources */ = {isa = PBXBuildFile; fileRef = 82C65D1A89E445A4A5604056A5B2AE78 /* v3_conf.c */; };
 		BD9FA4AEF9A0DBFB6ED213F5B2B96BCB /* cpu-aarch64-fuchsia.c in Sources */ = {isa = PBXBuildFile; fileRef = 80289DE31F0374350346F07AC982E7C2 /* cpu-aarch64-fuchsia.c */; };
@@ -856,7 +854,7 @@
 		C22AA7EA12442C4A94C9B12C27F0C027 /* wnaf.c in Sources */ = {isa = PBXBuildFile; fileRef = EDBA7F9DE9126C1DE37809FD554A2EEA /* wnaf.c */; };
 		C234F4FCC36A40450C592F1D9B52BA01 /* BaseStreamSocketChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358D38200AD21E1DD2A364D74B4A95BD /* BaseStreamSocketChannel.swift */; };
 		C255ECC6B9D3D7D50519419D0D58BCD2 /* HTTPPipelineSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5FBC0D21661AF9CDC36D21F0DFF3AA /* HTTPPipelineSetup.swift */; };
-		C287BE643057266EA824BE0188B5CE1C /* Pods-Dr. Foodie-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1460F001F8D25C5DD3032F4BAFA98CF /* Pods-Dr. Foodie-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C287BE643057266EA824BE0188B5CE1C /* Pods-Dr. Foodie-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3036F8ADC74A09F107B8630625CAC4 /* Pods-Dr. Foodie-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2E90F8BB8266D690B4AE26837EF34FF /* CGRPCZlib.h in Headers */ = {isa = PBXBuildFile; fileRef = C882438BBDF7E367AB63988E5D6DF6EC /* CGRPCZlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3A22869EC29DEB02E342D7F8AAC39D8 /* aead.c in Sources */ = {isa = PBXBuildFile; fileRef = 35FBC298C217F93A10E83021EF34008A /* aead.c */; };
 		C3AE6DB4C62AAD41B1816408217C47E0 /* md5-x86_64.linux.x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E0A8DD7CA29EC35C09808B5019F29 /* md5-x86_64.linux.x86_64.S */; };
@@ -986,7 +984,6 @@
 		DD5D4250CF8B80FC2165633697E7B3E8 /* StateMachineResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52521E22CEECB75E36974BC90297DEE /* StateMachineResult.swift */; };
 		DDCD75F49EBD5A03C7C9586B1F5F58B3 /* LinuxCABundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A01BEF40E95273A65A99F0F21CBDFF /* LinuxCABundle.swift */; };
 		DE040637B7EC2074186AC5AEDA71CE81 /* HTTP2FlowControlWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE9363C6448275E6ED39992AD90126 /* HTTP2FlowControlWindow.swift */; };
-		DE0D6FC02EA76B001D301A7A3FE1E084 /* Pods-Dr. Foodie-Dr. Foodie App Clip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 165DF10466F8C366AB1B3EC0D4CF7DAE /* Pods-Dr. Foodie-Dr. Foodie App Clip-dummy.m */; };
 		DE28E8D910C4FD343D949DFC82932903 /* a_mbstr.c in Sources */ = {isa = PBXBuildFile; fileRef = C9394F647FF3B378A0CF037E02285615 /* a_mbstr.c */; };
 		DE9032A9870BDCCA25A185ABFCC47B3A /* IOData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD1809FE6E1F57E2BCECBDC2D21EF89 /* IOData.swift */; };
 		DEC3E541DB551729EC407FA6566CEE54 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B629DFCF620FFDCB82C1B971F8CD15 /* ConstraintViewDSL.swift */; };
@@ -1021,7 +1018,7 @@
 		E5752E8484057E0484CE969718F22352 /* p256_beeu-x86_64-asm.mac.x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = B5414361A00DAEE4698C854613D58032 /* p256_beeu-x86_64-asm.mac.x86_64.S */; };
 		E5DA838FFE4DFEF58D24825661FC1EE5 /* CNIOHTTPParser.h in Headers */ = {isa = PBXBuildFile; fileRef = AB30587272ABC134F74F7C8D1176AFBF /* CNIOHTTPParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5DE8C9702213CD73CB3E8E71B1FC2D9 /* CNIOAtomics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 383E0537ADDE78F29D50C48005F6C225 /* CNIOAtomics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5E2F8FEA35F8A88A3CDA03E6650FCD1 /* Pods-Dr. Foodie-Dr. FoodieUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 736F0B9F2C53D514836286A445C92DE8 /* Pods-Dr. Foodie-Dr. FoodieUITests-dummy.m */; };
+		E5E2F8FEA35F8A88A3CDA03E6650FCD1 /* Pods-Dr. Foodie-Dr. FoodieUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FE5BBFF361165D25CA2DCE4F982119 /* Pods-Dr. Foodie-Dr. FoodieUITests-dummy.m */; };
 		E6452994410CA130BC9BF4986223697F /* shim.c in Sources */ = {isa = PBXBuildFile; fileRef = FE424D878FDB00FF424A937E3E956455 /* shim.c */; };
 		E66E230C9438432332978D6CF82BCD71 /* NIOTSBootstraps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3945E5535BEBCA6897B0E45A5E834DBB /* NIOTSBootstraps.swift */; };
 		E691C82A8FF049746DD85BD38CA204B1 /* CNIOSHA1-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1CE66FD36008EA1869C776D527652C4 /* CNIOSHA1-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1133,27 +1130,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0087F4A6BF46EE97C7D84C134E1C4C93 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FEC86271E8E1F8D419E532469B0CEB47;
-			remoteInfo = CircularCarousel;
-		};
-		045F16951AD082AA475586FF8D8BC32E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E50EEBE8207624037F43288C584338F9;
-			remoteInfo = CNIOSHA1;
-		};
-		09874F83B454D618AEDDEA6E09FB8DB2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F71DD9985215E142F625AD23A9121477;
-			remoteInfo = SwiftNIOHPACK;
-		};
 		0D6CF6D74A613E96297764956CAC3110 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -1217,27 +1193,6 @@
 			remoteGlobalIDString = 59007493BE8F52FEEC69F0F9330AA6C0;
 			remoteInfo = CNIOHTTPParser;
 		};
-		206D5FA4150023B2D3C33225875E69C6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 65C8D0D3B04F444B821EB675E4D821DA;
-			remoteInfo = CNIOBoringSSLShims;
-		};
-		22856F837D5973033241275658E5B155 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E0A1D7BDF9C722E6E4B4B1E012D20E51;
-			remoteInfo = SwiftNIOTLS;
-		};
-		27E2EBFF7BED9DEC452B1CD6190BF66A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 834F3DE9EFC7B90102D63A51F6A9AF51;
-			remoteInfo = SwiftNIOFoundationCompat;
-		};
 		28F5F581F700B3CCED72DA5A719154F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -1260,20 +1215,6 @@
 			remoteInfo = SwiftNIOConcurrencyHelpers;
 		};
 		2EE328C5A01129F1F9873CC5FFBAF215 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 773FB76F4A2F42092713B9025F188877;
-			remoteInfo = SwiftNIOConcurrencyHelpers;
-		};
-		3096429EFFCFFF20BF7F635A35EDB246 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5E62229F86AA9810C2A7E6CF628B8486;
-			remoteInfo = SwiftNIO;
-		};
-		30E5C6AEBF1EC8D92F4F5A158BC4858E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -1336,33 +1277,12 @@
 			remoteGlobalIDString = 34E23B39AFBC87A7678CDCA494DE5CDC;
 			remoteInfo = CNIOLinux;
 		};
-		41C921E0B040A379ECBEB3CF83DC8F75 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DBB6098E2B03BC9DB53C067142C50CA4;
-			remoteInfo = "gRPC-Swift";
-		};
-		424CDBB5101CC9BCDDD97014C986AC3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2ABF3F8EC6CE525E1E02C51D72C64E94;
-			remoteInfo = Logging;
-		};
 		446D720E85C05BEF50AE540868B76E8E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D11B0D1A6986453F8B1B1BACDA442BBA;
 			remoteInfo = CardSlider;
-		};
-		45F332D017E0C4D124572DD39E4A32DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 71D94F5C545887C8BC575883E745A3DF;
-			remoteInfo = CNIOBoringSSL;
 		};
 		46B6D243C30863AF96D063CC49D22D77 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1377,13 +1297,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
 			remoteInfo = GooglePlaces;
-		};
-		49D35B3657F5DD3A6214A17FE5B373CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
-			remoteInfo = SnapKit;
 		};
 		4A7406FFD30F36929E91BCDED3BEC727 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1448,13 +1361,6 @@
 			remoteGlobalIDString = 642945244208FC5F107EE5F43551DCA5;
 			remoteInfo = CGRPCZlib;
 		};
-		5E1A330F5F22D5121960BFABA4AB16EC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 59007493BE8F52FEEC69F0F9330AA6C0;
-			remoteInfo = CNIOHTTPParser;
-		};
 		64124B0F5834109B583C992B7DD4FFF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -1476,13 +1382,6 @@
 			remoteGlobalIDString = 5E62229F86AA9810C2A7E6CF628B8486;
 			remoteInfo = SwiftNIO;
 		};
-		68278B5CFE0007C29DAE8F26EB08279E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
-			remoteInfo = GooglePlaces;
-		};
 		687C2EF447020923057BA5FD493D1B07 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -1503,13 +1402,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = DBB6098E2B03BC9DB53C067142C50CA4;
 			remoteInfo = "gRPC-Swift";
-		};
-		6A84A340D620FF7666AD2459E21C786C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 17112F66EE5BDC5584A51CF4FCE7631A;
-			remoteInfo = SwiftNIOHTTP2;
 		};
 		6E3A74C0813BE13A589FF185E38A0373 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1553,13 +1445,6 @@
 			remoteGlobalIDString = CF4D556EB90FFD6388321BDFD45BDDB3;
 			remoteInfo = SwiftNIOSSL;
 		};
-		75A7D6912958AB189D2EB2AE4B0E1D3F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CF4D556EB90FFD6388321BDFD45BDDB3;
-			remoteInfo = SwiftNIOSSL;
-		};
 		78E6ADAB78A126A56C736383B55FA131 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -1587,13 +1472,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = E0A1D7BDF9C722E6E4B4B1E012D20E51;
 			remoteInfo = SwiftNIOTLS;
-		};
-		80DD24DD7AA3CCF871BB4281CA02BC12 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 642945244208FC5F107EE5F43551DCA5;
-			remoteInfo = CGRPCZlib;
 		};
 		81A14F967EFC726703B6F9E98FA30B96 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1644,40 +1522,12 @@
 			remoteGlobalIDString = 5E62229F86AA9810C2A7E6CF628B8486;
 			remoteInfo = SwiftNIO;
 		};
-		9256BB2E697FE858F8D5D9C3FC19AA32 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E31BF93EB20B6245622D5A44E45F9BCA;
-			remoteInfo = CNIOAtomics;
-		};
-		930C077E8E3639A1A0F60C36C3B3E989 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D11B0D1A6986453F8B1B1BACDA442BBA;
-			remoteInfo = CardSlider;
-		};
-		93488670389739BEC2351E6B2D283814 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
-			remoteInfo = GoogleMaps;
-		};
 		9380BF80DAFBAC5D3FCE745EFDA13FBB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 17112F66EE5BDC5584A51CF4FCE7631A;
 			remoteInfo = SwiftNIOHTTP2;
-		};
-		9518C69E69A5A2A191CBD8E95EEB509F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5D6DC8585F20CBE789F7D3D4F645980E;
-			remoteInfo = SwiftNIOTransportServices;
 		};
 		965E6B07867544B323EDD97B60BBB51B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1720,13 +1570,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 71D94F5C545887C8BC575883E745A3DF;
 			remoteInfo = CNIOBoringSSL;
-		};
-		A55A2306848CA2E1EA1E9C582293E609 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 56C793C77970EA2F3692F44FFEFD9360;
-			remoteInfo = SwiftNIOHTTP1;
 		};
 		A7FE858A988D0585AA76DDC96DF0D8C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1791,13 +1634,6 @@
 			remoteGlobalIDString = F71DD9985215E142F625AD23A9121477;
 			remoteInfo = SwiftNIOHPACK;
 		};
-		BEBF3D52EFBA7A26576A6368D40BE4CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 56A44E6B610D174593F40C5AD73224C4;
-			remoteInfo = CNIODarwin;
-		};
 		C449FAA32066301FA440294432D2A6EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -1853,13 +1689,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5E62229F86AA9810C2A7E6CF628B8486;
 			remoteInfo = SwiftNIO;
-		};
-		D95C39F388386FE6EA54224F742D960B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A5F702E0DA383BC1479572581615A916;
-			remoteInfo = SwiftProtobuf;
 		};
 		DCF1A7A2284A5E1BE2C332F279DD22E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1924,20 +1753,6 @@
 			remoteGlobalIDString = 5E62229F86AA9810C2A7E6CF628B8486;
 			remoteInfo = SwiftNIO;
 		};
-		F9D3BF63FB4E1E2DEA0F8801A5C67512 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4A0A66DC2DC19095E11E5D3A679802D4;
-			remoteInfo = CNIOWindows;
-		};
-		F9E99F9554C8587F76291F72A13D4B22 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 34E23B39AFBC87A7678CDCA494DE5CDC;
-			remoteInfo = CNIOLinux;
-		};
 		FD3BDE2E216A7FAF01AB59DAF901500F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -1975,10 +1790,10 @@
 		02FF126736281AF31E800E7405A64784 /* ServerErrorDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerErrorDelegate.swift; path = Sources/GRPC/ServerErrorDelegate.swift; sourceTree = "<group>"; };
 		032549D2415974BEB79FF78B2283F935 /* chacha-x86.linux.x86.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "chacha-x86.linux.x86.S"; path = "Sources/CNIOBoringSSL/crypto/chacha/chacha-x86.linux.x86.S"; sourceTree = "<group>"; };
 		039274153667BFBCB0965156B47C153F /* aes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aes.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/aes/aes.c; sourceTree = "<group>"; };
-		03EA0474546E2B9054EBF74B4FDB6AEE /* Pods-Dr. FoodieTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Dr. FoodieTests-dummy.m"; sourceTree = "<group>"; };
 		042632783E4032DDDF67D234A7273004 /* CNIOBoringSSL_cipher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_cipher.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_cipher.h; sourceTree = "<group>"; };
 		043FC90AD1A68A93E871FA92D898CE27 /* p_x25519.c */ = {isa = PBXFileReference; includeInIndex = 1; name = p_x25519.c; path = Sources/CNIOBoringSSL/crypto/evp/p_x25519.c; sourceTree = "<group>"; };
 		0443DCA8CEC0348A4CABAB9BFB9BFAD4 /* ec_key.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ec_key.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/ec/ec_key.c; sourceTree = "<group>"; };
+		04BD20526351310E1982BC8FFA951E77 /* Pods-Dr. Foodie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dr. Foodie.release.xcconfig"; sourceTree = "<group>"; };
 		04C9A9367299C8A393031E5CEF86638B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		0520A7BC306B9F5040550B5BFC9C6B45 /* pcy_int.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pcy_int.h; path = Sources/CNIOBoringSSL/crypto/x509v3/pcy_int.h; sourceTree = "<group>"; };
 		0533D50930F7C45549232BA58CB4A2ED /* crypto.c */ = {isa = PBXFileReference; includeInIndex = 1; name = crypto.c; path = Sources/CNIOBoringSSL/crypto/crypto.c; sourceTree = "<group>"; };
@@ -1996,12 +1811,10 @@
 		08820D0A98E023D706E3AE33F87E8C3D /* ssl_versions.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = ssl_versions.cc; path = Sources/CNIOBoringSSL/ssl/ssl_versions.cc; sourceTree = "<group>"; };
 		08AC4F3D24EAB3F9B58914300C7A41AC /* HTTPServerPipelineHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPServerPipelineHandler.swift; path = Sources/NIOHTTP1/HTTPServerPipelineHandler.swift; sourceTree = "<group>"; };
 		08B56C1A4690B943222C5A99A8873022 /* NIOHPACK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NIOHPACK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		09A91FD99FF8032AFC41E6027AA423FB /* Pods-Dr. FoodieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dr. FoodieTests.debug.xcconfig"; sourceTree = "<group>"; };
 		09DDF2E5B7B12922011DBD798C34C931 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Sources/SwiftProtobuf/Decoder.swift; sourceTree = "<group>"; };
 		0A0A40AF91C8B3E991374593BF9630D5 /* WSAStartup.c */ = {isa = PBXFileReference; includeInIndex = 1; name = WSAStartup.c; path = Sources/CNIOWindows/WSAStartup.c; sourceTree = "<group>"; };
 		0A2E0A8DD7CA29EC35C09808B5019F29 /* md5-x86_64.linux.x86_64.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "md5-x86_64.linux.x86_64.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/md5-x86_64.linux.x86_64.S"; sourceTree = "<group>"; };
 		0A456D1A6D3847FCB82BD0AF46B07021 /* HPACKErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HPACKErrors.swift; path = Sources/NIOHPACK/HPACKErrors.swift; sourceTree = "<group>"; };
-		0AC931D5D13E50A92DADDBC50F318050 /* Pods-Dr. Foodie-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Dr. Foodie-dummy.m"; sourceTree = "<group>"; };
 		0B421E3A8657FBD438E10BD0982291A3 /* CardSlider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CardSlider-Info.plist"; sourceTree = "<group>"; };
 		0B6B2FD93111D76168D020D7A6EF3C1B /* mem.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mem.c; path = Sources/CNIOBoringSSL/crypto/mem.c; sourceTree = "<group>"; };
 		0BAD5B1CB2FC86666C848B86CA7FB4F0 /* SwiftNIO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftNIO.debug.xcconfig; sourceTree = "<group>"; };
@@ -2042,7 +1855,6 @@
 		13817281999E4878A0D004705B22DEC6 /* err_data.c */ = {isa = PBXFileReference; includeInIndex = 1; name = err_data.c; path = Sources/CNIOBoringSSL/crypto/err/err_data.c; sourceTree = "<group>"; };
 		139984993657A5402C3499DA5DF1F989 /* ssl_lib.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = ssl_lib.cc; path = Sources/CNIOBoringSSL/ssl/ssl_lib.cc; sourceTree = "<group>"; };
 		13B609375B28E7BCDA0BF6551641BAB4 /* ByteBufferBIO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ByteBufferBIO.swift; path = Sources/NIOSSL/ByteBufferBIO.swift; sourceTree = "<group>"; };
-		1438BD84AFC30FAD3FCB5263266159EE /* Pods-Dr. Foodie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dr. Foodie.debug.xcconfig"; sourceTree = "<group>"; };
 		145BDAB86D749D9FF0DBB568F8CC4B64 /* Logging-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Logging-prefix.pch"; sourceTree = "<group>"; };
 		14AE6FE4ED7A61AE72BB0485F35EEC66 /* p256_table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = p256_table.h; path = Sources/CNIOBoringSSL/crypto/fipsmodule/ec/p256_table.h; sourceTree = "<group>"; };
 		14CF2B9EDF8797BBD616C56F8089073F /* CNIOAtomics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CNIOAtomics.debug.xcconfig; sourceTree = "<group>"; };
@@ -2055,7 +1867,6 @@
 		157E478122BCEDFBDBB1CE2774D9C825 /* chacha-armv4.ios.arm.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "chacha-armv4.ios.arm.S"; path = "Sources/CNIOBoringSSL/crypto/chacha/chacha-armv4.ios.arm.S"; sourceTree = "<group>"; };
 		15FE800D301E5D4317C31CABE0B84E89 /* CNIOBoringSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CNIOBoringSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1655D198B19A380E388A3288CEE22C08 /* CardSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CardSlider-prefix.pch"; sourceTree = "<group>"; };
-		165DF10466F8C366AB1B3EC0D4CF7DAE /* Pods-Dr. Foodie-Dr. Foodie App Clip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Dr. Foodie-Dr. Foodie App Clip-dummy.m"; sourceTree = "<group>"; };
 		16C69D626E3E9E7A594D1CED0403A434 /* EventLoop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventLoop.swift; path = Sources/NIO/EventLoop.swift; sourceTree = "<group>"; };
 		16C7F1F17EC4D920683D4AAD579321FB /* ssl_transcript.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = ssl_transcript.cc; path = Sources/CNIOBoringSSL/ssl/ssl_transcript.cc; sourceTree = "<group>"; };
 		16D435D32D516215F48E20F8216D652E /* HTTP2StreamMultiplexer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTP2StreamMultiplexer.swift; path = Sources/NIOHTTP2/HTTP2StreamMultiplexer.swift; sourceTree = "<group>"; };
@@ -2075,9 +1886,9 @@
 		194E383396C6F9938B245C4F0EB1EA87 /* pem_oth.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pem_oth.c; path = Sources/CNIOBoringSSL/crypto/pem/pem_oth.c; sourceTree = "<group>"; };
 		19EC67E3D231E3004535908E274852C3 /* ecdh_extra.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ecdh_extra.c; path = Sources/CNIOBoringSSL/crypto/ecdh_extra/ecdh_extra.c; sourceTree = "<group>"; };
 		19FE8FEAEDB460411A3AD9A9E65093A8 /* CardSliderCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardSliderCell.swift; path = CardSlider/CardSlider/Public/CardSliderCell.swift; sourceTree = "<group>"; };
+		1A755592D984D8D5A9BCEBF3BA9386DB /* Pods-Dr. Foodie-Dr. FoodieUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dr. Foodie-Dr. FoodieUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1A885E26455506C77E77A2F235F7BC31 /* SocketAddresses.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketAddresses.swift; path = Sources/NIO/SocketAddresses.swift; sourceTree = "<group>"; };
 		1A9262CFF70EF67D784CD635D6ECBEB2 /* CGRPCZlib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CGRPCZlib-prefix.pch"; sourceTree = "<group>"; };
-		1ADE6364AC733ADC175B7103BCAB7DB0 /* Pods-Dr. FoodieTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dr. FoodieTests-Info.plist"; sourceTree = "<group>"; };
 		1AF6D9C66A4E2F96572DBF373C03F914 /* Shims.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shims.swift; path = Sources/GRPC/Shims.swift; sourceTree = "<group>"; };
 		1B2CB2E2B5CCBB6F3787D4535D735AA3 /* Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = Sources/SwiftProtobuf/Enum.swift; sourceTree = "<group>"; };
 		1B392515A953C72C9C3DAD414DEA26D3 /* SwiftNIOTLS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftNIOTLS-dummy.m"; sourceTree = "<group>"; };
@@ -2087,6 +1898,7 @@
 		1BDC9749B4598196BA8E280EE39A5466 /* Google_Protobuf_FieldMask+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_FieldMask+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_FieldMask+Extensions.swift"; sourceTree = "<group>"; };
 		1C00D51413DA4835C8268EC978130F24 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		1C28BA3A3A3D7E0630D7850B2EA9BBE2 /* GRPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GRPC.framework; path = "gRPC-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C45E1503892B2218389E1BC8B024327 /* Pods-Dr. FoodieTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Dr. FoodieTests-dummy.m"; sourceTree = "<group>"; };
 		1C729F1E46F3070B99836A103C54E2BD /* CNIOBoringSSL_ossl_typ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_ossl_typ.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_ossl_typ.h; sourceTree = "<group>"; };
 		1C977A7EED0389682366BD69AC058CE5 /* cbb.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cbb.c; path = Sources/CNIOBoringSSL/crypto/bytestring/cbb.c; sourceTree = "<group>"; };
 		1D1EB175B69125A06EFEF7B570BE0994 /* BinaryDelimited.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryDelimited.swift; path = Sources/SwiftProtobuf/BinaryDelimited.swift; sourceTree = "<group>"; };
@@ -2110,12 +1922,14 @@
 		202FB8323F994506D4C054BB2FEF3EE0 /* CNIOBoringSSL_ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_ssl3.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_ssl3.h; sourceTree = "<group>"; };
 		20465BB0682199ABA887EFAA53384216 /* CNIOLinux-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CNIOLinux-umbrella.h"; sourceTree = "<group>"; };
 		20F66A85A3385FA9F3B08F27EBBBFB00 /* x_x509.c */ = {isa = PBXFileReference; includeInIndex = 1; name = x_x509.c; path = Sources/CNIOBoringSSL/crypto/x509/x_x509.c; sourceTree = "<group>"; };
+		2105ECCE859D6044D992A041E45A8115 /* Pods-Dr. FoodieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dr. FoodieTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2132A007E5FEB2AED35A63220601E23E /* poly1305_arm.c */ = {isa = PBXFileReference; includeInIndex = 1; name = poly1305_arm.c; path = Sources/CNIOBoringSSL/crypto/poly1305/poly1305_arm.c; sourceTree = "<group>"; };
 		214097DDC367F9B7E9126B31F08C3A55 /* ProtoNameProviding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtoNameProviding.swift; path = Sources/SwiftProtobuf/ProtoNameProviding.swift; sourceTree = "<group>"; };
 		21584ACD2606FCEEBCCE273A2955F318 /* v3_akeya.c */ = {isa = PBXFileReference; includeInIndex = 1; name = v3_akeya.c; path = Sources/CNIOBoringSSL/crypto/x509v3/v3_akeya.c; sourceTree = "<group>"; };
 		21A01BEF40E95273A65A99F0F21CBDFF /* LinuxCABundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinuxCABundle.swift; path = Sources/NIOSSL/LinuxCABundle.swift; sourceTree = "<group>"; };
 		21AA7DD47E8D57F3012B3FF499AD7372 /* cpu-intel.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "cpu-intel.c"; path = "Sources/CNIOBoringSSL/crypto/cpu-intel.c"; sourceTree = "<group>"; };
 		21BEFCC9C2A31D1F3EFA86FA04CE41BB /* ControlMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControlMessage.swift; path = Sources/NIO/ControlMessage.swift; sourceTree = "<group>"; };
+		21E673315861C1B7DA666339D75749E0 /* Pods-Dr. Foodie-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Dr. Foodie-acknowledgements.markdown"; sourceTree = "<group>"; };
 		21F6087DA52C32B1425018CBCC26D0F1 /* WebCORSHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebCORSHandler.swift; path = Sources/GRPC/WebCORSHandler.swift; sourceTree = "<group>"; };
 		2200F8375DEAA7946F9EC12B1DAC1E59 /* a_time.c */ = {isa = PBXFileReference; includeInIndex = 1; name = a_time.c; path = Sources/CNIOBoringSSL/crypto/asn1/a_time.c; sourceTree = "<group>"; };
 		2234163FBA01DAD4E73BD3C20892CC99 /* x86_64-mont.linux.x86_64.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "x86_64-mont.linux.x86_64.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/x86_64-mont.linux.x86_64.S"; sourceTree = "<group>"; };
@@ -2126,7 +1940,6 @@
 		22F06EACB44750CB4A0C8C296C750422 /* evp_asn1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = evp_asn1.c; path = Sources/CNIOBoringSSL/crypto/evp/evp_asn1.c; sourceTree = "<group>"; };
 		2300003D83A1308C0128247073CB1866 /* rsaz_exp.c */ = {isa = PBXFileReference; includeInIndex = 1; name = rsaz_exp.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/bn/rsaz_exp.c; sourceTree = "<group>"; };
 		231D7DACBEB1165D2ED6440BC72E5843 /* BSDSocketAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BSDSocketAPI.swift; path = Sources/NIO/BSDSocketAPI.swift; sourceTree = "<group>"; };
-		23311341EC4B6C869BD0847162C85856 /* Pods-Dr. Foodie-Dr. Foodie App Clip-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Dr. Foodie-Dr. Foodie App Clip-acknowledgements.markdown"; sourceTree = "<group>"; };
 		238BC456F07C915D54CDCA1C5306BCAB /* SSLPrivateKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLPrivateKey.swift; path = Sources/NIOSSL/SSLPrivateKey.swift; sourceTree = "<group>"; };
 		23F7D0F25137A3F9F863195223B5B325 /* x86-mont.linux.x86.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "x86-mont.linux.x86.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/x86-mont.linux.x86.S"; sourceTree = "<group>"; };
 		241BB6E59647EBE48CA37CC41F51F9A7 /* NIOTSConnectionBootstrap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NIOTSConnectionBootstrap.swift; path = Sources/NIOTransportServices/NIOTSConnectionBootstrap.swift; sourceTree = "<group>"; };
@@ -2135,7 +1948,6 @@
 		24E691B8DB0A86A0F95208E2759AB07F /* OutboundFlowControlBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OutboundFlowControlBuffer.swift; path = "Sources/NIOHTTP2/Frame Buffers/OutboundFlowControlBuffer.swift"; sourceTree = "<group>"; };
 		250B11C01A5560405A38670D82702218 /* ResponsePartContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponsePartContainer.swift; path = Sources/GRPC/ClientCalls/ResponsePartContainer.swift; sourceTree = "<group>"; };
 		254803FB230B9CEF617E39DA30F1F280 /* HTTP2Settings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTP2Settings.swift; path = Sources/NIOHTTP2/HTTP2Settings.swift; sourceTree = "<group>"; };
-		257686AF6A9DC9C2AB62281B44B1631E /* Pods-Dr. Foodie-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dr. Foodie-acknowledgements.plist"; sourceTree = "<group>"; };
 		25F5AE72BF19ACBD53B0B416306F1EF6 /* HasFlowControlWindows.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HasFlowControlWindows.swift; path = Sources/NIOHTTP2/ConnectionStateMachine/HasFlowControlWindows.swift; sourceTree = "<group>"; };
 		26041AE3D8AAEE187C8616525E2B3E70 /* internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = internal.h; path = Sources/CNIOBoringSSL/crypto/hrss/internal.h; sourceTree = "<group>"; };
 		263D954BA9EC6A315DFAF9D4E91ECD26 /* p256-x86_64.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "p256-x86_64.c"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/ec/p256-x86_64.c"; sourceTree = "<group>"; };
@@ -2146,14 +1958,16 @@
 		27C428CDAF0803D08386A83089A9FE73 /* ChannelInvoker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChannelInvoker.swift; path = Sources/NIO/ChannelInvoker.swift; sourceTree = "<group>"; };
 		27F980F15BCDA82428658CA7A2CA9AF8 /* BSDSocketAPIWindows.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BSDSocketAPIWindows.swift; path = Sources/NIO/BSDSocketAPIWindows.swift; sourceTree = "<group>"; };
 		2834D1EC9BC2E62CD67299A250A827BD /* vpaes-x86_64.linux.x86_64.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "vpaes-x86_64.linux.x86_64.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/vpaes-x86_64.linux.x86_64.S"; sourceTree = "<group>"; };
+		28B5D1288D874CE34CEE376962B50877 /* Pods-Dr. FoodieTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Dr. FoodieTests-umbrella.h"; sourceTree = "<group>"; };
 		28CD89D7B7312CAC62DAD25DE3CF0DAA /* BidirectionalStreamingCallHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BidirectionalStreamingCallHandler.swift; path = Sources/GRPC/CallHandlers/BidirectionalStreamingCallHandler.swift; sourceTree = "<group>"; };
 		290EDD058AA5722C0E4D3DAD7E3155BC /* x509_r2x.c */ = {isa = PBXFileReference; includeInIndex = 1; name = x509_r2x.c; path = Sources/CNIOBoringSSL/crypto/x509/x509_r2x.c; sourceTree = "<group>"; };
+		2992539E721A31B09A6D5C111E2D57CF /* Pods-Dr. Foodie.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Dr. Foodie.modulemap"; sourceTree = "<group>"; };
+		29B6AE4B5264093A3E8415B9E2A65F0A /* Pods-Dr. Foodie-Dr. FoodieUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Dr. Foodie-Dr. FoodieUITests.modulemap"; sourceTree = "<group>"; };
 		2A349BB0A0DD7400CE7836A187A436B6 /* pool.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pool.c; path = Sources/CNIOBoringSSL/crypto/pool/pool.c; sourceTree = "<group>"; };
 		2A4CC298CC8CF90A2A7FAFA7D74BD1CF /* NIOHTTP2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NIOHTTP2.framework; path = SwiftNIOHTTP2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7413814D4FB27779598303CE51DAE3 /* SwiftNIOFoundationCompat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftNIOFoundationCompat.modulemap; sourceTree = "<group>"; };
 		2AD4AF0B5AD75A2B61BEBB0FD9D9E9DE /* CNIOWindows.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOWindows.h; path = Sources/CNIOWindows/include/CNIOWindows.h; sourceTree = "<group>"; };
 		2ADA6CE0DCCC2B07CCC5E200A0007EC2 /* d1_lib.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = d1_lib.cc; path = Sources/CNIOBoringSSL/ssl/d1_lib.cc; sourceTree = "<group>"; };
-		2B49326B72B4E74EFB1BF3DB9B4F1D82 /* Pods-Dr. FoodieTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Dr. FoodieTests-umbrella.h"; sourceTree = "<group>"; };
 		2B780264F0A4185AB918DE2BF37F07CB /* StaticHeaderTable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StaticHeaderTable.swift; path = Sources/NIOHPACK/StaticHeaderTable.swift; sourceTree = "<group>"; };
 		2BD1809FE6E1F57E2BCECBDC2D21EF89 /* IOData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOData.swift; path = Sources/NIO/IOData.swift; sourceTree = "<group>"; };
 		2BD9B4C18F38007198149E2718B77F26 /* x509_ext.c */ = {isa = PBXFileReference; includeInIndex = 1; name = x509_ext.c; path = Sources/CNIOBoringSSL/crypto/x509/x509_ext.c; sourceTree = "<group>"; };
@@ -2208,12 +2022,14 @@
 		34CA9B0CB4A62AF4377D54C708DBD5F1 /* chacha.c */ = {isa = PBXFileReference; includeInIndex = 1; name = chacha.c; path = Sources/CNIOBoringSSL/crypto/chacha/chacha.c; sourceTree = "<group>"; };
 		34D51A8A1F162CDDB99012253FF816E8 /* ServerCallContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerCallContext.swift; path = Sources/GRPC/ServerCallContexts/ServerCallContext.swift; sourceTree = "<group>"; };
 		34D6A82108C78999A0D7B31EC11DBCE2 /* internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = internal.h; path = Sources/CNIOBoringSSL/crypto/fipsmodule/cipher/internal.h; sourceTree = "<group>"; };
+		3506739B4B933D2A9DF91E5430A0DFC9 /* Pods-Dr. Foodie-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dr. Foodie-frameworks.sh"; sourceTree = "<group>"; };
 		3529BA461DC87C016B40B9EAB8C4B74C /* internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = internal.h; path = Sources/CNIOBoringSSL/crypto/bio/internal.h; sourceTree = "<group>"; };
 		35322CEC5922C53EBF09732AF3A63689 /* MultiplexerAbstractChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiplexerAbstractChannel.swift; path = Sources/NIOHTTP2/MultiplexerAbstractChannel.swift; sourceTree = "<group>"; };
 		35653641CBE4F86C8B8FF0111F64BF0F /* vpaes-armv7.linux.arm.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "vpaes-armv7.linux.arm.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/vpaes-armv7.linux.arm.S"; sourceTree = "<group>"; };
 		35895F6185DFDBBD03B1B400707AC364 /* ConnectionIdledEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionIdledEvent.swift; path = Sources/GRPC/ConnectionIdledEvent.swift; sourceTree = "<group>"; };
 		358D38200AD21E1DD2A364D74B4A95BD /* BaseStreamSocketChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseStreamSocketChannel.swift; path = Sources/NIO/BaseStreamSocketChannel.swift; sourceTree = "<group>"; };
 		359F403927DD9ACE8D2DB8402EC6C3D3 /* sign.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sign.c; path = Sources/CNIOBoringSSL/crypto/evp/sign.c; sourceTree = "<group>"; };
+		35A774AB3D9044BADF6401C1E25EAB81 /* Pods-Dr. Foodie-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dr. Foodie-acknowledgements.plist"; sourceTree = "<group>"; };
 		35BA738ACF312A6588251D669BAEDDFB /* dtls_record.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = dtls_record.cc; path = Sources/CNIOBoringSSL/ssl/dtls_record.cc; sourceTree = "<group>"; };
 		35BA75FE610042624F306B12DC8EA330 /* e_chacha20poly1305.c */ = {isa = PBXFileReference; includeInIndex = 1; name = e_chacha20poly1305.c; path = Sources/CNIOBoringSSL/crypto/cipher_extra/e_chacha20poly1305.c; sourceTree = "<group>"; };
 		35BAE6825801ED8A9E6B995FDCDBC540 /* kdf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = kdf.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/tls/kdf.c; sourceTree = "<group>"; };
@@ -2298,6 +2114,7 @@
 		43D822596D667C22E8B1526968DCF72F /* GRPCChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GRPCChannel.swift; path = Sources/GRPC/GRPCChannel/GRPCChannel.swift; sourceTree = "<group>"; };
 		444A5EAF529DDE63DB090C10C4A00E15 /* CNIOBoringSSL_hrss.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_hrss.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_hrss.h; sourceTree = "<group>"; };
 		449CB226B4B089B991D143B9256437F3 /* SwiftNIO-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftNIO-umbrella.h"; sourceTree = "<group>"; };
+		450BA5D61BCBE667DB725CC31FE37095 /* Pods-Dr. FoodieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dr. FoodieTests.release.xcconfig"; sourceTree = "<group>"; };
 		451C30A8E7594DE1FBE7F3CD4AF00407 /* x25519-asm-arm.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "x25519-asm-arm.S"; path = "Sources/CNIOBoringSSL/crypto/curve25519/asm/x25519-asm-arm.S"; sourceTree = "<group>"; };
 		45BAF6B44256D5C715C40918494313D4 /* CircularCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CircularCarousel.framework; path = CircularCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C56CE95EF295CDD96F8306F3C1A751 /* ClientStreamingCallHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClientStreamingCallHandler.swift; path = Sources/GRPC/CallHandlers/ClientStreamingCallHandler.swift; sourceTree = "<group>"; };
@@ -2305,7 +2122,6 @@
 		463D898E6665D43BF42AB619A61F09F7 /* UnaryResponseCallContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnaryResponseCallContext.swift; path = Sources/GRPC/ServerCallContexts/UnaryResponseCallContext.swift; sourceTree = "<group>"; };
 		46791E10EA68BF0168CE9773EEA2E64A /* tls13_client.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = tls13_client.cc; path = Sources/CNIOBoringSSL/ssl/tls13_client.cc; sourceTree = "<group>"; };
 		467D77FC934557BAEAE5D888E258F23C /* JSONEncodingOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONEncodingOptions.swift; path = Sources/SwiftProtobuf/JSONEncodingOptions.swift; sourceTree = "<group>"; };
-		4698185A2419E3A04144247B5E89009B /* Pods-Dr. Foodie-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dr. Foodie-Info.plist"; sourceTree = "<group>"; };
 		475FC58AEC47E0EC1F4366063BA2B397 /* CNIOBoringSSL_curve25519.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_curve25519.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_curve25519.h; sourceTree = "<group>"; };
 		479D0AB479643434E7D11FCB228F3CC4 /* poly_rq_mul.S */ = {isa = PBXFileReference; includeInIndex = 1; name = poly_rq_mul.S; path = Sources/CNIOBoringSSL/crypto/hrss/asm/poly_rq_mul.S; sourceTree = "<group>"; };
 		47C2263ACE7E12A1B9E5DC42B598B419 /* JSONMapEncodingVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONMapEncodingVisitor.swift; path = Sources/SwiftProtobuf/JSONMapEncodingVisitor.swift; sourceTree = "<group>"; };
@@ -2333,11 +2149,11 @@
 		4BF574EF9E556C1D6CBBD4530E39B439 /* pem_xaux.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pem_xaux.c; path = Sources/CNIOBoringSSL/crypto/pem/pem_xaux.c; sourceTree = "<group>"; };
 		4CECE1D3F082EE1C5AF7E5E93BAEDF74 /* CNIODarwin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CNIODarwin.framework; path = CNIODarwin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF5856C0F622580D070081B4204268E /* p256_64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = p256_64.h; path = Sources/CNIOBoringSSL/third_party/fiat/p256_64.h; sourceTree = "<group>"; };
+		4D3F5A576DEE7E9AD4CA8C05F1D1C6E0 /* Pods-Dr. Foodie-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dr. Foodie-Info.plist"; sourceTree = "<group>"; };
 		4D6754B57244FCFF641A32C6C8F3DED8 /* ghash-ssse3-x86_64.mac.x86_64.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "ghash-ssse3-x86_64.mac.x86_64.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/ghash-ssse3-x86_64.mac.x86_64.S"; sourceTree = "<group>"; };
 		4DC4284A7B083918A195D5AEF9641410 /* sha1-x86_64.linux.x86_64.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "sha1-x86_64.linux.x86_64.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/sha1-x86_64.linux.x86_64.S"; sourceTree = "<group>"; };
 		4DDFDC426E79FB4E5CD88DC764049A98 /* SwiftNIOFoundationCompat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftNIOFoundationCompat.release.xcconfig; sourceTree = "<group>"; };
 		4E0C70738AB05378CE1299388C53F897 /* HPACKHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HPACKHeader.swift; path = Sources/NIOHPACK/HPACKHeader.swift; sourceTree = "<group>"; };
-		4E24FFC78ECF78271198DA466D3ED01C /* Pods-Dr. Foodie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dr. Foodie.release.xcconfig"; sourceTree = "<group>"; };
 		4EB540CE62F9C3C26CB55B5DA05EEB09 /* FileDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileDescriptor.swift; path = Sources/NIO/FileDescriptor.swift; sourceTree = "<group>"; };
 		4ECED1362BF44BBC0069C0C2A41EA687 /* UnaryCallHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnaryCallHandler.swift; path = Sources/GRPC/CallHandlers/UnaryCallHandler.swift; sourceTree = "<group>"; };
 		4EEDBBDC26F4A5DFA09D2C013C611305 /* StreamingResponseCallContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamingResponseCallContext.swift; path = Sources/GRPC/ServerCallContexts/StreamingResponseCallContext.swift; sourceTree = "<group>"; };
@@ -2359,7 +2175,6 @@
 		5187392EF4701BB0AD3E0946B2350CEA /* CNIOBoringSSL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CNIOBoringSSL-prefix.pch"; sourceTree = "<group>"; };
 		51AEAA747DF63C3753D8FB59B6270D33 /* CNIOSHA1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CNIOSHA1.modulemap; sourceTree = "<group>"; };
 		51D4A605032A9EEB0886D720214B86EA /* DispathQueue+WithFuture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispathQueue+WithFuture.swift"; path = "Sources/NIO/DispathQueue+WithFuture.swift"; sourceTree = "<group>"; };
-		524158EF25981C12970DE103FC166818 /* Pods-Dr. Foodie-Dr. Foodie App Clip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Dr. Foodie-Dr. Foodie App Clip.modulemap"; sourceTree = "<group>"; };
 		52877B8781EB26CC8008DF354780C7C3 /* SwiftNIOHTTP1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftNIOHTTP1.release.xcconfig; sourceTree = "<group>"; };
 		52A36735BEC3D9668EA21B552535C93E /* fork_detect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fork_detect.h; path = Sources/CNIOBoringSSL/crypto/fipsmodule/rand/fork_detect.h; sourceTree = "<group>"; };
 		52CFDEB437C801E6232A0D4E54A3679C /* IntegerTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntegerTypes.swift; path = Sources/NIO/IntegerTypes.swift; sourceTree = "<group>"; };
@@ -2380,7 +2195,6 @@
 		5845D9FD733D0527A84ADE129F516DDD /* NIOSSLServerHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NIOSSLServerHandler.swift; path = Sources/NIOSSL/NIOSSLServerHandler.swift; sourceTree = "<group>"; };
 		5891CF868E185F3FD3CAD4DA65145236 /* TextFormatEncodingVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFormatEncodingVisitor.swift; path = Sources/SwiftProtobuf/TextFormatEncodingVisitor.swift; sourceTree = "<group>"; };
 		5896DC94C7AE1A08B26A9A57DA4200FE /* CNIOBoringSSL_x509_vfy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_x509_vfy.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_x509_vfy.h; sourceTree = "<group>"; };
-		58C21DAF1E884747D97CA51BCDA94679 /* Pods-Dr. Foodie-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dr. Foodie-frameworks.sh"; sourceTree = "<group>"; };
 		592CA18535F857F28AB63639C5CA1303 /* a_utctm.c */ = {isa = PBXFileReference; includeInIndex = 1; name = a_utctm.c; path = Sources/CNIOBoringSSL/crypto/asn1/a_utctm.c; sourceTree = "<group>"; };
 		598261112446B28B789F2B796B6277C6 /* CNIOHTTPParser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CNIOHTTPParser.modulemap; sourceTree = "<group>"; };
 		5992A1B26D32B66415FD493198BB3E10 /* e_des.c */ = {isa = PBXFileReference; includeInIndex = 1; name = e_des.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/cipher/e_des.c; sourceTree = "<group>"; };
@@ -2430,12 +2244,12 @@
 		629867A6EF68CC73CB0771D33ACE5108 /* trust_token.c */ = {isa = PBXFileReference; includeInIndex = 1; name = trust_token.c; path = Sources/CNIOBoringSSL/crypto/trust_token/trust_token.c; sourceTree = "<group>"; };
 		62B55E5D3DE4B85B0E8E80E0C5825227 /* HTTP2Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTP2Frame.swift; path = Sources/NIOHTTP2/HTTP2Frame.swift; sourceTree = "<group>"; };
 		62C892A81D7ACC43683CE2D8A831F5CC /* cfb.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cfb.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/modes/cfb.c; sourceTree = "<group>"; };
-		62CF5D89A452842FA026ACCE74E961AF /* Pods-Dr. FoodieTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Dr. FoodieTests.modulemap"; sourceTree = "<group>"; };
 		637AFD91360B5642DAB164C88C2EF951 /* file.c */ = {isa = PBXFileReference; includeInIndex = 1; name = file.c; path = Sources/CNIOBoringSSL/crypto/bio/file.c; sourceTree = "<group>"; };
 		63FBB82F7ED4A502AB6C2A038EA37EC5 /* hkdf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hkdf.c; path = Sources/CNIOBoringSSL/crypto/hkdf/hkdf.c; sourceTree = "<group>"; };
 		63FED0CBDE77FFF43314EC063F4D6D2B /* ConnectionKeepalive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionKeepalive.swift; path = Sources/GRPC/ConnectionKeepalive.swift; sourceTree = "<group>"; };
 		6408CE4A7392783767D697412C8999DC /* a_digest.c */ = {isa = PBXFileReference; includeInIndex = 1; name = a_digest.c; path = Sources/CNIOBoringSSL/crypto/x509/a_digest.c; sourceTree = "<group>"; };
 		6449BBD52BEA896EA2FE7AF771845A3E /* tasn_enc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = tasn_enc.c; path = Sources/CNIOBoringSSL/crypto/asn1/tasn_enc.c; sourceTree = "<group>"; };
+		64548E11DC150EB4B039D67CAD86EEC6 /* Pods-Dr. FoodieTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dr. FoodieTests-Info.plist"; sourceTree = "<group>"; };
 		64892B11CC3EC89DA03FD6FEE544245B /* SwiftNIOSSL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftNIOSSL.debug.xcconfig; sourceTree = "<group>"; };
 		64A6B66D6B7B17464D31276A81F9D4CA /* ex_data.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ex_data.c; path = Sources/CNIOBoringSSL/crypto/ex_data.c; sourceTree = "<group>"; };
 		64DD3A6C01A8E97A70627C1C40C1948F /* v3_utl.c */ = {isa = PBXFileReference; includeInIndex = 1; name = v3_utl.c; path = Sources/CNIOBoringSSL/crypto/x509v3/v3_utl.c; sourceTree = "<group>"; };
@@ -2451,7 +2265,6 @@
 		65EB0211E647AC99D1E087D8A4FB0989 /* v3_enum.c */ = {isa = PBXFileReference; includeInIndex = 1; name = v3_enum.c; path = Sources/CNIOBoringSSL/crypto/x509v3/v3_enum.c; sourceTree = "<group>"; };
 		6612CEA25BED05320A3B07225B6E85D2 /* CircularCarousel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircularCarousel-prefix.pch"; sourceTree = "<group>"; };
 		661EC4DF055F095808B24691D9F35BED /* s3_both.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = s3_both.cc; path = Sources/CNIOBoringSSL/ssl/s3_both.cc; sourceTree = "<group>"; };
-		66239FDF428062BC71128B8B8C3830A5 /* Pods-Dr. FoodieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dr. FoodieTests.release.xcconfig"; sourceTree = "<group>"; };
 		6662CB4696E1B2049A4D145BBE774B7F /* simple_mul.c */ = {isa = PBXFileReference; includeInIndex = 1; name = simple_mul.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/ec/simple_mul.c; sourceTree = "<group>"; };
 		6665B086E4E30BDCD2739825E6775871 /* Google_Protobuf_Duration+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Duration+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Duration+Extensions.swift"; sourceTree = "<group>"; };
 		669974B49E27D0CADBC8362EAB0FAA44 /* Google_Protobuf_NullValue+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_NullValue+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_NullValue+Extensions.swift"; sourceTree = "<group>"; };
@@ -2504,6 +2317,7 @@
 		71051DBDEEC6FC4B26985F3DE3D7AFB1 /* CNIOBoringSSLShims.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CNIOBoringSSLShims.release.xcconfig; sourceTree = "<group>"; };
 		7144778CDE958CFC2F656FEEB9957B55 /* p_rsa_asn1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = p_rsa_asn1.c; path = Sources/CNIOBoringSSL/crypto/evp/p_rsa_asn1.c; sourceTree = "<group>"; };
 		714BAC7845B49C6FA4C68FEF3FC970C2 /* asn1_gen.c */ = {isa = PBXFileReference; includeInIndex = 1; name = asn1_gen.c; path = Sources/CNIOBoringSSL/crypto/x509/asn1_gen.c; sourceTree = "<group>"; };
+		71C19865FAAA8F5FC5ADF90C1886DBDA /* Pods-Dr. Foodie-Dr. FoodieUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dr. Foodie-Dr. FoodieUITests-Info.plist"; sourceTree = "<group>"; };
 		71CB29AA338BC1442C1D541AE084A098 /* chacha20_poly1305_x86_64.linux.x86_64.S */ = {isa = PBXFileReference; includeInIndex = 1; name = chacha20_poly1305_x86_64.linux.x86_64.S; path = Sources/CNIOBoringSSL/crypto/cipher_extra/chacha20_poly1305_x86_64.linux.x86_64.S; sourceTree = "<group>"; };
 		72302F7CA8C8F20EAA6FFDF9E369D659 /* AddressedEnvelope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AddressedEnvelope.swift; path = Sources/NIO/AddressedEnvelope.swift; sourceTree = "<group>"; };
 		7273A89CEE0EE34246E7FB7B1C06B2D2 /* x86_64-mont5.mac.x86_64.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "x86_64-mont5.mac.x86_64.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/x86_64-mont5.mac.x86_64.S"; sourceTree = "<group>"; };
@@ -2513,15 +2327,12 @@
 		7330FE16E211520EC2D05C5799115AFA /* Version.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Version.swift; path = Sources/SwiftProtobuf/Version.swift; sourceTree = "<group>"; };
 		73328AB6E67FF4855DF7327B64265B4E /* NIOSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NIOSSL.framework; path = SwiftNIOSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73508011E00A14BC52FAD88427C52945 /* digestsign.c */ = {isa = PBXFileReference; includeInIndex = 1; name = digestsign.c; path = Sources/CNIOBoringSSL/crypto/evp/digestsign.c; sourceTree = "<group>"; };
-		736F0B9F2C53D514836286A445C92DE8 /* Pods-Dr. Foodie-Dr. FoodieUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Dr. Foodie-Dr. FoodieUITests-dummy.m"; sourceTree = "<group>"; };
-		73B0C0D770758E4853B2FCC284BDC82C /* Pods-Dr. Foodie-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dr. Foodie-resources.sh"; sourceTree = "<group>"; };
 		73C64D686F0085B9F6B972C8C8D03F63 /* CNIOBoringSSL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CNIOBoringSSL.modulemap; sourceTree = "<group>"; };
 		73F1AD28814EDAB7FF6686197EE987C4 /* ClientStreamingCall.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClientStreamingCall.swift; path = Sources/GRPC/ClientCalls/ClientStreamingCall.swift; sourceTree = "<group>"; };
 		7435F919311BDB7FF2A160B4714BC9EE /* ssl_asn1.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = ssl_asn1.cc; path = Sources/CNIOBoringSSL/ssl/ssl_asn1.cc; sourceTree = "<group>"; };
 		7439566918146D345CD44A8905856ADB /* CNIOHTTPParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CNIOHTTPParser-dummy.m"; sourceTree = "<group>"; };
 		745D0521D65A95635D6FB2C2230C6658 /* SwiftNIOHTTP2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftNIOHTTP2.release.xcconfig; sourceTree = "<group>"; };
 		746C9D15FB661F31FDD66893733B2526 /* pem_x509.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pem_x509.c; path = Sources/CNIOBoringSSL/crypto/pem/pem_x509.c; sourceTree = "<group>"; };
-		74BE78D2F9EE0F59C2011CAFD753F7DA /* Pods-Dr. FoodieTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Dr. FoodieTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		755959AEF346BF8A1484F71AD133ABD0 /* rsa_asn1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = rsa_asn1.c; path = Sources/CNIOBoringSSL/crypto/rsa_extra/rsa_asn1.c; sourceTree = "<group>"; };
 		75798FFD234B01B2F1EA7EF0AC471664 /* HTTP2FrameParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTP2FrameParser.swift; path = Sources/NIOHTTP2/HTTP2FrameParser.swift; sourceTree = "<group>"; };
 		757FAAD77A204D3D104102D0EDA0355D /* s3_pkt.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = s3_pkt.cc; path = Sources/CNIOBoringSSL/ssl/s3_pkt.cc; sourceTree = "<group>"; };
@@ -2558,7 +2369,6 @@
 		7B73CA7AE9F9217F03CAAE2DF9EE7F56 /* SwiftNIOConcurrencyHelpers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftNIOConcurrencyHelpers.debug.xcconfig; sourceTree = "<group>"; };
 		7C2E1FADFF0CE23B4145A4EC74C85E10 /* SwiftNIOTransportServices-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftNIOTransportServices-umbrella.h"; sourceTree = "<group>"; };
 		7C4205013B1F1829D4E31FB260605C64 /* sha1-armv4-large.ios.arm.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "sha1-armv4-large.ios.arm.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/sha1-armv4-large.ios.arm.S"; sourceTree = "<group>"; };
-		7C773A535F4DA57BE942DC377CB72F64 /* Pods-Dr. Foodie-Dr. Foodie App Clip-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dr. Foodie-Dr. Foodie App Clip-resources.sh"; sourceTree = "<group>"; };
 		7C798A23186A3172B4D1C99F8FE03DD1 /* cipher_extra.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cipher_extra.c; path = Sources/CNIOBoringSSL/crypto/cipher_extra/cipher_extra.c; sourceTree = "<group>"; };
 		7C82A55459C6C4FEC312E5C631481472 /* BinaryEncodingVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryEncodingVisitor.swift; path = Sources/SwiftProtobuf/BinaryEncodingVisitor.swift; sourceTree = "<group>"; };
 		7CB6C74642E6D1603B6FDCAFD0EAD8F0 /* a_strnid.c */ = {isa = PBXFileReference; includeInIndex = 1; name = a_strnid.c; path = Sources/CNIOBoringSSL/crypto/asn1/a_strnid.c; sourceTree = "<group>"; };
@@ -2574,7 +2384,6 @@
 		7ECD06B0FF9A0655AE72CBFD161F3A83 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		7F20D61DA5243B8E84AACF74D35C5B29 /* sha512-x86_64.mac.x86_64.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "sha512-x86_64.mac.x86_64.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/sha512-x86_64.mac.x86_64.S"; sourceTree = "<group>"; };
 		7FDBDBB7F15F2F0C0CDF8985FA33A102 /* sha1-x86_64.mac.x86_64.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "sha1-x86_64.mac.x86_64.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/sha1-x86_64.mac.x86_64.S"; sourceTree = "<group>"; };
-		7FDBE5EBF1D7FEF763B36CD4710C0305 /* Pods-Dr. Foodie-Dr. Foodie App Clip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dr. Foodie-Dr. Foodie App Clip-Info.plist"; sourceTree = "<group>"; };
 		7FF8A53EDD6F3E1FEF344328BF516299 /* scrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = scrypt.c; path = Sources/CNIOBoringSSL/crypto/evp/scrypt.c; sourceTree = "<group>"; };
 		80289DE31F0374350346F07AC982E7C2 /* cpu-aarch64-fuchsia.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "cpu-aarch64-fuchsia.c"; path = "Sources/CNIOBoringSSL/crypto/cpu-aarch64-fuchsia.c"; sourceTree = "<group>"; };
 		806F1EE62BBEC3E8C7E1FD28564F29C1 /* shims.c */ = {isa = PBXFileReference; includeInIndex = 1; name = shims.c; path = Sources/CNIOBoringSSLShims/shims.c; sourceTree = "<group>"; };
@@ -2611,7 +2420,6 @@
 		854807C636F9366F4B1E3C8117FA8ECB /* internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = internal.h; path = Sources/CNIOBoringSSL/crypto/fipsmodule/sha/internal.h; sourceTree = "<group>"; };
 		85992D6C1FB4FA00C41163CD1FBA3D8A /* internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = internal.h; path = Sources/CNIOBoringSSL/crypto/curve25519/internal.h; sourceTree = "<group>"; };
 		85A37EA47FBFB1BC2F357F6D6599F9B3 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
-		85D3EEDCC7BA7B3A9676C3014FA9C4F9 /* Pods-Dr. Foodie-Dr. Foodie App Clip-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dr. Foodie-Dr. Foodie App Clip-acknowledgements.plist"; sourceTree = "<group>"; };
 		85F8EB2521D109EE92F82B93C08BCE7C /* a_bitstr.c */ = {isa = PBXFileReference; includeInIndex = 1; name = a_bitstr.c; path = Sources/CNIOBoringSSL/crypto/asn1/a_bitstr.c; sourceTree = "<group>"; };
 		860594583794E84E6B8E2F2C04842742 /* sha256-x86_64.linux.x86_64.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "sha256-x86_64.linux.x86_64.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/sha256-x86_64.linux.x86_64.S"; sourceTree = "<group>"; };
 		860A6E66869C1435AB98FE6FDA8E3A08 /* CNIOBoringSSL_ripemd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_ripemd.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_ripemd.h; sourceTree = "<group>"; };
@@ -2625,7 +2433,6 @@
 		874F33DE14199D52490B6FE0631CBD95 /* CNIOBoringSSL_hkdf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_hkdf.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_hkdf.h; sourceTree = "<group>"; };
 		87692C79FD4707ED8E3A69A5D58FBB7B /* v3_int.c */ = {isa = PBXFileReference; includeInIndex = 1; name = v3_int.c; path = Sources/CNIOBoringSSL/crypto/x509v3/v3_int.c; sourceTree = "<group>"; };
 		87783A9BBD1EDE7325457721878CBCFC /* ProtobufMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtobufMap.swift; path = Sources/SwiftProtobuf/ProtobufMap.swift; sourceTree = "<group>"; };
-		8795B5A9B14C83CC2E6F9F46E7861C4D /* Pods-Dr. Foodie-Dr. FoodieUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dr. Foodie-Dr. FoodieUITests-frameworks.sh"; sourceTree = "<group>"; };
 		87B85A59C5AA6B8D74AF74150A0CCEDD /* ByteBuffer-foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ByteBuffer-foundation.swift"; path = "Sources/NIOFoundationCompat/ByteBuffer-foundation.swift"; sourceTree = "<group>"; };
 		87B8817A3A5DCBEC51F8804999D6A4CF /* pcy_lib.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pcy_lib.c; path = Sources/CNIOBoringSSL/crypto/x509v3/pcy_lib.c; sourceTree = "<group>"; };
 		880254E2C02F74858418E34A8E383B80 /* SwiftNIOHTTP2-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftNIOHTTP2-Info.plist"; sourceTree = "<group>"; };
@@ -2656,7 +2463,6 @@
 		8DBA3E21E738C276D367C15C2CC2846B /* CNIOBoringSSL_boringssl_prefix_symbols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_boringssl_prefix_symbols.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_boringssl_prefix_symbols.h; sourceTree = "<group>"; };
 		8E6B7431B7F5ADCCDE136DB7EF3E7F3B /* GRPCStatusAndMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GRPCStatusAndMetadata.swift; path = Sources/GRPC/GRPCStatusAndMetadata.swift; sourceTree = "<group>"; };
 		8E710254BA671B77E013ADBDB34CE1B2 /* rdrand-x86_64.mac.x86_64.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "rdrand-x86_64.mac.x86_64.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/rdrand-x86_64.mac.x86_64.S"; sourceTree = "<group>"; };
-		8E78D6710B7E2B48138EEC330F4BC66A /* Pods-Dr. Foodie-Dr. FoodieUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Dr. Foodie-Dr. FoodieUITests-umbrella.h"; sourceTree = "<group>"; };
 		8EADF0AC43CFE7E96A6E51028E903D2B /* ssl_privkey.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = ssl_privkey.cc; path = Sources/CNIOBoringSSL/ssl/ssl_privkey.cc; sourceTree = "<group>"; };
 		8EB9497562413DC82C35DA7DBE89FDA7 /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Sources/NIO/Utilities.swift; sourceTree = "<group>"; };
 		8ED1DDF2025569DBE2D085D472C578CA /* SwiftNIOHPACK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftNIOHPACK-dummy.m"; sourceTree = "<group>"; };
@@ -2692,6 +2498,7 @@
 		9475C11078A8A046A4F94FDD378FFE18 /* CNIOLinux.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CNIOLinux.release.xcconfig; sourceTree = "<group>"; };
 		947A174CA0A6D2AF2C5C7171F8802F84 /* ThreadWindows.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadWindows.swift; path = Sources/NIO/ThreadWindows.swift; sourceTree = "<group>"; };
 		950044970D88BB2F5FB454DFFEFC5B08 /* dh_asn1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = dh_asn1.c; path = Sources/CNIOBoringSSL/crypto/dh/dh_asn1.c; sourceTree = "<group>"; };
+		953C78CE2F7B8E1A91CCC03F85E5B840 /* Pods-Dr. FoodieTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dr. FoodieTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		96024DBF3AFD6C32D9CFBF4B3EFCA265 /* deterministic.c */ = {isa = PBXFileReference; includeInIndex = 1; name = deterministic.c; path = Sources/CNIOBoringSSL/crypto/rand_extra/deterministic.c; sourceTree = "<group>"; };
 		9646AF89C8561D1304F307B49F05CC4F /* CNIOAtomics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOAtomics.h; path = Sources/CNIOAtomics/include/CNIOAtomics.h; sourceTree = "<group>"; };
 		967C9F9D1DFCECEC1B922ACB7A6F8F6D /* engine.c */ = {isa = PBXFileReference; includeInIndex = 1; name = engine.c; path = Sources/CNIOBoringSSL/crypto/engine/engine.c; sourceTree = "<group>"; };
@@ -2716,7 +2523,6 @@
 		9959C3628ECEB0722D4F3BE79EE349DD /* gRPC-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "gRPC-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		9971F8A91538C82369C24E0F6C4E3153 /* Visitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Visitor.swift; path = Sources/SwiftProtobuf/Visitor.swift; sourceTree = "<group>"; };
 		998546508F7E4EE126F48CF17FAA65B0 /* x509_obj.c */ = {isa = PBXFileReference; includeInIndex = 1; name = x509_obj.c; path = Sources/CNIOBoringSSL/crypto/x509/x509_obj.c; sourceTree = "<group>"; };
-		9AC42D99D9E38DD35AE42634BD67929C /* Pods-Dr. Foodie.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Dr. Foodie.modulemap"; sourceTree = "<group>"; };
 		9AE238C3E8284E749CCACEE0AFB3337F /* CNIOBoringSSL_err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_err.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_err.h; sourceTree = "<group>"; };
 		9AE2F8E9CA4C4F688EFDAF40628A1B48 /* bn-586.linux.x86.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "bn-586.linux.x86.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/bn-586.linux.x86.S"; sourceTree = "<group>"; };
 		9B5B4C558DA959654966BF4E3CF472BA /* CircularCarousel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircularCarousel.debug.xcconfig; sourceTree = "<group>"; };
@@ -2746,8 +2552,8 @@
 		9F60CAA0B820E18A12E7F09158B94DFE /* CardSliderViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardSliderViewController.swift; path = CardSlider/CardSlider/Public/CardSliderViewController.swift; sourceTree = "<group>"; };
 		9F8241C276169D2116DBC5946775D1DD /* Serialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Serialization.swift; path = Sources/GRPC/Serialization.swift; sourceTree = "<group>"; };
 		9FB5318D49FB7CDF1563A0BFFB2DD158 /* rand_extra.c */ = {isa = PBXFileReference; includeInIndex = 1; name = rand_extra.c; path = Sources/CNIOBoringSSL/crypto/rand_extra/rand_extra.c; sourceTree = "<group>"; };
-		A015E3F4E221833089D9FEC45B05B357 /* Pods-Dr. Foodie-Dr. FoodieUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dr. Foodie-Dr. FoodieUITests-resources.sh"; sourceTree = "<group>"; };
 		A01EBD8B04E2F68EC601AC4D8088B9CB /* SwiftNIOSSL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftNIOSSL-prefix.pch"; sourceTree = "<group>"; };
+		A029A2C89221DABB30B43F39332C1404 /* Pods-Dr. Foodie-Dr. FoodieUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dr. Foodie-Dr. FoodieUITests-resources.sh"; sourceTree = "<group>"; };
 		A07EBCCA5B9BE94D8476D7F4E0CB5E49 /* SwiftNIOTLS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftNIOTLS.modulemap; sourceTree = "<group>"; };
 		A0B231DE9E6F0A76CF7B88156BA76D8E /* CircularCarousel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CircularCarousel-Info.plist"; sourceTree = "<group>"; };
 		A0E119A2344AA38558A67D7B75B2BE67 /* refcount_lock.c */ = {isa = PBXFileReference; includeInIndex = 1; name = refcount_lock.c; path = Sources/CNIOBoringSSL/crypto/refcount_lock.c; sourceTree = "<group>"; };
@@ -2759,10 +2565,11 @@
 		A243D6B69227F01112BD9D1CCB8B3A29 /* CNIOBoringSSL_pkcs7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_pkcs7.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_pkcs7.h; sourceTree = "<group>"; };
 		A2AFB1F047D1CCF075D1C861219E8211 /* MulticastChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MulticastChannel.swift; path = Sources/NIO/MulticastChannel.swift; sourceTree = "<group>"; };
 		A2BD97DAB221CFE138023E4773A80483 /* tasn_typ.c */ = {isa = PBXFileReference; includeInIndex = 1; name = tasn_typ.c; path = Sources/CNIOBoringSSL/crypto/asn1/tasn_typ.c; sourceTree = "<group>"; };
+		A2FE5BBFF361165D25CA2DCE4F982119 /* Pods-Dr. Foodie-Dr. FoodieUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Dr. Foodie-Dr. FoodieUITests-dummy.m"; sourceTree = "<group>"; };
 		A318B564E2C3E0564509AC571DF7826A /* CNIOBoringSSL_base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_base64.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_base64.h; sourceTree = "<group>"; };
 		A3235AD55F6C66AD274B681E6C565EDA /* Google_Protobuf_ListValue+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_ListValue+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_ListValue+Extensions.swift"; sourceTree = "<group>"; };
 		A359F0E0BE1782D3BF0650176C6C8BB8 /* wrappers.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = wrappers.pb.swift; path = Sources/SwiftProtobuf/wrappers.pb.swift; sourceTree = "<group>"; };
-		A3F00E4EFD351FD7C1F4A200E0230CC9 /* Pods-Dr. Foodie-Dr. Foodie App Clip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dr. Foodie-Dr. Foodie App Clip.debug.xcconfig"; sourceTree = "<group>"; };
+		A467AF68467341F6479D89104BCBDD3F /* Pods-Dr. Foodie-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dr. Foodie-resources.sh"; sourceTree = "<group>"; };
 		A4CBB8CFF7CA8570B3E900264591172B /* gcm_nohw.c */ = {isa = PBXFileReference; includeInIndex = 1; name = gcm_nohw.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/modes/gcm_nohw.c; sourceTree = "<group>"; };
 		A4F27AD1F5E0BA2C56CB79935B005FA5 /* CompressionAlgorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompressionAlgorithm.swift; path = Sources/GRPC/Compression/CompressionAlgorithm.swift; sourceTree = "<group>"; };
 		A5850601C2A69C7F55097DC8CA065DFD /* SwiftNIOConcurrencyHelpers-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftNIOConcurrencyHelpers-dummy.m"; sourceTree = "<group>"; };
@@ -2826,7 +2633,6 @@
 		B0E7767DCA4D66E7C347883773827248 /* CNIOLinux-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CNIOLinux-Info.plist"; sourceTree = "<group>"; };
 		B114B86EF584947FA5B4B9D4308E75C5 /* CircularCarousel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircularCarousel-umbrella.h"; sourceTree = "<group>"; };
 		B1269F02B25F064B16AA213AF111883F /* a_verify.c */ = {isa = PBXFileReference; includeInIndex = 1; name = a_verify.c; path = Sources/CNIOBoringSSL/crypto/x509/a_verify.c; sourceTree = "<group>"; };
-		B1460F001F8D25C5DD3032F4BAFA98CF /* Pods-Dr. Foodie-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Dr. Foodie-umbrella.h"; sourceTree = "<group>"; };
 		B15996AB5EC2912D7BE7A742322835D5 /* algorithm.c */ = {isa = PBXFileReference; includeInIndex = 1; name = algorithm.c; path = Sources/CNIOBoringSSL/crypto/x509/algorithm.c; sourceTree = "<group>"; };
 		B16D3CD1FFF12C905AD7CB84D9423B9E /* InboundEventBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InboundEventBuffer.swift; path = Sources/NIOHTTP2/InboundEventBuffer.swift; sourceTree = "<group>"; };
 		B18B5B73BCE5C3549520EB635B58FBA8 /* v3_alt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = v3_alt.c; path = Sources/CNIOBoringSSL/crypto/x509v3/v3_alt.c; sourceTree = "<group>"; };
@@ -2869,7 +2675,6 @@
 		BBD15532F7179D3523E9CB585E12AC26 /* asn_pack.c */ = {isa = PBXFileReference; includeInIndex = 1; name = asn_pack.c; path = Sources/CNIOBoringSSL/crypto/asn1/asn_pack.c; sourceTree = "<group>"; };
 		BBE2D1DA842B0FE92CC19F4F77ACBFBB /* internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = internal.h; path = Sources/CNIOBoringSSL/crypto/fipsmodule/des/internal.h; sourceTree = "<group>"; };
 		BC10821CCA6F0D28937911BF1A8A6FA9 /* Google_Protobuf_Any+Registry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Any+Registry.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Any+Registry.swift"; sourceTree = "<group>"; };
-		BC202614C672E6DA140A62C3B653B22C /* Pods-Dr. Foodie-Dr. FoodieUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dr. Foodie-Dr. FoodieUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BC52DEBEEC6F30EFEF2294295F5031B2 /* sha1-armv8.linux.aarch64.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "sha1-armv8.linux.aarch64.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/sha1-armv8.linux.aarch64.S"; sourceTree = "<group>"; };
 		BC5DAC2209EE9EEBD62C0A40F1078DB8 /* HTTPServerProtocolErrorHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPServerProtocolErrorHandler.swift; path = Sources/NIOHTTP1/HTTPServerProtocolErrorHandler.swift; sourceTree = "<group>"; };
 		BCDDFB2A76DD61073CF697AC169DF619 /* Google_Protobuf_Timestamp+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Timestamp+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Timestamp+Extensions.swift"; sourceTree = "<group>"; };
@@ -2881,12 +2686,12 @@
 		BDDB5CAB20094C0423E002C1B2B10B59 /* CNIOBoringSSL_siphash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_siphash.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_siphash.h; sourceTree = "<group>"; };
 		BDDDBF367A1553DF6FB69AB2D48910E1 /* SwiftNIOConcurrencyHelpers-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftNIOConcurrencyHelpers-Info.plist"; sourceTree = "<group>"; };
 		BDDF22099C6DD67CB24BE6CD7E062A82 /* t_req.c */ = {isa = PBXFileReference; includeInIndex = 1; name = t_req.c; path = Sources/CNIOBoringSSL/crypto/x509/t_req.c; sourceTree = "<group>"; };
-		BDF3798BD99EA05487247D8682DB92B0 /* Pods-Dr. Foodie-Dr. Foodie App Clip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Dr. Foodie-Dr. Foodie App Clip-umbrella.h"; sourceTree = "<group>"; };
 		BE00A55F3B87FF796E41ACA74414E957 /* SwiftNIOHPACK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftNIOHPACK.release.xcconfig; sourceTree = "<group>"; };
 		BE45FC615D03E312582E0EE38F049996 /* params.c */ = {isa = PBXFileReference; includeInIndex = 1; name = params.c; path = Sources/CNIOBoringSSL/crypto/dh/params.c; sourceTree = "<group>"; };
 		BE8ACE00A041027189BC51BF58B5A025 /* sha512-armv4.linux.arm.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "sha512-armv4.linux.arm.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/sha512-armv4.linux.arm.S"; sourceTree = "<group>"; };
 		BE9264D53595A171DE22A2005E927A8D /* gRPC-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "gRPC-Swift-Info.plist"; sourceTree = "<group>"; };
 		BEB90EE5C3060EAAC3D5923CE0FA93D1 /* SwiftNIOHTTP1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftNIOHTTP1-dummy.m"; sourceTree = "<group>"; };
+		BEE3B7902E28CED8A8AC7EEABBAE4DFA /* Pods-Dr. Foodie-Dr. FoodieUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dr. Foodie-Dr. FoodieUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BF3021E6F5B083ADC15D2BB372B3631B /* ApplicationProtocolNegotiationHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApplicationProtocolNegotiationHandler.swift; path = Sources/NIOTLS/ApplicationProtocolNegotiationHandler.swift; sourceTree = "<group>"; };
 		BF442D86C76A43BEA3477D71F45DFEAB /* StringUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringUtils.swift; path = Sources/SwiftProtobuf/StringUtils.swift; sourceTree = "<group>"; };
 		BF61A87C81B1F57842379D8B69DDE5B2 /* vpaes-armv7.ios.arm.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "vpaes-armv7.ios.arm.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/vpaes-armv7.ios.arm.S"; sourceTree = "<group>"; };
@@ -2908,6 +2713,7 @@
 		C2C3DD4A19DF88F0C762E05DE511C44D /* NIOCloseOnErrorHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NIOCloseOnErrorHandler.swift; path = Sources/NIO/NIOCloseOnErrorHandler.swift; sourceTree = "<group>"; };
 		C301DF008702AC6762498DA1020FD9A7 /* CNIOBoringSSL_chacha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_chacha.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_chacha.h; sourceTree = "<group>"; };
 		C3C2F0687518E48E6ADB5DEA34DBD551 /* buf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = buf.c; path = Sources/CNIOBoringSSL/crypto/buf/buf.c; sourceTree = "<group>"; };
+		C3D95E192F65B903A65F81A2C9BCEAB0 /* Pods-Dr. FoodieTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Dr. FoodieTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C464C77D7E4626B61A6AFAAAD46D3433 /* gcd.c */ = {isa = PBXFileReference; includeInIndex = 1; name = gcd.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/bn/gcd.c; sourceTree = "<group>"; };
 		C48B66F575F796F2CE9F0B33D5161689 /* conf_def.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf_def.h; path = Sources/CNIOBoringSSL/crypto/conf/conf_def.h; sourceTree = "<group>"; };
 		C493D5874D81702B1EBE23DE6070DA38 /* CNIOHTTPParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CNIOHTTPParser-prefix.pch"; sourceTree = "<group>"; };
@@ -2916,6 +2722,7 @@
 		C56C691AF21CC3ED491E743090E1E3DC /* CNIODarwin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CNIODarwin-Info.plist"; sourceTree = "<group>"; };
 		C5822E8CA8DF6922E320162E3944B202 /* JSONDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecoder.swift; path = Sources/SwiftProtobuf/JSONDecoder.swift; sourceTree = "<group>"; };
 		C5DCC9CF42EC6A17772425527245CAC7 /* ecdh.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ecdh.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/ecdh/ecdh.c; sourceTree = "<group>"; };
+		C60B764BC6C2F58545DC3444486F144E /* Pods-Dr. Foodie-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Dr. Foodie-dummy.m"; sourceTree = "<group>"; };
 		C61A0A9364F8980E92376458B7E4DF08 /* v3_ncons.c */ = {isa = PBXFileReference; includeInIndex = 1; name = v3_ncons.c; path = Sources/CNIOBoringSSL/crypto/x509v3/v3_ncons.c; sourceTree = "<group>"; };
 		C63D8D94B8BCB88C80E081AFA643783A /* BinaryEncodingSizeVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryEncodingSizeVisitor.swift; path = Sources/SwiftProtobuf/BinaryEncodingSizeVisitor.swift; sourceTree = "<group>"; };
 		C68FA24D2C4EDD0CEFA557F1D4C0EC4D /* v3_pcia.c */ = {isa = PBXFileReference; includeInIndex = 1; name = v3_pcia.c; path = Sources/CNIOBoringSSL/crypto/x509v3/v3_pcia.c; sourceTree = "<group>"; };
@@ -2930,7 +2737,6 @@
 		C871EBEFB79C5E02EE43A92025314BDC /* internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = internal.h; path = Sources/CNIOBoringSSL/crypto/fipsmodule/aes/internal.h; sourceTree = "<group>"; };
 		C882438BBDF7E367AB63988E5D6DF6EC /* CGRPCZlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGRPCZlib.h; path = Sources/CGRPCZlib/include/CGRPCZlib.h; sourceTree = "<group>"; };
 		C9394F647FF3B378A0CF037E02285615 /* a_mbstr.c */ = {isa = PBXFileReference; includeInIndex = 1; name = a_mbstr.c; path = Sources/CNIOBoringSSL/crypto/asn1/a_mbstr.c; sourceTree = "<group>"; };
-		C9662A0322A83AB6F45083CF6EB87B75 /* Pods-Dr. Foodie-Dr. FoodieUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Dr. Foodie-Dr. FoodieUITests.modulemap"; sourceTree = "<group>"; };
 		C9D8E0D0145A16C076B00E9BC953CEB8 /* CNIOBoringSSL_ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_ssl.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_ssl.h; sourceTree = "<group>"; };
 		CA6D3205A270E9778C8BA216A31517D3 /* HTTP2ConnectionStateChange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTP2ConnectionStateChange.swift; path = Sources/NIOHTTP2/HTTP2ConnectionStateChange.swift; sourceTree = "<group>"; };
 		CA8881D050D566649FB4F2C7AB00C019 /* digests.c */ = {isa = PBXFileReference; includeInIndex = 1; name = digests.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/digest/digests.c; sourceTree = "<group>"; };
@@ -2947,18 +2753,16 @@
 		CC7565A5F9CD2FCF9D0494DC52348B62 /* sha512-armv8.linux.aarch64.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "sha512-armv8.linux.aarch64.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/sha512-armv8.linux.aarch64.S"; sourceTree = "<group>"; };
 		CCC4F7D34641463C9F2CD502836D1D27 /* by_file.c */ = {isa = PBXFileReference; includeInIndex = 1; name = by_file.c; path = Sources/CNIOBoringSSL/crypto/x509/by_file.c; sourceTree = "<group>"; };
 		CCC5241BFFBE12EB68C0B823A0462EC2 /* v3_crld.c */ = {isa = PBXFileReference; includeInIndex = 1; name = v3_crld.c; path = Sources/CNIOBoringSSL/crypto/x509v3/v3_crld.c; sourceTree = "<group>"; };
-		CCCA5C6C5B7F2CAD46BA29571181DC7C /* Pods-Dr. Foodie-Dr. FoodieUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dr. Foodie-Dr. FoodieUITests-Info.plist"; sourceTree = "<group>"; };
 		CCE096018F9347B07EC078BD6574E734 /* key_wrap.c */ = {isa = PBXFileReference; includeInIndex = 1; name = key_wrap.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/aes/key_wrap.c; sourceTree = "<group>"; };
 		CCE7E7A20EF08B79A4182379BB471E07 /* CGRPCZlib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CGRPCZlib-umbrella.h"; sourceTree = "<group>"; };
 		CCFC1C47297E1904867156073E389AAB /* CGRPCZlib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CGRPCZlib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD262A7E7A47CA9A06CC253B8F1CDDF6 /* NIOTSEventLoopGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NIOTSEventLoopGroup.swift; path = Sources/NIOTransportServices/NIOTSEventLoopGroup.swift; sourceTree = "<group>"; };
 		CD78557A80EA0AA778B311BDE8099FB8 /* cpu-arm-linux.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "cpu-arm-linux.h"; path = "Sources/CNIOBoringSSL/crypto/cpu-arm-linux.h"; sourceTree = "<group>"; };
 		CDD6BBD7F73699B71017863FEFB8CA93 /* cmp.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cmp.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/bn/cmp.c; sourceTree = "<group>"; };
-		CE3FEF096CE7FC7D63ACC3BAE2895CED /* Pods-Dr. Foodie-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Dr. Foodie-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CE515497FEA288B8F629717CBFB8423D /* ReceivingRstStreamState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReceivingRstStreamState.swift; path = Sources/NIOHTTP2/ConnectionStateMachine/FrameReceivingStates/ReceivingRstStreamState.swift; sourceTree = "<group>"; };
 		CE927A0FA31B548805B6C436C8AAC4E8 /* System.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = System.swift; path = Sources/NIO/System.swift; sourceTree = "<group>"; };
 		CEBCC63E07AB43DC2F4862717C4E391F /* Pods_Dr__Foodie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Dr__Foodie.framework; path = "Pods-Dr. Foodie.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CED692A955546945A68CF21DBA9B95A7 /* Pods_Dr__Foodie_Dr__Foodie_App_Clip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Dr__Foodie_Dr__Foodie_App_Clip.framework; path = "Pods-Dr. Foodie-Dr. Foodie App Clip.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC6C62446589F1CEFD6D61AD083D1CC /* Pods-Dr. Foodie-Dr. FoodieUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dr. Foodie-Dr. FoodieUITests-frameworks.sh"; sourceTree = "<group>"; };
 		CED974D7160A2A27756B82C7CA916E99 /* SwiftNIOFoundationCompat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftNIOFoundationCompat-dummy.m"; sourceTree = "<group>"; };
 		CF2171E4B4700D71BD051FFCA3D74BE8 /* GRPCError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GRPCError.swift; path = Sources/GRPC/GRPCError.swift; sourceTree = "<group>"; };
 		CF2EAF93E96CB5190F332D2093C44FC7 /* dh.c */ = {isa = PBXFileReference; includeInIndex = 1; name = dh.c; path = Sources/CNIOBoringSSL/crypto/dh/dh.c; sourceTree = "<group>"; };
@@ -2980,7 +2784,6 @@
 		D2DD99A7D60BBD6DE4042E8D74A0BFA0 /* CNIOBoringSSL_digest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_digest.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_digest.h; sourceTree = "<group>"; };
 		D2FAC5BDB0576D7352510D10F5A0ACF4 /* x_req.c */ = {isa = PBXFileReference; includeInIndex = 1; name = x_req.c; path = Sources/CNIOBoringSSL/crypto/x509/x_req.c; sourceTree = "<group>"; };
 		D2FE60868AB7E5C783D66B1B9860DADD /* v3_ocsp.c */ = {isa = PBXFileReference; includeInIndex = 1; name = v3_ocsp.c; path = Sources/CNIOBoringSSL/crypto/x509v3/v3_ocsp.c; sourceTree = "<group>"; };
-		D377DB5B558249B504B8F1613109D971 /* Pods-Dr. Foodie-Dr. FoodieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dr. Foodie-Dr. FoodieUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3DBD40BB179B397A733732DBEF24501 /* Logging-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Logging-umbrella.h"; sourceTree = "<group>"; };
 		D3F3E3B4564D584A6F569DC92A11DF44 /* CNIOBoringSSL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CNIOBoringSSL-dummy.m"; sourceTree = "<group>"; };
 		D40C554DCD3420E9C3B2D1A318630ACD /* IdentityVerification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdentityVerification.swift; path = Sources/NIOSSL/IdentityVerification.swift; sourceTree = "<group>"; };
@@ -2989,6 +2792,7 @@
 		D4979D2C28A8709CA4896E4AAC3DCD97 /* DoubleParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DoubleParser.swift; path = Sources/SwiftProtobuf/DoubleParser.swift; sourceTree = "<group>"; };
 		D4989008F81FE2F0E676BB1817011E1D /* p256-x86_64-table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "p256-x86_64-table.h"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/ec/p256-x86_64-table.h"; sourceTree = "<group>"; };
 		D4AE7103E387CA71DE8FA2A3E95578FD /* internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = internal.h; path = Sources/CNIOBoringSSL/crypto/pool/internal.h; sourceTree = "<group>"; };
+		D5162962D1E40D03643F14B98B7B0193 /* Pods-Dr. Foodie-Dr. FoodieUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Dr. Foodie-Dr. FoodieUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D52521E22CEECB75E36974BC90297DEE /* StateMachineResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StateMachineResult.swift; path = Sources/NIOHTTP2/ConnectionStateMachine/StateMachineResult.swift; sourceTree = "<group>"; };
 		D5316F8569AEFC8B169457CBCDC42FF3 /* md32_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md32_common.h; path = Sources/CNIOBoringSSL/crypto/fipsmodule/digest/md32_common.h; sourceTree = "<group>"; };
 		D556FA5827B05CC66B59AADAEAD798B7 /* SocketProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketProtocols.swift; path = Sources/NIO/SocketProtocols.swift; sourceTree = "<group>"; };
@@ -3032,7 +2836,6 @@
 		DA72E9B10584C9A991172C762C8D70F5 /* CircularCarousel+Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CircularCarousel+Layout.swift"; path = "Framework/CircularCarousel/CircularCarousel+Layout.swift"; sourceTree = "<group>"; };
 		DAB90F5779BDACC49300B4C3A91C999E /* CNIOBoringSSL_engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_engine.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_engine.h; sourceTree = "<group>"; };
 		DAD35345D4214EF7EA7C7A47561B4C97 /* SwiftNIOFoundationCompat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftNIOFoundationCompat.debug.xcconfig; sourceTree = "<group>"; };
-		DAEBBAA66061E9A4008DEA8ABC9BA175 /* Pods-Dr. FoodieTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dr. FoodieTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DAFBCA64E74EBED82857D74A32D15438 /* gcd_extra.c */ = {isa = PBXFileReference; includeInIndex = 1; name = gcd_extra.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/bn/gcd_extra.c; sourceTree = "<group>"; };
 		DB066493D904AE3DE6AAAF2C67EAD18B /* t_x509a.c */ = {isa = PBXFileReference; includeInIndex = 1; name = t_x509a.c; path = Sources/CNIOBoringSSL/crypto/x509/t_x509a.c; sourceTree = "<group>"; };
 		DB0A03CF268F5E0B0AC65C44BB468A57 /* internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = internal.h; path = Sources/CNIOBoringSSL/crypto/x509/internal.h; sourceTree = "<group>"; };
@@ -3041,6 +2844,7 @@
 		DB77FEA76EE50D0F3EC1825664FD6256 /* aes128gcmsiv-x86_64.mac.x86_64.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "aes128gcmsiv-x86_64.mac.x86_64.S"; path = "Sources/CNIOBoringSSL/crypto/cipher_extra/aes128gcmsiv-x86_64.mac.x86_64.S"; sourceTree = "<group>"; };
 		DB84B468A7025248A3BF06D055722BB8 /* add.c */ = {isa = PBXFileReference; includeInIndex = 1; name = add.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/bn/add.c; sourceTree = "<group>"; };
 		DBA6E301FBDFBAA2D5851CAFAFE5FA94 /* c-atomics.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "c-atomics.c"; path = "Sources/CNIOAtomics/src/c-atomics.c"; sourceTree = "<group>"; };
+		DC3036F8ADC74A09F107B8630625CAC4 /* Pods-Dr. Foodie-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Dr. Foodie-umbrella.h"; sourceTree = "<group>"; };
 		DC405DF94DFED0986137B929C4110C1A /* CNIOBoringSSLShims.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CNIOBoringSSLShims.modulemap; sourceTree = "<group>"; };
 		DC41C6F40506BE9695185D35E5C4A918 /* SwiftNIOHPACK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftNIOHPACK.debug.xcconfig; sourceTree = "<group>"; };
 		DC66DB88D536B48B98E3D38DF77392D2 /* CNIOLinux-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CNIOLinux-prefix.pch"; sourceTree = "<group>"; };
@@ -3049,11 +2853,9 @@
 		DC8A1839A8DCF3ECE278D5A5B594F27B /* ghash-neon-armv8.ios.aarch64.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "ghash-neon-armv8.ios.aarch64.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/ghash-neon-armv8.ios.aarch64.S"; sourceTree = "<group>"; };
 		DC9273394729457692CC378B2F81D54B /* util.c */ = {isa = PBXFileReference; includeInIndex = 1; name = util.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/ec/util.c; sourceTree = "<group>"; };
 		DCAE6A98A7EB2FAA75B6538B25464ACA /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
-		DCDD4F6EACB6A33A91329E3C3FB53D06 /* Pods-Dr. Foodie-Dr. Foodie App Clip-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dr. Foodie-Dr. Foodie App Clip-frameworks.sh"; sourceTree = "<group>"; };
 		DCDF1B1231494CA11F70A521FDD5F041 /* ControlFrameBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControlFrameBuffer.swift; path = "Sources/NIOHTTP2/Frame Buffers/ControlFrameBuffer.swift"; sourceTree = "<group>"; };
 		DD428871C4E4711F7BD65ED2CF4FB0CB /* obj.c */ = {isa = PBXFileReference; includeInIndex = 1; name = obj.c; path = Sources/CNIOBoringSSL/crypto/obj/obj.c; sourceTree = "<group>"; };
 		DD5A7633ABF1E75A90F420F460E1ED75 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
-		DDA08B84ABA4787C3B00554E4603800E /* Pods-Dr. Foodie-Dr. Foodie App Clip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dr. Foodie-Dr. Foodie App Clip.release.xcconfig"; sourceTree = "<group>"; };
 		DDF7D47D0B1012F78292A7996BA27F7E /* atomics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = atomics.swift; path = Sources/NIOConcurrencyHelpers/atomics.swift; sourceTree = "<group>"; };
 		DDFFB436C92357690DF2140FCD1B3FBE /* CGRPCZlib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CGRPCZlib-Info.plist"; sourceTree = "<group>"; };
 		DE3A50AECD605039D5C96115A0AFCC5C /* CNIOBoringSSL_ex_data.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_ex_data.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_ex_data.h; sourceTree = "<group>"; };
@@ -3094,13 +2896,14 @@
 		E49AD7192DD190F63F1503F07BF9A2F6 /* mode_wrappers.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mode_wrappers.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/aes/mode_wrappers.c; sourceTree = "<group>"; };
 		E4A0FF919340FC51BBFAAF2929CFEE27 /* p256-x86_64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "p256-x86_64.h"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/ec/p256-x86_64.h"; sourceTree = "<group>"; };
 		E4A50E956C711410A8F445EACFC97E5B /* tls_record.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = tls_record.cc; path = Sources/CNIOBoringSSL/ssl/tls_record.cc; sourceTree = "<group>"; };
-		E4E2894F58FF2FB95F7F93F27D6F76F7 /* Pods-Dr. Foodie-Dr. FoodieUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Dr. Foodie-Dr. FoodieUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E523FD53E9ACD8AF2649569666BB6E34 /* sha512-armv8.ios.aarch64.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "sha512-armv8.ios.aarch64.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/sha512-armv8.ios.aarch64.S"; sourceTree = "<group>"; };
 		E56293B1AACF34FBF7649D7E52FC9505 /* HTTPEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPEncoder.swift; path = Sources/NIOHTTP1/HTTPEncoder.swift; sourceTree = "<group>"; };
 		E589CD02614EFA946D29FED7EAC924D7 /* SSLCallbacks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLCallbacks.swift; path = Sources/NIOSSL/SSLCallbacks.swift; sourceTree = "<group>"; };
 		E614DFCF2C92BD4EFF4D0956BE9E2A56 /* api.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = api.pb.swift; path = Sources/SwiftProtobuf/api.pb.swift; sourceTree = "<group>"; };
 		E62D99122866603D12F561D038A0DDA2 /* c_nio_http_parser.c */ = {isa = PBXFileReference; includeInIndex = 1; name = c_nio_http_parser.c; path = Sources/CNIOHTTPParser/c_nio_http_parser.c; sourceTree = "<group>"; };
 		E6304710108973E7C32AABC9098258DE /* WriteCapturingHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WriteCapturingHandler.swift; path = Sources/GRPC/WriteCapturingHandler.swift; sourceTree = "<group>"; };
+		E675BECD47F8117942882CC49EA8E5F2 /* Pods-Dr. Foodie-Dr. FoodieUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Dr. Foodie-Dr. FoodieUITests-umbrella.h"; sourceTree = "<group>"; };
+		E69E36CEF0273FFEABC628F2AEA06E3C /* Pods-Dr. Foodie-Dr. FoodieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dr. Foodie-Dr. FoodieUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6B578BB90C94C83E6E3416129DFCA8D /* ConnectivityState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectivityState.swift; path = Sources/GRPC/ConnectivityState.swift; sourceTree = "<group>"; };
 		E6C347D94EA6ECD1DE6B5E600EB310B3 /* DOSHeuristics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DOSHeuristics.swift; path = Sources/NIOHTTP2/DOSHeuristics.swift; sourceTree = "<group>"; };
 		E6F7E099D632F6B9AB862B1F13A531FE /* BinaryEncodingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryEncodingError.swift; path = Sources/SwiftProtobuf/BinaryEncodingError.swift; sourceTree = "<group>"; };
@@ -3127,7 +2930,6 @@
 		EC6C55B7521BCC1F1858FDE6C6F052D8 /* CardSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CardSlider-umbrella.h"; sourceTree = "<group>"; };
 		ECBE591BC7566F16F296C8D799EF103B /* FieldTag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldTag.swift; path = Sources/SwiftProtobuf/FieldTag.swift; sourceTree = "<group>"; };
 		ECF0A60F36BCDBE72D75975826351D90 /* curve25519_tables.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = curve25519_tables.h; path = Sources/CNIOBoringSSL/crypto/curve25519/curve25519_tables.h; sourceTree = "<group>"; };
-		ED8B3D4E0072409D593E6EB73D559B9A /* Pods-Dr. Foodie-Dr. FoodieUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dr. Foodie-Dr. FoodieUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		EDA5C76C11A0391FCEDE3D7F7287A03E /* ssl_file.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = ssl_file.cc; path = Sources/CNIOBoringSSL/ssl/ssl_file.cc; sourceTree = "<group>"; };
 		EDB858EC5EE99CA5EB2DB37E270B2D00 /* SelectableEventLoop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectableEventLoop.swift; path = Sources/NIO/SelectableEventLoop.swift; sourceTree = "<group>"; };
 		EDBA7F9DE9126C1DE37809FD554A2EEA /* wnaf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = wnaf.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/ec/wnaf.c; sourceTree = "<group>"; };
@@ -3172,8 +2974,10 @@
 		F694FA8A90D9AEFBEAB3DA6C2971312B /* CNIOBoringSSLShims-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CNIOBoringSSLShims-umbrella.h"; sourceTree = "<group>"; };
 		F718B004C60B56326019795D6B70B31E /* sha512-armv4.ios.arm.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "sha512-armv4.ios.arm.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/sha512-armv4.ios.arm.S"; sourceTree = "<group>"; };
 		F7371D549A7D6B73E9ADBC9E09A472AA /* div_extra.c */ = {isa = PBXFileReference; includeInIndex = 1; name = div_extra.c; path = Sources/CNIOBoringSSL/crypto/fipsmodule/bn/div_extra.c; sourceTree = "<group>"; };
+		F7461F363A05EB9D48BA7DD509B06041 /* Pods-Dr. FoodieTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Dr. FoodieTests.modulemap"; sourceTree = "<group>"; };
 		F76CFB5A5017FEC3F3086AA0F67DA119 /* charmap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = charmap.h; path = Sources/CNIOBoringSSL/crypto/x509/charmap.h; sourceTree = "<group>"; };
 		F76EBC1D487EA10204D3BCDB1A8A51AB /* HTTPTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPTypes.swift; path = Sources/NIOHTTP1/HTTPTypes.swift; sourceTree = "<group>"; };
+		F7E04B9FFBEB3948D522F13F778286DE /* Pods-Dr. Foodie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dr. Foodie.debug.xcconfig"; sourceTree = "<group>"; };
 		F7EA9AED47AE65F2B4356E936005A0A3 /* CNIOBoringSSL_obj_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_obj_mac.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_obj_mac.h; sourceTree = "<group>"; };
 		F805A729362968BAE7BDB21AE7BC5A45 /* cpu-aarch64-linux.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "cpu-aarch64-linux.c"; path = "Sources/CNIOBoringSSL/crypto/cpu-aarch64-linux.c"; sourceTree = "<group>"; };
 		F828F4FB2552E7D3831637C72B4D61A6 /* CNIOBoringSSLShims-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CNIOBoringSSLShims-dummy.m"; sourceTree = "<group>"; };
@@ -3354,14 +3158,6 @@
 			files = (
 				44BDE6D3B1CCDD6E4DB82AAA2C2BA390 /* CNIOAtomics.framework in Frameworks */,
 				102255BEB77B2A1CCBFD66D7BD24C320 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99C5A72EE5FCD91A0981120124064EB6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				793329E6EA341B3ABE4AB386C5CF2C0B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3740,17 +3536,6 @@
 			path = SwiftNIOHTTP2;
 			sourceTree = "<group>";
 		};
-		28978ABDEC2903E1FC90A13CFBF61557 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				54A301ADD20D11092883EA0F5CFF61F2 /* Pods-Dr. Foodie */,
-				E80BC625B4A44B7D12BACB8409567FE5 /* Pods-Dr. FoodieTests */,
-				DB4FA4566308E96C2E60DE25B565DB34 /* Pods-Dr. Foodie-Dr. Foodie App Clip */,
-				8A3186DDC0D9C5644B7B208751DCB006 /* Pods-Dr. Foodie-Dr. FoodieUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		2C6957B6D346B6DFAE8E5507280E61F2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -3903,24 +3688,6 @@
 			);
 			name = SwiftNIOTransportServices;
 			path = SwiftNIOTransportServices;
-			sourceTree = "<group>";
-		};
-		54A301ADD20D11092883EA0F5CFF61F2 /* Pods-Dr. Foodie */ = {
-			isa = PBXGroup;
-			children = (
-				9AC42D99D9E38DD35AE42634BD67929C /* Pods-Dr. Foodie.modulemap */,
-				CE3FEF096CE7FC7D63ACC3BAE2895CED /* Pods-Dr. Foodie-acknowledgements.markdown */,
-				257686AF6A9DC9C2AB62281B44B1631E /* Pods-Dr. Foodie-acknowledgements.plist */,
-				0AC931D5D13E50A92DADDBC50F318050 /* Pods-Dr. Foodie-dummy.m */,
-				58C21DAF1E884747D97CA51BCDA94679 /* Pods-Dr. Foodie-frameworks.sh */,
-				4698185A2419E3A04144247B5E89009B /* Pods-Dr. Foodie-Info.plist */,
-				73B0C0D770758E4853B2FCC284BDC82C /* Pods-Dr. Foodie-resources.sh */,
-				B1460F001F8D25C5DD3032F4BAFA98CF /* Pods-Dr. Foodie-umbrella.h */,
-				1438BD84AFC30FAD3FCB5263266159EE /* Pods-Dr. Foodie.debug.xcconfig */,
-				4E24FFC78ECF78271198DA466D3ED01C /* Pods-Dr. Foodie.release.xcconfig */,
-			);
-			name = "Pods-Dr. Foodie";
-			path = "Target Support Files/Pods-Dr. Foodie";
 			sourceTree = "<group>";
 		};
 		57BD546FA61E7FB4D8CD72F3A3F3CBF4 /* CNIOWindows */ = {
@@ -4175,24 +3942,6 @@
 			path = SwiftNIOHPACK;
 			sourceTree = "<group>";
 		};
-		8A3186DDC0D9C5644B7B208751DCB006 /* Pods-Dr. Foodie-Dr. FoodieUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C9662A0322A83AB6F45083CF6EB87B75 /* Pods-Dr. Foodie-Dr. FoodieUITests.modulemap */,
-				E4E2894F58FF2FB95F7F93F27D6F76F7 /* Pods-Dr. Foodie-Dr. FoodieUITests-acknowledgements.markdown */,
-				ED8B3D4E0072409D593E6EB73D559B9A /* Pods-Dr. Foodie-Dr. FoodieUITests-acknowledgements.plist */,
-				736F0B9F2C53D514836286A445C92DE8 /* Pods-Dr. Foodie-Dr. FoodieUITests-dummy.m */,
-				8795B5A9B14C83CC2E6F9F46E7861C4D /* Pods-Dr. Foodie-Dr. FoodieUITests-frameworks.sh */,
-				CCCA5C6C5B7F2CAD46BA29571181DC7C /* Pods-Dr. Foodie-Dr. FoodieUITests-Info.plist */,
-				A015E3F4E221833089D9FEC45B05B357 /* Pods-Dr. Foodie-Dr. FoodieUITests-resources.sh */,
-				8E78D6710B7E2B48138EEC330F4BC66A /* Pods-Dr. Foodie-Dr. FoodieUITests-umbrella.h */,
-				D377DB5B558249B504B8F1613109D971 /* Pods-Dr. Foodie-Dr. FoodieUITests.debug.xcconfig */,
-				BC202614C672E6DA140A62C3B653B22C /* Pods-Dr. Foodie-Dr. FoodieUITests.release.xcconfig */,
-			);
-			name = "Pods-Dr. Foodie-Dr. FoodieUITests";
-			path = "Target Support Files/Pods-Dr. Foodie-Dr. FoodieUITests";
-			sourceTree = "<group>";
-		};
 		90DB27650394F20A6FAADA7A323081C8 /* CNIOAtomics */ = {
 			isa = PBXGroup;
 			children = (
@@ -4204,6 +3953,22 @@
 			);
 			name = CNIOAtomics;
 			path = CNIOAtomics;
+			sourceTree = "<group>";
+		};
+		94B72D557FCBD147E4BC5A35E3E0DCB0 /* Pods-Dr. FoodieTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7461F363A05EB9D48BA7DD509B06041 /* Pods-Dr. FoodieTests.modulemap */,
+				C3D95E192F65B903A65F81A2C9BCEAB0 /* Pods-Dr. FoodieTests-acknowledgements.markdown */,
+				953C78CE2F7B8E1A91CCC03F85E5B840 /* Pods-Dr. FoodieTests-acknowledgements.plist */,
+				1C45E1503892B2218389E1BC8B024327 /* Pods-Dr. FoodieTests-dummy.m */,
+				64548E11DC150EB4B039D67CAD86EEC6 /* Pods-Dr. FoodieTests-Info.plist */,
+				28B5D1288D874CE34CEE376962B50877 /* Pods-Dr. FoodieTests-umbrella.h */,
+				2105ECCE859D6044D992A041E45A8115 /* Pods-Dr. FoodieTests.debug.xcconfig */,
+				450BA5D61BCBE667DB725CC31FE37095 /* Pods-Dr. FoodieTests.release.xcconfig */,
+			);
+			name = "Pods-Dr. FoodieTests";
+			path = "Target Support Files/Pods-Dr. FoodieTests";
 			sourceTree = "<group>";
 		};
 		9765D54F9E52A7B862DF569734D72D86 /* Logging */ = {
@@ -4237,6 +4002,24 @@
 			);
 			name = CNIOLinux;
 			path = CNIOLinux;
+			sourceTree = "<group>";
+		};
+		A45F4D4EA45A1E2996D663B88841A0A3 /* Pods-Dr. Foodie */ = {
+			isa = PBXGroup;
+			children = (
+				2992539E721A31B09A6D5C111E2D57CF /* Pods-Dr. Foodie.modulemap */,
+				21E673315861C1B7DA666339D75749E0 /* Pods-Dr. Foodie-acknowledgements.markdown */,
+				35A774AB3D9044BADF6401C1E25EAB81 /* Pods-Dr. Foodie-acknowledgements.plist */,
+				C60B764BC6C2F58545DC3444486F144E /* Pods-Dr. Foodie-dummy.m */,
+				3506739B4B933D2A9DF91E5430A0DFC9 /* Pods-Dr. Foodie-frameworks.sh */,
+				4D3F5A576DEE7E9AD4CA8C05F1D1C6E0 /* Pods-Dr. Foodie-Info.plist */,
+				A467AF68467341F6479D89104BCBDD3F /* Pods-Dr. Foodie-resources.sh */,
+				DC3036F8ADC74A09F107B8630625CAC4 /* Pods-Dr. Foodie-umbrella.h */,
+				F7E04B9FFBEB3948D522F13F778286DE /* Pods-Dr. Foodie.debug.xcconfig */,
+				04BD20526351310E1982BC8FFA951E77 /* Pods-Dr. Foodie.release.xcconfig */,
+			);
+			name = "Pods-Dr. Foodie";
+			path = "Target Support Files/Pods-Dr. Foodie";
 			sourceTree = "<group>";
 		};
 		A794AE0CA13712AA4607BC7CA9FF6C1A /* SwiftNIOSSL */ = {
@@ -4351,6 +4134,24 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CardSlider";
+			sourceTree = "<group>";
+		};
+		BDC888FA63C1FA96F3F1C018DC4DB4AD /* Pods-Dr. Foodie-Dr. FoodieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				29B6AE4B5264093A3E8415B9E2A65F0A /* Pods-Dr. Foodie-Dr. FoodieUITests.modulemap */,
+				D5162962D1E40D03643F14B98B7B0193 /* Pods-Dr. Foodie-Dr. FoodieUITests-acknowledgements.markdown */,
+				1A755592D984D8D5A9BCEBF3BA9386DB /* Pods-Dr. Foodie-Dr. FoodieUITests-acknowledgements.plist */,
+				A2FE5BBFF361165D25CA2DCE4F982119 /* Pods-Dr. Foodie-Dr. FoodieUITests-dummy.m */,
+				CEC6C62446589F1CEFD6D61AD083D1CC /* Pods-Dr. Foodie-Dr. FoodieUITests-frameworks.sh */,
+				71C19865FAAA8F5FC5ADF90C1886DBDA /* Pods-Dr. Foodie-Dr. FoodieUITests-Info.plist */,
+				A029A2C89221DABB30B43F39332C1404 /* Pods-Dr. Foodie-Dr. FoodieUITests-resources.sh */,
+				E675BECD47F8117942882CC49EA8E5F2 /* Pods-Dr. Foodie-Dr. FoodieUITests-umbrella.h */,
+				E69E36CEF0273FFEABC628F2AEA06E3C /* Pods-Dr. Foodie-Dr. FoodieUITests.debug.xcconfig */,
+				BEE3B7902E28CED8A8AC7EEABBAE4DFA /* Pods-Dr. Foodie-Dr. FoodieUITests.release.xcconfig */,
+			);
+			name = "Pods-Dr. Foodie-Dr. FoodieUITests";
+			path = "Target Support Files/Pods-Dr. Foodie-Dr. FoodieUITests";
 			sourceTree = "<group>";
 		};
 		C126A5B450ADA5102485428E6BB1C566 /* Support Files */ = {
@@ -4483,8 +4284,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				B5438E378AA4D1A2FD263AB3C02ED685 /* Frameworks */,
 				8626D476136CBD39FAC1C67D670A17EF /* Pods */,
-				F2134C1EBDD846F5E1694984E8961EEF /* Products */,
-				28978ABDEC2903E1FC90A13CFBF61557 /* Targets Support Files */,
+				DFC3BDE31308B6A33A3E80B76EF64DE8 /* Products */,
+				DBA6C727C193AF9287A191658B840F89 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -4555,22 +4356,49 @@
 			path = CNIODarwin;
 			sourceTree = "<group>";
 		};
-		DB4FA4566308E96C2E60DE25B565DB34 /* Pods-Dr. Foodie-Dr. Foodie App Clip */ = {
+		DBA6C727C193AF9287A191658B840F89 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				524158EF25981C12970DE103FC166818 /* Pods-Dr. Foodie-Dr. Foodie App Clip.modulemap */,
-				23311341EC4B6C869BD0847162C85856 /* Pods-Dr. Foodie-Dr. Foodie App Clip-acknowledgements.markdown */,
-				85D3EEDCC7BA7B3A9676C3014FA9C4F9 /* Pods-Dr. Foodie-Dr. Foodie App Clip-acknowledgements.plist */,
-				165DF10466F8C366AB1B3EC0D4CF7DAE /* Pods-Dr. Foodie-Dr. Foodie App Clip-dummy.m */,
-				DCDD4F6EACB6A33A91329E3C3FB53D06 /* Pods-Dr. Foodie-Dr. Foodie App Clip-frameworks.sh */,
-				7FDBE5EBF1D7FEF763B36CD4710C0305 /* Pods-Dr. Foodie-Dr. Foodie App Clip-Info.plist */,
-				7C773A535F4DA57BE942DC377CB72F64 /* Pods-Dr. Foodie-Dr. Foodie App Clip-resources.sh */,
-				BDF3798BD99EA05487247D8682DB92B0 /* Pods-Dr. Foodie-Dr. Foodie App Clip-umbrella.h */,
-				A3F00E4EFD351FD7C1F4A200E0230CC9 /* Pods-Dr. Foodie-Dr. Foodie App Clip.debug.xcconfig */,
-				DDA08B84ABA4787C3B00554E4603800E /* Pods-Dr. Foodie-Dr. Foodie App Clip.release.xcconfig */,
+				A45F4D4EA45A1E2996D663B88841A0A3 /* Pods-Dr. Foodie */,
+				94B72D557FCBD147E4BC5A35E3E0DCB0 /* Pods-Dr. FoodieTests */,
+				BDC888FA63C1FA96F3F1C018DC4DB4AD /* Pods-Dr. Foodie-Dr. FoodieUITests */,
 			);
-			name = "Pods-Dr. Foodie-Dr. Foodie App Clip";
-			path = "Target Support Files/Pods-Dr. Foodie-Dr. Foodie App Clip";
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DFC3BDE31308B6A33A3E80B76EF64DE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BE14ED7EE382CA6577D4EC34FF7388A /* CardSlider.bundle */,
+				EF81FE7FCA7DDB5CBE9366C6E2178F7E /* CardSlider.framework */,
+				67F9B3FA2F42C85B1AEE52AB15566E95 /* CGRPCZlib.framework */,
+				45BAF6B44256D5C715C40918494313D4 /* CircularCarousel.framework */,
+				D91FC01385D3680BAE48C7A1E23CB088 /* CNIOAtomics.framework */,
+				BBBC89616D0756CD768F9406643F7DC0 /* CNIOBoringSSL.framework */,
+				D138731AC283B1675098D887342027D8 /* CNIOBoringSSLShims.framework */,
+				4CECE1D3F082EE1C5AF7E5E93BAEDF74 /* CNIODarwin.framework */,
+				E8457AC368411E1953DDF7BE182DA599 /* CNIOHTTPParser.framework */,
+				6F1C5C1A1C8F9473CEF780C63705F78A /* CNIOLinux.framework */,
+				B7F4755B386144CE5A64B92DD50D2D57 /* CNIOSHA1.framework */,
+				4A1D16EDB0405CEE4C837F184DC39013 /* CNIOWindows.framework */,
+				1C28BA3A3A3D7E0630D7850B2EA9BBE2 /* GRPC.framework */,
+				A6513E0A6CB60623515716E73996F0F5 /* Logging.framework */,
+				5E982D315A4CB75E8F15068B30779C7C /* NIO.framework */,
+				673CA60B9FF9D56D5AEAFAD4E2D7B368 /* NIOConcurrencyHelpers.framework */,
+				6D040D1A67C3DBE3C11EB6FBC61B8141 /* NIOFoundationCompat.framework */,
+				8A6887895625D9DECAAEBF5A690134F7 /* NIOHPACK.framework */,
+				134C82C2AF26C1F6D1FA6484A52A0FF4 /* NIOHTTP1.framework */,
+				2A4CC298CC8CF90A2A7FAFA7D74BD1CF /* NIOHTTP2.framework */,
+				73328AB6E67FF4855DF7327B64265B4E /* NIOSSL.framework */,
+				43BCA78D557ACEB23EEA495EE0402530 /* NIOTLS.framework */,
+				42E23A3C1C5D8CE37484B124E180BAA0 /* NIOTransportServices.framework */,
+				CEBCC63E07AB43DC2F4862717C4E391F /* Pods_Dr__Foodie.framework */,
+				5E7D336CAA0FE59CB8ABB4E4BEA71EE1 /* Pods_Dr__Foodie_Dr__FoodieUITests.framework */,
+				342029D32FA3FE7B22E21CF07EC02EE1 /* Pods_Dr__FoodieTests.framework */,
+				979486118B3E90C08386079D57962701 /* SnapKit.framework */,
+				943D347E61A2E181A4FA2CA894307B6E /* SwiftProtobuf.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		E2C288186AF6C9AAD34A8F4C6EDBC155 /* gRPC-Swift */ = {
@@ -4655,22 +4483,6 @@
 			);
 			name = "gRPC-Swift";
 			path = "gRPC-Swift";
-			sourceTree = "<group>";
-		};
-		E80BC625B4A44B7D12BACB8409567FE5 /* Pods-Dr. FoodieTests */ = {
-			isa = PBXGroup;
-			children = (
-				62CF5D89A452842FA026ACCE74E961AF /* Pods-Dr. FoodieTests.modulemap */,
-				74BE78D2F9EE0F59C2011CAFD753F7DA /* Pods-Dr. FoodieTests-acknowledgements.markdown */,
-				DAEBBAA66061E9A4008DEA8ABC9BA175 /* Pods-Dr. FoodieTests-acknowledgements.plist */,
-				03EA0474546E2B9054EBF74B4FDB6AEE /* Pods-Dr. FoodieTests-dummy.m */,
-				1ADE6364AC733ADC175B7103BCAB7DB0 /* Pods-Dr. FoodieTests-Info.plist */,
-				2B49326B72B4E74EFB1BF3DB9B4F1D82 /* Pods-Dr. FoodieTests-umbrella.h */,
-				09A91FD99FF8032AFC41E6027AA423FB /* Pods-Dr. FoodieTests.debug.xcconfig */,
-				66239FDF428062BC71128B8B8C3830A5 /* Pods-Dr. FoodieTests.release.xcconfig */,
-			);
-			name = "Pods-Dr. FoodieTests";
-			path = "Target Support Files/Pods-Dr. FoodieTests";
 			sourceTree = "<group>";
 		};
 		EB774E39F5FCC1925CA5D9377DCD4622 /* CNIOBoringSSL */ = {
@@ -5240,42 +5052,6 @@
 			path = CNIOBoringSSL;
 			sourceTree = "<group>";
 		};
-		F2134C1EBDD846F5E1694984E8961EEF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8BE14ED7EE382CA6577D4EC34FF7388A /* CardSlider.bundle */,
-				EF81FE7FCA7DDB5CBE9366C6E2178F7E /* CardSlider.framework */,
-				67F9B3FA2F42C85B1AEE52AB15566E95 /* CGRPCZlib.framework */,
-				45BAF6B44256D5C715C40918494313D4 /* CircularCarousel.framework */,
-				D91FC01385D3680BAE48C7A1E23CB088 /* CNIOAtomics.framework */,
-				BBBC89616D0756CD768F9406643F7DC0 /* CNIOBoringSSL.framework */,
-				D138731AC283B1675098D887342027D8 /* CNIOBoringSSLShims.framework */,
-				4CECE1D3F082EE1C5AF7E5E93BAEDF74 /* CNIODarwin.framework */,
-				E8457AC368411E1953DDF7BE182DA599 /* CNIOHTTPParser.framework */,
-				6F1C5C1A1C8F9473CEF780C63705F78A /* CNIOLinux.framework */,
-				B7F4755B386144CE5A64B92DD50D2D57 /* CNIOSHA1.framework */,
-				4A1D16EDB0405CEE4C837F184DC39013 /* CNIOWindows.framework */,
-				1C28BA3A3A3D7E0630D7850B2EA9BBE2 /* GRPC.framework */,
-				A6513E0A6CB60623515716E73996F0F5 /* Logging.framework */,
-				5E982D315A4CB75E8F15068B30779C7C /* NIO.framework */,
-				673CA60B9FF9D56D5AEAFAD4E2D7B368 /* NIOConcurrencyHelpers.framework */,
-				6D040D1A67C3DBE3C11EB6FBC61B8141 /* NIOFoundationCompat.framework */,
-				8A6887895625D9DECAAEBF5A690134F7 /* NIOHPACK.framework */,
-				134C82C2AF26C1F6D1FA6484A52A0FF4 /* NIOHTTP1.framework */,
-				2A4CC298CC8CF90A2A7FAFA7D74BD1CF /* NIOHTTP2.framework */,
-				73328AB6E67FF4855DF7327B64265B4E /* NIOSSL.framework */,
-				43BCA78D557ACEB23EEA495EE0402530 /* NIOTLS.framework */,
-				42E23A3C1C5D8CE37484B124E180BAA0 /* NIOTransportServices.framework */,
-				CEBCC63E07AB43DC2F4862717C4E391F /* Pods_Dr__Foodie.framework */,
-				CED692A955546945A68CF21DBA9B95A7 /* Pods_Dr__Foodie_Dr__Foodie_App_Clip.framework */,
-				5E7D336CAA0FE59CB8ABB4E4BEA71EE1 /* Pods_Dr__Foodie_Dr__FoodieUITests.framework */,
-				342029D32FA3FE7B22E21CF07EC02EE1 /* Pods_Dr__FoodieTests.framework */,
-				979486118B3E90C08386079D57962701 /* SnapKit.framework */,
-				943D347E61A2E181A4FA2CA894307B6E /* SwiftProtobuf.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		F2184C24C41BFDCC04B962875BE06DEC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -5483,14 +5259,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				24A023F24327974D2A921590F82992ED /* SwiftNIO-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B6A56B694130123D609172039798A6CF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B8B67C692DA610D51E5E61C26DEC1DB1 /* Pods-Dr. Foodie-Dr. Foodie App Clip-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6188,50 +5956,6 @@
 			productReference = 1C28BA3A3A3D7E0630D7850B2EA9BBE2 /* GRPC.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E06489F2ADCE8EECC915E33810E59F94 /* Pods-Dr. Foodie-Dr. Foodie App Clip */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0B0E6EC3C009324E97EECCE100C921DD /* Build configuration list for PBXNativeTarget "Pods-Dr. Foodie-Dr. Foodie App Clip" */;
-			buildPhases = (
-				B6A56B694130123D609172039798A6CF /* Headers */,
-				9E6D62F536658531949E11C766B95526 /* Sources */,
-				99C5A72EE5FCD91A0981120124064EB6 /* Frameworks */,
-				5EA90DB2980FDE7BCD4111200B349B76 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1DBE9E9B8FF06BB0587F04351270ACF0 /* PBXTargetDependency */,
-				F4B4BC1962FA1468A20BC446417D154C /* PBXTargetDependency */,
-				C79BFDAD758E3916C24BD1D3AB569547 /* PBXTargetDependency */,
-				D1578945F2754BB0D38AA4E24D2DD364 /* PBXTargetDependency */,
-				D92F886FC184F24F56630C431A626820 /* PBXTargetDependency */,
-				4218DCC53889AE86C8F8B056EB77630D /* PBXTargetDependency */,
-				B3A98CC203AA098D52A39003E1A05C54 /* PBXTargetDependency */,
-				C03D0DF8E7B4A10610CED19095ADCCBB /* PBXTargetDependency */,
-				C4E156A56E6FF77826648C21A12209F8 /* PBXTargetDependency */,
-				23F335F89738E71BE33F7C0AFA658418 /* PBXTargetDependency */,
-				4D18E17E3849C20E6FF898E0283C1926 /* PBXTargetDependency */,
-				BCCB12E09E071A465FD8A578F7CFB0FE /* PBXTargetDependency */,
-				A88697102F2C924123903B686609E571 /* PBXTargetDependency */,
-				515B9AC4DDD9494BDEA37C362EC45502 /* PBXTargetDependency */,
-				326F02CBEA1D72ABDED0206030C6F430 /* PBXTargetDependency */,
-				E6A6A2805B44FC8144A46A298DED8E8A /* PBXTargetDependency */,
-				C5EFE1CFD53D331B1D2267DDE1DBE0FF /* PBXTargetDependency */,
-				6310D6F1AF632C99CD8EE93A4D99FD4F /* PBXTargetDependency */,
-				E6ADF35790F948789330EA6053967891 /* PBXTargetDependency */,
-				67B1B2D6231954134A7B1B07BCBB60E3 /* PBXTargetDependency */,
-				BA212A1B3EFEBE99D1E6DAB330073AB0 /* PBXTargetDependency */,
-				F9B5C5C6AD7D8D0A8CB8B8D42CA05947 /* PBXTargetDependency */,
-				7546A77A1EB1A4821315FD3EDDF52255 /* PBXTargetDependency */,
-				C96960231A49D87724E3123413CE219D /* PBXTargetDependency */,
-				F66CD2BFE40307CE28E31F0457B8BF68 /* PBXTargetDependency */,
-				22A886F3CD479C7673129DE06D6192E1 /* PBXTargetDependency */,
-			);
-			name = "Pods-Dr. Foodie-Dr. Foodie App Clip";
-			productName = "Pods-Dr. Foodie-Dr. Foodie App Clip";
-			productReference = CED692A955546945A68CF21DBA9B95A7 /* Pods_Dr__Foodie_Dr__Foodie_App_Clip.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		E0A1D7BDF9C722E6E4B4B1E012D20E51 /* SwiftNIOTLS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBA75159CE3058E5E928C7296148B4D4 /* Build configuration list for PBXNativeTarget "SwiftNIOTLS" */;
@@ -6344,7 +6068,7 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = F2134C1EBDD846F5E1694984E8961EEF /* Products */;
+			productRefGroup = DFC3BDE31308B6A33A3E80B76EF64DE8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -6365,7 +6089,6 @@
 				DBB6098E2B03BC9DB53C067142C50CA4 /* gRPC-Swift */,
 				2ABF3F8EC6CE525E1E02C51D72C64E94 /* Logging */,
 				77E4E2015CEE3D58427B4CB4EBDEA5F1 /* Pods-Dr. Foodie */,
-				E06489F2ADCE8EECC915E33810E59F94 /* Pods-Dr. Foodie-Dr. Foodie App Clip */,
 				2682C3074508B93C9CEAF94BE7CC8139 /* Pods-Dr. Foodie-Dr. FoodieUITests */,
 				5AED35E86CDBC7DA03FA7E7114C25868 /* Pods-Dr. FoodieTests */,
 				19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */,
@@ -6484,13 +6207,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		55226793D53FA3CB18D9A5936C039FFF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EA90DB2980FDE7BCD4111200B349B76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -6949,14 +6665,6 @@
 				5DBFB9A0499F04CBE806486211A4ABD0 /* SnapKit-dummy.m in Sources */,
 				0D7A7F3919AE48736753181756DE8AE8 /* Typealiases.swift in Sources */,
 				98AE4E2F24A858A47B5A1B405CEAD8FD /* UILayoutSupport+Extensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9E6D62F536658531949E11C766B95526 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE0D6FC02EA76B001D301A7A3FE1E084 /* Pods-Dr. Foodie-Dr. Foodie App Clip-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7714,12 +7422,6 @@
 			target = 17112F66EE5BDC5584A51CF4FCE7631A /* SwiftNIOHTTP2 */;
 			targetProxy = 9380BF80DAFBAC5D3FCE745EFDA13FBB /* PBXContainerItemProxy */;
 		};
-		1DBE9E9B8FF06BB0587F04351270ACF0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CGRPCZlib;
-			target = 642945244208FC5F107EE5F43551DCA5 /* CGRPCZlib */;
-			targetProxy = 80DD24DD7AA3CCF871BB4281CA02BC12 /* PBXContainerItemProxy */;
-		};
 		1E350F8D14BE66F481D3C8B3427A662C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "gRPC-Swift";
@@ -7731,12 +7433,6 @@
 			name = CNIODarwin;
 			target = 56A44E6B610D174593F40C5AD73224C4 /* CNIODarwin */;
 			targetProxy = DCF1A7A2284A5E1BE2C332F279DD22E4 /* PBXContainerItemProxy */;
-		};
-		22A886F3CD479C7673129DE06D6192E1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "gRPC-Swift";
-			target = DBB6098E2B03BC9DB53C067142C50CA4 /* gRPC-Swift */;
-			targetProxy = 41C921E0B040A379ECBEB3CF83DC8F75 /* PBXContainerItemProxy */;
 		};
 		230E0D6A608295FD0FB1980CE38BF767 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -7755,12 +7451,6 @@
 			name = SwiftNIOTLS;
 			target = E0A1D7BDF9C722E6E4B4B1E012D20E51 /* SwiftNIOTLS */;
 			targetProxy = 90036D4BD683700767B68547223120EA /* PBXContainerItemProxy */;
-		};
-		23F335F89738E71BE33F7C0AFA658418 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CardSlider;
-			target = D11B0D1A6986453F8B1B1BACDA442BBA /* CardSlider */;
-			targetProxy = 930C077E8E3639A1A0F60C36C3B3E989 /* PBXContainerItemProxy */;
 		};
 		26D0B39246BDE94FB062CBC0D80EE010 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -7785,12 +7475,6 @@
 			name = GoogleMaps;
 			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
 			targetProxy = 330DA41A488D5401DAB8411C36105A30 /* PBXContainerItemProxy */;
-		};
-		326F02CBEA1D72ABDED0206030C6F430 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SnapKit;
-			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
-			targetProxy = 49D35B3657F5DD3A6214A17FE5B373CC /* PBXContainerItemProxy */;
 		};
 		35E56800F6E3FB95564D8E77D121FF93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -7822,12 +7506,6 @@
 			target = 834F3DE9EFC7B90102D63A51F6A9AF51 /* SwiftNIOFoundationCompat */;
 			targetProxy = C6715B721455193516B630AA321560F9 /* PBXContainerItemProxy */;
 		};
-		4218DCC53889AE86C8F8B056EB77630D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CNIOHTTPParser;
-			target = 59007493BE8F52FEEC69F0F9330AA6C0 /* CNIOHTTPParser */;
-			targetProxy = 5E1A330F5F22D5121960BFABA4AB16EC /* PBXContainerItemProxy */;
-		};
 		42DC1DA8D8E5EE25DE16EEC036F0E1E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CNIOSHA1;
@@ -7846,12 +7524,6 @@
 			target = 59007493BE8F52FEEC69F0F9330AA6C0 /* CNIOHTTPParser */;
 			targetProxy = 388882EA877A81682A528F808769AF1A /* PBXContainerItemProxy */;
 		};
-		4D18E17E3849C20E6FF898E0283C1926 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CircularCarousel;
-			target = FEC86271E8E1F8D419E532469B0CEB47 /* CircularCarousel */;
-			targetProxy = 0087F4A6BF46EE97C7D84C134E1C4C93 /* PBXContainerItemProxy */;
-		};
 		4DCCE43350BDCC896EABEBA923C294A6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Logging;
@@ -7863,12 +7535,6 @@
 			name = SwiftNIOHTTP1;
 			target = 56C793C77970EA2F3692F44FFEFD9360 /* SwiftNIOHTTP1 */;
 			targetProxy = 0F806D877356E70B3D6778D7FA8395D6 /* PBXContainerItemProxy */;
-		};
-		515B9AC4DDD9494BDEA37C362EC45502 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Logging;
-			target = 2ABF3F8EC6CE525E1E02C51D72C64E94 /* Logging */;
-			targetProxy = 424CDBB5101CC9BCDDD97014C986AC3C /* PBXContainerItemProxy */;
 		};
 		537460002805D6C76C38FBB1A7580C73 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -7912,23 +7578,11 @@
 			target = DBB6098E2B03BC9DB53C067142C50CA4 /* gRPC-Swift */;
 			targetProxy = 6A53AB9484B02F9E85F7042208E77213 /* PBXContainerItemProxy */;
 		};
-		6310D6F1AF632C99CD8EE93A4D99FD4F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftNIOFoundationCompat;
-			target = 834F3DE9EFC7B90102D63A51F6A9AF51 /* SwiftNIOFoundationCompat */;
-			targetProxy = 27E2EBFF7BED9DEC452B1CD6190BF66A /* PBXContainerItemProxy */;
-		};
 		6567F654D606848A0B10FF833A0395E9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftNIOHPACK;
 			target = F71DD9985215E142F625AD23A9121477 /* SwiftNIOHPACK */;
 			targetProxy = 1F48001935C89086474D9DED63E4E9B3 /* PBXContainerItemProxy */;
-		};
-		67B1B2D6231954134A7B1B07BCBB60E3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftNIOHTTP1;
-			target = 56C793C77970EA2F3692F44FFEFD9360 /* SwiftNIOHTTP1 */;
-			targetProxy = A55A2306848CA2E1EA1E9C582293E609 /* PBXContainerItemProxy */;
 		};
 		681A038261FCD8C274D964F3E5EA659D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -7959,12 +7613,6 @@
 			name = SwiftNIO;
 			target = 5E62229F86AA9810C2A7E6CF628B8486 /* SwiftNIO */;
 			targetProxy = 72000DEAD47C0CA27395D8E394AF0052 /* PBXContainerItemProxy */;
-		};
-		7546A77A1EB1A4821315FD3EDDF52255 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftNIOTLS;
-			target = E0A1D7BDF9C722E6E4B4B1E012D20E51 /* SwiftNIOTLS */;
-			targetProxy = 22856F837D5973033241275658E5B155 /* PBXContainerItemProxy */;
 		};
 		79AD879887D7E200C448013F51DE199C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -8098,12 +7746,6 @@
 			target = FEC86271E8E1F8D419E532469B0CEB47 /* CircularCarousel */;
 			targetProxy = CD0E6626075D81DC9B4F68717A8AEC0A /* PBXContainerItemProxy */;
 		};
-		A88697102F2C924123903B686609E571 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GooglePlaces;
-			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
-			targetProxy = 68278B5CFE0007C29DAE8F26EB08279E /* PBXContainerItemProxy */;
-		};
 		AB864F45CD8B73AC5CA90BD6E8939530 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CNIOAtomics;
@@ -8128,12 +7770,6 @@
 			target = 773FB76F4A2F42092713B9025F188877 /* SwiftNIOConcurrencyHelpers */;
 			targetProxy = 8888877D754FF94B69C3B4D5A07BB4CF /* PBXContainerItemProxy */;
 		};
-		B3A98CC203AA098D52A39003E1A05C54 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CNIOLinux;
-			target = 34E23B39AFBC87A7678CDCA494DE5CDC /* CNIOLinux */;
-			targetProxy = F9E99F9554C8587F76291F72A13D4B22 /* PBXContainerItemProxy */;
-		};
 		B8654F7EC055FF595543DF836538B884 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CNIOAtomics;
@@ -8152,18 +7788,6 @@
 			target = 59007493BE8F52FEEC69F0F9330AA6C0 /* CNIOHTTPParser */;
 			targetProxy = E6AF5833EE66BEC190BF137DC3AF3A8E /* PBXContainerItemProxy */;
 		};
-		BA212A1B3EFEBE99D1E6DAB330073AB0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftNIOHTTP2;
-			target = 17112F66EE5BDC5584A51CF4FCE7631A /* SwiftNIOHTTP2 */;
-			targetProxy = 6A84A340D620FF7666AD2459E21C786C /* PBXContainerItemProxy */;
-		};
-		BCCB12E09E071A465FD8A578F7CFB0FE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GoogleMaps;
-			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
-			targetProxy = 93488670389739BEC2351E6B2D283814 /* PBXContainerItemProxy */;
-		};
 		BE927F454346AA8E2CE764DDC88613E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftNIOConcurrencyHelpers;
@@ -8175,12 +7799,6 @@
 			name = SwiftNIO;
 			target = 5E62229F86AA9810C2A7E6CF628B8486 /* SwiftNIO */;
 			targetProxy = 66E936E9CAD35A8A13AA246A379D55EB /* PBXContainerItemProxy */;
-		};
-		C03D0DF8E7B4A10610CED19095ADCCBB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CNIOSHA1;
-			target = E50EEBE8207624037F43288C584338F9 /* CNIOSHA1 */;
-			targetProxy = 045F16951AD082AA475586FF8D8BC32E /* PBXContainerItemProxy */;
 		};
 		C08E1AB20BB713373EC5C56772332C72 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -8206,47 +7824,17 @@
 			target = 773FB76F4A2F42092713B9025F188877 /* SwiftNIOConcurrencyHelpers */;
 			targetProxy = 2C6441D18A69843F995A5436E2895C3A /* PBXContainerItemProxy */;
 		};
-		C4E156A56E6FF77826648C21A12209F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CNIOWindows;
-			target = 4A0A66DC2DC19095E11E5D3A679802D4 /* CNIOWindows */;
-			targetProxy = F9D3BF63FB4E1E2DEA0F8801A5C67512 /* PBXContainerItemProxy */;
-		};
-		C5EFE1CFD53D331B1D2267DDE1DBE0FF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftNIOConcurrencyHelpers;
-			target = 773FB76F4A2F42092713B9025F188877 /* SwiftNIOConcurrencyHelpers */;
-			targetProxy = 30E5C6AEBF1EC8D92F4F5A158BC4858E /* PBXContainerItemProxy */;
-		};
 		C75644C73955C9A297B817D8C0B73B5C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftNIO;
 			target = 5E62229F86AA9810C2A7E6CF628B8486 /* SwiftNIO */;
 			targetProxy = 8A9FC2F946DB8EE87F459247843DC0CC /* PBXContainerItemProxy */;
 		};
-		C79BFDAD758E3916C24BD1D3AB569547 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CNIOBoringSSL;
-			target = 71D94F5C545887C8BC575883E745A3DF /* CNIOBoringSSL */;
-			targetProxy = 45F332D017E0C4D124572DD39E4A32DD /* PBXContainerItemProxy */;
-		};
 		C8B0AF7B839E990A2A8B004A25B8697A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftNIO;
 			target = 5E62229F86AA9810C2A7E6CF628B8486 /* SwiftNIO */;
 			targetProxy = D5C701C58B4E2E5D218519F522A07B0E /* PBXContainerItemProxy */;
-		};
-		C96960231A49D87724E3123413CE219D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftNIOTransportServices;
-			target = 5D6DC8585F20CBE789F7D3D4F645980E /* SwiftNIOTransportServices */;
-			targetProxy = 9518C69E69A5A2A191CBD8E95EEB509F /* PBXContainerItemProxy */;
-		};
-		D1578945F2754BB0D38AA4E24D2DD364 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CNIOBoringSSLShims;
-			target = 65C8D0D3B04F444B821EB675E4D821DA /* CNIOBoringSSLShims */;
-			targetProxy = 206D5FA4150023B2D3C33225875E69C6 /* PBXContainerItemProxy */;
 		};
 		D749F471FDC154A12E980750252CA957 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -8266,12 +7854,6 @@
 			target = 56A44E6B610D174593F40C5AD73224C4 /* CNIODarwin */;
 			targetProxy = E9EBA89562A3D55992BFEDE4EE13DF85 /* PBXContainerItemProxy */;
 		};
-		D92F886FC184F24F56630C431A626820 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CNIODarwin;
-			target = 56A44E6B610D174593F40C5AD73224C4 /* CNIODarwin */;
-			targetProxy = BEBF3D52EFBA7A26576A6368D40BE4CD /* PBXContainerItemProxy */;
-		};
 		DD7C128191F9B03D86FDEFD2186F8158 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftNIOTransportServices;
@@ -8283,18 +7865,6 @@
 			name = Logging;
 			target = 2ABF3F8EC6CE525E1E02C51D72C64E94 /* Logging */;
 			targetProxy = 16C5940DAD77F4DF7B2A48CB8742CB38 /* PBXContainerItemProxy */;
-		};
-		E6A6A2805B44FC8144A46A298DED8E8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftNIO;
-			target = 5E62229F86AA9810C2A7E6CF628B8486 /* SwiftNIO */;
-			targetProxy = 3096429EFFCFFF20BF7F635A35EDB246 /* PBXContainerItemProxy */;
-		};
-		E6ADF35790F948789330EA6053967891 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftNIOHPACK;
-			target = F71DD9985215E142F625AD23A9121477 /* SwiftNIOHPACK */;
-			targetProxy = 09874F83B454D618AEDDEA6E09FB8DB2 /* PBXContainerItemProxy */;
 		};
 		EE8DE988AFC8D86089D03F68D23BA111 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -8326,18 +7896,6 @@
 			target = E0A1D7BDF9C722E6E4B4B1E012D20E51 /* SwiftNIOTLS */;
 			targetProxy = 5DEBC56771C461E009261F9BED3C06A1 /* PBXContainerItemProxy */;
 		};
-		F4B4BC1962FA1468A20BC446417D154C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CNIOAtomics;
-			target = E31BF93EB20B6245622D5A44E45F9BCA /* CNIOAtomics */;
-			targetProxy = 9256BB2E697FE858F8D5D9C3FC19AA32 /* PBXContainerItemProxy */;
-		};
-		F66CD2BFE40307CE28E31F0457B8BF68 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftProtobuf;
-			target = A5F702E0DA383BC1479572581615A916 /* SwiftProtobuf */;
-			targetProxy = D95C39F388386FE6EA54224F742D960B /* PBXContainerItemProxy */;
-		};
 		F749107518969B73D026FABDB5F98F49 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftNIOFoundationCompat;
@@ -8349,12 +7907,6 @@
 			name = SwiftNIOTransportServices;
 			target = 5D6DC8585F20CBE789F7D3D4F645980E /* SwiftNIOTransportServices */;
 			targetProxy = 56DD4CF4D0D5AC139981A82A11DAE1E9 /* PBXContainerItemProxy */;
-		};
-		F9B5C5C6AD7D8D0A8CB8B8D42CA05947 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftNIOSSL;
-			target = CF4D556EB90FFD6388321BDFD45BDDB3 /* SwiftNIOSSL */;
-			targetProxy = 75A7D6912958AB189D2EB2AE4B0E1D3F /* PBXContainerItemProxy */;
 		};
 		FACD27555BFB5791FACDCB8343E032F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -8528,43 +8080,6 @@
 			};
 			name = Debug;
 		};
-		17EAB571969F2682FA345D2F900D74B2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3F00E4EFD351FD7C1F4A200E0230CC9 /* Pods-Dr. Foodie-Dr. Foodie App Clip.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Dr. Foodie-Dr. Foodie App Clip/Pods-Dr. Foodie-Dr. Foodie App Clip-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Dr. Foodie-Dr. Foodie App Clip/Pods-Dr. Foodie-Dr. Foodie App Clip.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		1E304EE92947920EAEDCE534DDDA5FB8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B334CAC8FC756DF0AB810BC958A056D9 /* SwiftNIOConcurrencyHelpers.release.xcconfig */;
@@ -8603,7 +8118,7 @@
 		};
 		2C15D0B9164C18BD2FF487392EFF683A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC202614C672E6DA140A62C3B653B22C /* Pods-Dr. Foodie-Dr. FoodieUITests.release.xcconfig */;
+			baseConfigurationReference = BEE3B7902E28CED8A8AC7EEABBAE4DFA /* Pods-Dr. Foodie-Dr. FoodieUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -9330,7 +8845,7 @@
 		};
 		7C814860DFB66939713331457438D0EF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66239FDF428062BC71128B8B8C3830A5 /* Pods-Dr. FoodieTests.release.xcconfig */;
+			baseConfigurationReference = 450BA5D61BCBE667DB725CC31FE37095 /* Pods-Dr. FoodieTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -9611,7 +9126,7 @@
 		};
 		94FAC288CA78E1F1C7E19415B5AF8EB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09A91FD99FF8032AFC41E6027AA423FB /* Pods-Dr. FoodieTests.debug.xcconfig */;
+			baseConfigurationReference = 2105ECCE859D6044D992A041E45A8115 /* Pods-Dr. FoodieTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -9772,44 +9287,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A41E69DD92E9E64172EA84BC2296BD6F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDA08B84ABA4787C3B00554E4603800E /* Pods-Dr. Foodie-Dr. Foodie App Clip.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Dr. Foodie-Dr. Foodie App Clip/Pods-Dr. Foodie-Dr. Foodie App Clip-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Dr. Foodie-Dr. Foodie App Clip/Pods-Dr. Foodie-Dr. Foodie App Clip.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -10165,7 +9642,7 @@
 		};
 		D4DB38C390B1FC2633D12E83D2AE5BD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D377DB5B558249B504B8F1613109D971 /* Pods-Dr. Foodie-Dr. FoodieUITests.debug.xcconfig */;
+			baseConfigurationReference = E69E36CEF0273FFEABC628F2AEA06E3C /* Pods-Dr. Foodie-Dr. FoodieUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -10202,7 +9679,7 @@
 		};
 		D951E8C84F18E73F5029B2EB000A5D86 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E24FFC78ECF78271198DA466D3ED01C /* Pods-Dr. Foodie.release.xcconfig */;
+			baseConfigurationReference = 04BD20526351310E1982BC8FFA951E77 /* Pods-Dr. Foodie.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -10275,7 +9752,7 @@
 		};
 		DFF42B534F54CFAC00D8A067EF01B6ED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1438BD84AFC30FAD3FCB5263266159EE /* Pods-Dr. Foodie.debug.xcconfig */;
+			baseConfigurationReference = F7E04B9FFBEB3948D522F13F778286DE /* Pods-Dr. Foodie.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -10596,15 +10073,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B0E6EC3C009324E97EECCE100C921DD /* Build configuration list for PBXNativeTarget "Pods-Dr. Foodie-Dr. Foodie App Clip" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				17EAB571969F2682FA345D2F900D74B2 /* Debug */,
-				A41E69DD92E9E64172EA84BC2296BD6F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		19D084DE45DF1A6B0543C08E991E5012 /* Build configuration list for PBXNativeTarget "SwiftProtobuf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

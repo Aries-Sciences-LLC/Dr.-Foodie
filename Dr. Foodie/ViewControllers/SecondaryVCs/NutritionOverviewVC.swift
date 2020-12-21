@@ -1,8 +1,8 @@
 //
-//  NutritionOverviewVC.swift
+//  LocalNutritionOverviewVC.swift
 //  Dr. Foodie
 //
-//  Created by Ozan Mirza on 10/18/20.
+//  Created by Ozan Mirza on 12/20/20.
 //  Copyright © 2020 Aries Sciences LLC. All rights reserved.
 //
 
@@ -19,7 +19,6 @@ import UIKit
 class NutritionOverviewVC: DRFVC {
 
     @IBOutlet weak var nutritionTable: UITableView!
-    @IBOutlet weak var finishedButton: UIButton!
     
     private var names: [String]?
     private var image: UIImage?
@@ -30,13 +29,16 @@ class NutritionOverviewVC: DRFVC {
     @IBAction func added(_ sender: Any!) {
         dismiss(animated: true) {
             self.parentVC?.cancel(UIButton())
+            let journal = JournalManager.Food(names: self.names!, image: self.image!, nutritionInformation: self.nutritionData!)
+            JournalManager.add(meal: journal)
+            CloudKitManager.meals(action: .upload) {
+                QuickAddData.insert(new: QuickAddContainer(image: self.image!, called: self.names!.first!))
+            }
         }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        finishedButton.setTitle("Really Informative!", for: .normal)
     }
 }
 
