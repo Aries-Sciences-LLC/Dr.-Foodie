@@ -13,23 +13,23 @@ public class NutritionOutput: NSObject, NSCoding, NSSecureCoding {
     public static var supportsSecureCoding: Bool = true
     
     public func encode(with coder: NSCoder) {
-        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: calories!, requiringSecureCoding: true), forKey: "calories")
-        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: totalFat!, requiringSecureCoding: true), forKey: "totalFat")
-        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: saturatedFat!, requiringSecureCoding: true), forKey: "saturatedFat")
-        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: transFat!, requiringSecureCoding: true), forKey: "transFat")
-        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: polysaturatedFat!, requiringSecureCoding: true), forKey: "polysaturatedFat")
-        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: monounsaturatedFat!, requiringSecureCoding: true), forKey: "monounsaturatedFat")
-        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: cholesterol!, requiringSecureCoding: true), forKey: "cholesterol")
-        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: sodium!, requiringSecureCoding: true), forKey: "sodium")
-        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: potassium!, requiringSecureCoding: true), forKey: "potassium")
-        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: totalCarbohydrates!, requiringSecureCoding: true), forKey: "totalCarbohydrates")
-        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: dietaryFiber!, requiringSecureCoding: true), forKey: "dietaryFiber")
-        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: sugars!, requiringSecureCoding: true), forKey: "sugars")
-        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: protein!, requiringSecureCoding: true), forKey: "protein")
-        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: vitaminA!, requiringSecureCoding: true), forKey: "vitaminA")
-        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: vitaminC!, requiringSecureCoding: true), forKey: "vitaminC")
-        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: calcium!, requiringSecureCoding: true), forKey: "calcium")
-        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: iron!, requiringSecureCoding: true), forKey: "iron")
+        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: calories ?? Item(amount: 0), requiringSecureCoding: true), forKey: "calories")
+        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: totalFat ?? Item(amount: 0), requiringSecureCoding: true), forKey: "totalFat")
+        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: saturatedFat ?? Item(amount: 0), requiringSecureCoding: true), forKey: "saturatedFat")
+        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: transFat ?? Item(amount: 0), requiringSecureCoding: true), forKey: "transFat")
+        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: polysaturatedFat ?? Item(amount: 0), requiringSecureCoding: true), forKey: "polysaturatedFat")
+        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: monounsaturatedFat ?? Item(amount: 0), requiringSecureCoding: true), forKey: "monounsaturatedFat")
+        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: cholesterol ?? Item(amount: 0), requiringSecureCoding: true), forKey: "cholesterol")
+        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: sodium ?? Item(amount: 0), requiringSecureCoding: true), forKey: "sodium")
+        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: potassium ?? Item(amount: 0), requiringSecureCoding: true), forKey: "potassium")
+        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: totalCarbohydrates ?? Item(amount: 0), requiringSecureCoding: true), forKey: "totalCarbohydrates")
+        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: dietaryFiber ?? Item(amount: 0), requiringSecureCoding: true), forKey: "dietaryFiber")
+        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: sugars ?? Item(amount: 0), requiringSecureCoding: true), forKey: "sugars")
+        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: protein ?? Item(amount: 0), requiringSecureCoding: true), forKey: "protein")
+        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: vitaminA ?? Item(amount: 0), requiringSecureCoding: true), forKey: "vitaminA")
+        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: vitaminC ?? Item(amount: 0), requiringSecureCoding: true), forKey: "vitaminC")
+        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: calcium ?? Item(amount: 0), requiringSecureCoding: true), forKey: "calcium")
+        coder.encode(try! NSKeyedArchiver.archivedData(withRootObject: iron ?? Item(amount: 0), requiringSecureCoding: true), forKey: "iron")
     }
     
     public required init?(coder: NSCoder) {
@@ -98,110 +98,111 @@ public class NutritionOutput: NSObject, NSCoding, NSSecureCoding {
     
     public var dictionary: [[String: Any]] {
         get {
+            let support = 0.0
             return [
                 [
                     "name": "Calories",
-                    "value": calories?.rawValue,
+                    "value": calories?.rawValue ?? support,
                 ],
                 [
                     "name": "Calcium",
-                    "value": calcium?.rawValue,
+                    "value": calcium?.rawValue ?? support,
                 ],
                 [
                     "name": "Total Fat",
-                    "value": totalFat?.rawValue,
+                    "value": totalFat?.rawValue ?? support,
                 ],
                 [
                     "name": "Iron",
-                    "value": iron?.rawValue,
+                    "value": iron?.rawValue ?? support,
                 ],
                 [
                     "name": "Fiber",
-                    "value": dietaryFiber?.rawValue,
+                    "value": dietaryFiber?.rawValue ?? support,
                 ],
                 [
                     "name": "Potassium",
-                    "value": potassium?.rawValue,
+                    "value": potassium?.rawValue ?? support,
                 ],
                 [
                     "name": "Sodium",
-                    "value": sodium?.rawValue,
+                    "value": sodium?.rawValue ?? support,
                 ],
                 [
                     "name": "Protein",
-                    "value": protein?.rawValue,
+                    "value": protein?.rawValue ?? support,
                 ],
                 [
                     "name": "Sugars",
-                    "value": sugars?.rawValue,
+                    "value": sugars?.rawValue ?? support,
                 ],
                 [
                     "name": "Vitamin A",
-                    "value": vitaminA?.rawValue,
+                    "value": vitaminA?.rawValue ?? support,
                 ],
                 [
                     "name": "Vitamin B",
-                    "value": vitaminB?.rawValue,
+                    "value": vitaminB?.rawValue ?? support,
                 ],
                 [
                     "name": "Vitamin C",
-                    "value": vitaminC?.rawValue,
+                    "value": vitaminC?.rawValue ?? support,
                 ],
                 [
                     "name": "Vitamin D",
-                    "value": vitaminD?.rawValue,
+                    "value": vitaminD?.rawValue ?? support,
                 ],
                 [
                     "name": "Vitamin E",
-                    "value": vitaminE?.rawValue,
+                    "value": vitaminE?.rawValue ?? support,
                 ],
                 [
                     "name": "Vitamin K",
-                    "value": vitaminK?.rawValue,
+                    "value": vitaminK?.rawValue ?? support,
                 ],
                 [
                     "name": "Alcohol",
-                    "value": alcohol?.rawValue,
+                    "value": alcohol?.rawValue ?? support,
                 ],
                 [
                     "name": "Caffeine",
-                    "value": caffeine?.rawValue,
+                    "value": caffeine?.rawValue ?? support,
                 ],
                 [
                     "name": "Copper",
-                    "value": copper?.rawValue,
+                    "value": copper?.rawValue ?? support,
                 ],
                 [
                     "name": "Cysteine",
-                    "value": cysteine?.rawValue,
+                    "value": cysteine?.rawValue ?? support,
                 ],
                 [
                     "name": "Energy",
-                    "value": energy?.rawValue,
+                    "value": energy?.rawValue ?? support,
                 ],
                 [
                     "name": "Lactose",
-                    "value": lactose?.rawValue,
+                    "value": lactose?.rawValue ?? support,
                 ],
                 [
                     "name": "Magnesium",
-                    "value": magnesium?.rawValue,
+                    "value": magnesium?.rawValue ?? support,
                 ],
                 [
                     "name": "Phosphorus",
-                    "value": phosphorus?.rawValue,
+                    "value": phosphorus?.rawValue ?? support,
                 ],
                 [
                     "name": "Starch",
-                    "value": starch?.rawValue,
+                    "value": starch?.rawValue ?? support,
                 ],
                 [
                     "name": "Valine",
-                    "value": valine?.rawValue,
+                    "value": valine?.rawValue ?? support,
                 ],
                 [
                     "name": "Zinc",
-                    "value": zinc?.rawValue,
+                    "value": zinc?.rawValue ?? support,
                 ],
             ]
         }

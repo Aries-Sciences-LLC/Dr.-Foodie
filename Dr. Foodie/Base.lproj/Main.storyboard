@@ -2363,7 +2363,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="finishedButton" destination="W4g-RG-4tT" id="aPG-lr-a48"/>
                         <outlet property="nutritionTable" destination="AWQ-ff-TJU" id="fmw-BE-TU2"/>
                     </connections>
                 </viewController>
@@ -3528,7 +3527,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="B7o-70-Gfd"/>
-        <segue reference="IJM-5t-FdA"/>
+        <segue reference="lNm-fe-d5n"/>
         <segue reference="sqh-Sm-zyZ"/>
         <segue reference="pUL-qL-Fje"/>
     </inferredMetricsTieBreakers>

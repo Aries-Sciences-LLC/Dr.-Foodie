@@ -158,7 +158,7 @@ extension ContainerVC: UITableViewDataSource {
         switch row {
         case 0:
             let cell = UITableViewCell()
-            cell.backgroundColor = UIColor.clear
+            cell.backgroundColor = .clear
             cell.separatorInset = UIEdgeInsets(top: 0.0, left: tableView.bounds.size.width, bottom: 0.0, right: 0.0)
             return cell
             
@@ -168,6 +168,8 @@ extension ContainerVC: UITableViewDataSource {
                 return tableCarouselView
             } else {
                 let cell: TableCarouselView = tableView.dequeueReusableCell(withIdentifier: ViewConstants.CellIdentifiers.tableCarousel) as! TableCarouselView
+                
+                cell.backgroundColor = .clear
                 
                 cell.delegate = self
                 cell.views = controllers
@@ -181,7 +183,7 @@ extension ContainerVC: UITableViewDataSource {
         
         case ViewConstants.RowIndex.buttonCarousel:
             let cell: ButtonCarouselView = tableView.dequeueReusableCell(withIdentifier: ViewConstants.CellIdentifiers.buttons) as! ButtonCarouselView
-            cell.backgroundColor = UIColor.clear
+            cell.backgroundColor = .clear
             
             cell.delegate = self
             cell.dataSource = self

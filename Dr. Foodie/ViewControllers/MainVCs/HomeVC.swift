@@ -149,6 +149,22 @@ extension HomeVC {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        rightSwipe(pageControl!)
+        todayPage.layoutSubviews()
+        cardSlider?.collectionView.reloadData()
+        update()
+    }
+
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        cardSlider?.collectionView.reloadData()
+        update()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination.isKind(of: NutritionOverviewVC.self) {
             nutritionOverviewDelegate = (segue.destination as! NutritionOverviewVC)

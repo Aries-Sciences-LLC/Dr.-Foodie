@@ -206,7 +206,9 @@ extension UserNutrition {
             for meal in JournalManager.meals {
                 meal.nutritionInformation.dictionary.forEach { (item) in
                     if (item["name"] as! String) == category.name {
-                        value += item["value"] as! Int
+                        if let amount = item["value"] {
+                            value += Int(amount as! Double)
+                        }
                     }
                 }
             }

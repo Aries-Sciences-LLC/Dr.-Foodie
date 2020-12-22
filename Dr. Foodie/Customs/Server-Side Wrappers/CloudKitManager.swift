@@ -167,7 +167,7 @@ extension CloudKitManager {
                 completion()
             }
         case .upload:
-            let id = CKRecord.ID(recordName: "ScannedFood.\(JournalManager.meals.count).\(User.authorized()?.id ?? "")")
+            let id = CKRecord.ID(recordName: "ScannedFood.\(JournalManager.count).\(User.authorized()?.id ?? "")")
             let record = CKRecord(recordType: "ScannedFood", recordID: id)
             
             let data = JournalManager.meals.last!

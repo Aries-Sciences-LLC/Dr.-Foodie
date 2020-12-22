@@ -17,6 +17,17 @@ class JournalManager {
     private static var buffer: Int = 0
     private static var historyCounter: [String] = []
     
+    static var count: Int {
+        get {
+            var buffer = 0
+            for day in historyCounter {
+                buffer += history[day]!.count
+            }
+            
+            return buffer + meals.count
+        }
+    }
+    
     struct Food {
         var names: [String]
         var image: UIImage

@@ -46,9 +46,9 @@ extension QuickAddData {
         }
         CloudKitManager.quickAdd(action: .update) {
             DispatchQueue.main.async {
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let containerVC = storyboard.instantiateViewController(withIdentifier: "ContainerVC") as! ContainerVC
-                containerVC.updateQuickAdd()
+//                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                let containerVC = storyboard.instantiateViewController(withIdentifier: "ContainerVC") as! ContainerVC
+//                containerVC.updateQuickAdd()
             }
         }
     }

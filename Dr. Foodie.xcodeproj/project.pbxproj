@@ -1163,7 +1163,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Dr. Foodie/Registrations/Dr. Foodie.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = QXNMG5R4EQ;
 				INFOPLIST_FILE = "Dr. Foodie/Registrations/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1186,7 +1186,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Dr. Foodie/Registrations/Dr. Foodie.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = QXNMG5R4EQ;
 				INFOPLIST_FILE = "Dr. Foodie/Registrations/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
