@@ -212,11 +212,26 @@ extension UserNutrition {
                     }
                 }
             }
-            switch section {
-            case .today:
-                suggestions.append(Suggestion(suggestedValue: category.suggestedValue.value, suggestedFoods: category.suggestedFoods, fact: Item(name: category.name, value: value, units: category.units, definition: category.definition)))
-            case .total:
-                suggestions.append(Suggestion(suggestedValue: nil, suggestedFoods: nil, fact: Item(name: category.name, value: value, units: category.units, definition: category.definition)))
+            suggestions.append(Suggestion(suggestedValue: category.suggestedValue.value, suggestedFoods: category.suggestedFoods, fact: Item(name: category.name, value: value, units: category.units, definition: category.definition)))
+        }
+        
+        if section == .total {
+            var buffer = 0
+            for category in categories {
+                var value = 0
+                for day in JournalManager.history {
+                    for meal in day.value {
+                        meal.nutritionInformation.dictionary.forEach { (item) in
+                            if (item["name"] as! String) == category.name {
+                                if let amount = item["value"] {
+                                    value += Int(amount as! Double)
+                                }
+                            }
+                        }
+                    }
+                }
+                suggestions[buffer].fact.value += value
+                buffer += 1
             }
         }
         

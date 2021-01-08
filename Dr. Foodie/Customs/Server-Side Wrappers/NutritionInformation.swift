@@ -92,7 +92,7 @@ public class NutritionOutput: NSObject, NSCoding, NSSecureCoding {
     
     public var amount: Int {
         get {
-            return 17
+            return dictionary.count
         }
     }
     

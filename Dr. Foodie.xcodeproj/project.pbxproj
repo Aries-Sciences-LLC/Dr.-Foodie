@@ -89,6 +89,7 @@
 		F7971BD3252AAB64006FED0C /* AuthorizationButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7971BD2252AAB64006FED0C /* AuthorizationButtons.swift */; };
 		F7971BD5252BF57C006FED0C /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7971BD4252BF57C006FED0C /* UIButton.swift */; };
 		F79BCB9B2574C25500918B92 /* UserBodySelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79BCB9A2574C25500918B92 /* UserBodySelectionVC.swift */; };
+		F7B4891C25A7F2F4009B93F7 /* DataHandlerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B4891B25A7F2F4009B93F7 /* DataHandlerVC.swift */; };
 		F7EB46122519ADDE00E25600 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EB46112519ADDE00E25600 /* HomeVC.swift */; };
 		F7EB46142519ADF600E25600 /* RestaurantMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EB46132519ADF600E25600 /* RestaurantMapVC.swift */; };
 		F7EB46162519AE4200E25600 /* SnapMealVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EB46152519AE4200E25600 /* SnapMealVC.swift */; };
@@ -246,6 +247,7 @@
 		F7971BD2252AAB64006FED0C /* AuthorizationButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationButtons.swift; sourceTree = "<group>"; };
 		F7971BD4252BF57C006FED0C /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		F79BCB9A2574C25500918B92 /* UserBodySelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBodySelectionVC.swift; sourceTree = "<group>"; };
+		F7B4891B25A7F2F4009B93F7 /* DataHandlerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHandlerVC.swift; sourceTree = "<group>"; };
 		F7EB46112519ADDE00E25600 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		F7EB46132519ADF600E25600 /* RestaurantMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMapVC.swift; sourceTree = "<group>"; };
 		F7EB46152519AE4200E25600 /* SnapMealVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapMealVC.swift; sourceTree = "<group>"; };
@@ -598,6 +600,7 @@
 		F7971BCB252A9437006FED0C /* SecondaryVCs */ = {
 			isa = PBXGroup;
 			children = (
+				F7B4891B25A7F2F4009B93F7 /* DataHandlerVC.swift */,
 				F738E013253A9C97000CC1C5 /* SnapMealHelpVC.swift */,
 				F75B4EA2253BEB150020E5B7 /* CategorySelectionVC.swift */,
 				F75FE60A256DEF07005CE320 /* ThirdPartyMapSelectorVC.swift */,
@@ -705,7 +708,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Aries Sciences LLC";
 				TargetAttributes = {
 					F7865D79250A4DEC00911426 = {
@@ -920,6 +923,7 @@
 				F75FE607256DE333005CE320 /* CoreLocation.swift in Sources */,
 				F70969C6253BD4EF00D3AA0B /* status_code.pb.swift in Sources */,
 				F77676E92534E5A900E6C26A /* QuickAddItem.swift in Sources */,
+				F7B4891C25A7F2F4009B93F7 /* DataHandlerVC.swift in Sources */,
 				F738E012253A83BA000CC1C5 /* UIImage.swift in Sources */,
 				F7971BD5252BF57C006FED0C /* UIButton.swift in Sources */,
 				F7949451253DF36B00866A04 /* RestaurantCategoryCell.swift in Sources */,
@@ -1064,6 +1068,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1125,6 +1130,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1163,7 +1169,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Dr. Foodie/Registrations/Dr. Foodie.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = QXNMG5R4EQ;
 				INFOPLIST_FILE = "Dr. Foodie/Registrations/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1186,7 +1192,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Dr. Foodie/Registrations/Dr. Foodie.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = QXNMG5R4EQ;
 				INFOPLIST_FILE = "Dr. Foodie/Registrations/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

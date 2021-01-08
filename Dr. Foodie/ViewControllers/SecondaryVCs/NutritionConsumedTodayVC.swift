@@ -32,10 +32,18 @@ class NutritionConsumedTodayVC: DRFVC {
 }
 
 // MARK: Methods
-extension NutritionConsumedTodayVC {
-    override func viewDidAppear(_ animated: Bool) {
+extension NutritionConsumedTodayVC: DataHandlerVC {
+    override func viewDidLoad() {
         super.viewDidLoad()
-        
-        dataContainer.set(suggestions: UserNutrition.information(for: .today))
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    func dataIsIn() {
+        DispatchQueue.main.async {
+            self.dataContainer.set(suggestions: UserNutrition.information(for: .today))
+        }
     }
 }

@@ -34,10 +34,18 @@ class TotalNutritionConsumedVC: DRFVC {
 }
 
 // MARK: Methods
-extension TotalNutritionConsumedVC {
-    override func viewDidAppear(_ animated: Bool) {
+extension TotalNutritionConsumedVC: DataHandlerVC {
+    override func viewDidLoad() {
         super.viewDidLoad()
-
-        dataContainer.set(suggestions: UserNutrition.information(for: .total))
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    func dataIsIn() {
+        DispatchQueue.main.async {
+            self.dataContainer.set(suggestions: UserNutrition.information(for: .total))
+        }
     }
 }

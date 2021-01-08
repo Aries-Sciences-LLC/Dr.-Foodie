@@ -18,7 +18,7 @@ class ContainerVC: DRFVC {
     @IBOutlet weak var whiteBottomView: UIView!
     @IBOutlet weak var navigationView: ContainerTableView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var emptyMessage: UILabel!
+    @IBOutlet weak var emptyMessage: UIStackView!
     
     private var tableCarouselView: TableCarouselView?
     private var buttonCarouselView: ButtonCarouselView?
@@ -31,6 +31,7 @@ class ContainerVC: DRFVC {
 
         // Do any additional setup after loading the view.
         setupNavigation()
+        
         
         ["HomePage", "BussinessLocator", "AddMeal", "DailyInformation", "UserAccount"].forEach { (identifier) in
             let controller = storyboard!.instantiateViewController(withIdentifier: identifier)
@@ -53,6 +54,7 @@ class ContainerVC: DRFVC {
                 }
             }
         }
+        QuickAddData.display = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -292,7 +294,7 @@ extension ContainerVC: UICollectionViewDataSource {
     }
 }
 
-// ContainerTableView
+// MARK: ContainerTableView
 class ContainerTableView: UITableView {
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         return !(cellForRow(at: IndexPath(item: 0, section: 0))?.frame.contains(point) ?? false)

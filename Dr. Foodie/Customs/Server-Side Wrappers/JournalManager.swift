@@ -8,19 +8,64 @@
 
 import UIKit
 
-// MARK: Properties, Structures
+// MARK: DateOrganizer
+
+// MARK: Properties
+class DateOrganizer {
+    private(set) var dates: [String] = []
+    
+    private var buffer: Int = 0
+    private var location: Int {
+        buffer += 1
+        
+        if buffer >= dates.count {
+            buffer = 0
+        }
+        
+        return dates.count - buffer - 1
+    }
+    
+}
+
+// MARK: Methods
+extension DateOrganizer {
+    public func getNextDate() -> String {
+        return dates[location]
+    }
+    
+    public func add(date: Date) -> (String, Bool) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd/yyyy"
+        let formatted = formatter.string(from: date)
+        
+        for prevDate in dates {
+            if Int(prevDate.prefix(5).suffix(2)) == Int(formatted.prefix(5).suffix(2)) &&
+                Int(prevDate.suffix(4))          ==           Int(formatted.suffix(4)) &&
+                Int(formatted.prefix(2))         ==             Int(prevDate.prefix(2)) {
+                return (formatted, false)
+            }
+        }
+        
+        dates.append(formatted)
+        dates = dates.compactMap(formatter.date(from:)).sorted(by: <).compactMap(formatter.string(from:))
+        
+        return (formatted, true)
+    }
+}
+
+// MARK: JournalManager
+
+// MARK: Properties & Structures
 class JournalManager {
     private(set) static var meals: [Food] = []
     private(set) static var history: [String: [Food]] = [:]
     
-    private static var started: Bool = false
-    private static var buffer: Int = 0
-    private static var historyCounter: [String] = []
+    private static var historyCounter: DateOrganizer = DateOrganizer()
     
     static var count: Int {
         get {
             var buffer = 0
-            for day in historyCounter {
+            for day in historyCounter.dates {
                 buffer += history[day]!.count
             }
             
@@ -53,26 +98,16 @@ extension JournalManager {
         if Calendar.current.isDateInToday(meal.time) {
             meals.append(meal)
         } else {
-            let formatter = DateFormatter()
-            formatter.dateFormat = "MM/dd/yyyy"
-            let formatted = formatter.string(from: meal.time)
-            if history[formatted] == nil {
-                history[formatted] = [meal]
-                historyCounter.insert(formatted, at: 0)
+            let (stamp, isNew) = historyCounter.add(date: meal.time)
+            if isNew {
+                history[stamp] = [meal]
             } else {
-                history[formatted]!.append(meal)
+                history[stamp]!.append(meal)
             }
         }
     }
     
     public static func getLatest() -> [Food] {
-        if !started {
-            buffer = historyCounter.count - 1
-            started = true
-        }
-        
-        let selected = history[historyCounter[buffer]]
-        buffer -= 1
-        return selected!
+        return history[historyCounter.getNextDate()]!
     }
 }

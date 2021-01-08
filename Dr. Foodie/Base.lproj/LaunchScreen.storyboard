@@ -111,9 +111,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="App-Icon-Rounded" width="120" height="120"/>
+        <image name="App-Icon-Rounded" width="475" height="475"/>
         <image name="FirstLayer" width="1024" height="1024"/>
-        <image name="Overlay" width="1024" height="1024"/>
+        <image name="Overlay" width="256" height="256"/>
         <image name="SecondLayer" width="256" height="256"/>
         <image name="WelcomeBackground" width="1280" height="720"/>
         <namedColor name="LabelColor">

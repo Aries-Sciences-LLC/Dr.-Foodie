@@ -14,6 +14,7 @@ struct QuickAddData {
     static private(set) var containers: [QuickAddContainer] = []
     
     static public var handler: (() -> Void)?
+    static public var display: ContainerVC?
     
     struct Package {
         var names: [String]
@@ -39,17 +40,18 @@ extension QuickAddData {
         return Package(names: names, images: images)
     }
     
-    public static func insert(new item: QuickAddContainer) {
+    public static func insert(new item: QuickAddContainer, completion: @escaping () -> Void) {
         containers.insert(item, at: 0)
         if containers.count > 4 {
             containers.removeLast()
         }
         CloudKitManager.quickAdd(action: .update) {
             DispatchQueue.main.async {
-//                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//                let containerVC = storyboard.instantiateViewController(withIdentifier: "ContainerVC") as! ContainerVC
-//                containerVC.updateQuickAdd()
+                if let vc = display {
+                    vc.quickAdd.reloadData()
+                }
             }
+            completion()
         }
     }
     

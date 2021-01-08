@@ -20,7 +20,7 @@ class AccountVC: BaseVC {
         var error: NSError?
         
         if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Please confirm to logout.") { success, authenticationError in
+            context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: "Please confirm to logout.") { success, authenticationError in
                 if let error = authenticationError {
                     print(error.localizedDescription)
                 }

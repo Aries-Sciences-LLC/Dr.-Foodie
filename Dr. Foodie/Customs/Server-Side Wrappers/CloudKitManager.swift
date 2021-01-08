@@ -32,7 +32,7 @@ extension CloudKitManager {
     }
 }
 
-// MARK: Helper Methods
+// MARK: Main Methods
 extension CloudKitManager {
     static func account(for user: User, action: AccountAction, completion: @escaping () -> Void) {
         let recordID = CKRecord.ID(recordName: user.id)
@@ -83,16 +83,7 @@ extension CloudKitManager {
                     record["height"] = user.height
                     record["weight"] = user.weight
 
-                    let modifyOperation = CKModifyRecordsOperation(recordsToSave: [record], recordIDsToDelete: nil)
-                    modifyOperation.savePolicy = .allKeys
-                    modifyOperation.qualityOfService = .userInitiated
-                    modifyOperation.modifyRecordsCompletionBlock = { (savedRecords, deletedRecordIDs, error) in
-                        if let error = error {
-                            print(error.localizedDescription)
-                        }
-                    }
-                    
-                    DATABASE.add(modifyOperation)
+                    modifyOperation(on: [record])
                 } else {
                     print(error.debugDescription)
                 }
@@ -111,7 +102,7 @@ extension CloudKitManager {
 
                 if let information = record {
                     let names = information["names"]! as! [String]
-                    let photos = information["photos"]! as! [CKAsset]
+                    let photos = information["images"]! as! [CKAsset]
 
                     var buffer = 0
                     for name in names {
@@ -129,13 +120,8 @@ extension CloudKitManager {
             record["names"] = data.names
             record["images"] = data.images as __CKRecordObjCValue
             
-            DATABASE.save(record) { (record, error) in
-                if let error = error {
-                    print(error.localizedDescription)
-                }
-                
-                completion()
-            }
+            modifyOperation(on: [record])
+            completion()
         }
     }
     
@@ -217,15 +203,22 @@ extension CloudKitManager {
         case .upload, .remove:
             record["names"] = RestaurantCategories.categories
             
-            let modify = CKModifyRecordsOperation(recordsToSave:[record], recordIDsToDelete: nil)
-            modify.savePolicy = .changedKeys
-            modify.qualityOfService = .userInitiated
-            modify.modifyRecordsCompletionBlock = { savedRecords, deletedRecordIDs, error in
-                if let error = error {
-                    print(error.localizedDescription)
-                }
-            }
-            DATABASE.add(modify)
+            modifyOperation(on: [record])
         }
+    }
+}
+
+// MARK: Helper Methods
+extension CloudKitManager {
+    static func modifyOperation(on records: [CKRecord]) {
+        let modify = CKModifyRecordsOperation(recordsToSave: records, recordIDsToDelete: nil)
+        modify.savePolicy = .changedKeys
+        modify.qualityOfService = .userInitiated
+        modify.modifyRecordsCompletionBlock = { savedRecords, deletedRecordIDs, error in
+            if let error = error {
+                print(error.localizedDescription)
+            }
+        }
+        DATABASE.add(modify)
     }
 }

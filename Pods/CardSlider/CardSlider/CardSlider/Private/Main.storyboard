@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92Z-gf-dSW" userLabel="header view">
-                                <rect key="frame" x="0.0" y="20" width="375" height="57.5"/>
+                                <rect key="frame" x="0.0" y="75" width="375" height="47.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Journal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TR-w8-Hpx">
-                                        <rect key="frame" x="15" y="10" width="345" height="32.5"/>
+                                        <rect key="frame" x="15" y="0.0" width="345" height="32.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
                                         <nil key="textColor"/>
@@ -34,7 +34,7 @@
                                 </constraints>
                             </view>
                             <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jWQ-Kq-YtS" userLabel="collection view">
-                                <rect key="frame" x="0.0" y="77.5" width="375" height="499.5"/>
+                                <rect key="frame" x="0.0" y="122.5" width="375" height="454.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewLayout key="collectionViewLayout" id="6VY-PS-kjF" customClass="CardsLayout" customModule="CardSlider" customModuleProvider="target">
                                     <connections>
@@ -156,7 +156,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNB-MG-oxt">
-                                        <rect key="frame" x="0.0" y="1039" width="375" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="1" constant="1" id="sTC-oc-UDS"/>
@@ -205,6 +205,7 @@
                                 </connections>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="MNB-MG-oxt" secondAttribute="bottom" id="0NQ-Ca-yio"/>
@@ -213,11 +214,11 @@
                             <constraint firstItem="6TR-w8-Hpx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="2yh-aR-Fz4"/>
                             <constraint firstItem="I7q-AA-C5G" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="48l-5r-MOy"/>
                             <constraint firstItem="ZYZ-8Y-xnh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="52U-3M-emL"/>
-                            <constraint firstItem="6TR-w8-Hpx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="6p3-qB-YyO"/>
+                            <constraint firstItem="6TR-w8-Hpx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="6p3-qB-YyO"/>
                             <constraint firstItem="MNB-MG-oxt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DaW-5s-BtK"/>
                             <constraint firstItem="rsz-eG-92Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FdM-de-FhJ"/>
                             <constraint firstItem="ZYZ-8Y-xnh" firstAttribute="top" secondItem="jWQ-Kq-YtS" secondAttribute="bottom" id="JTV-7c-rsW"/>
-                            <constraint firstItem="92Z-gf-dSW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="LDl-fF-vdf"/>
+                            <constraint firstItem="92Z-gf-dSW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="75" id="LDl-fF-vdf"/>
                             <constraint firstItem="92Z-gf-dSW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MWn-R9-GWk"/>
                             <constraint firstAttribute="trailing" secondItem="jWQ-Kq-YtS" secondAttribute="trailing" id="Olf-aF-EzY"/>
                             <constraint firstItem="ZYZ-8Y-xnh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SFq-ue-sHl"/>
@@ -235,7 +236,6 @@
                             <constraint firstAttribute="trailing" secondItem="cI7-dB-WkA" secondAttribute="trailing" id="u7f-Wl-qdT"/>
                             <constraint firstAttribute="bottom" secondItem="rsz-eG-92Q" secondAttribute="bottom" id="wrR-uX-qUs"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="cardTitleContainer" destination="ZYZ-8Y-xnh" id="MSL-aR-2mN"/>

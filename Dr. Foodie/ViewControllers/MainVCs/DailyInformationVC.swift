@@ -9,6 +9,7 @@
 import UIKit
 
 // MARK: IBOutlets & IBActions
+
 class DailyInformationVC: BaseVC {
 
     @IBOutlet weak var sectionSegmentControl: UISegmentedControl!
@@ -44,6 +45,7 @@ extension DailyInformationVC {
         
         overallX.constant = view.bounds.width
         
+        ((parent as! ContainerVC).children.first as! HomeVC).delegate = self
         addChild(storyboard!.instantiateViewController(withIdentifier: "todayNutritionData") as! NutritionConsumedTodayVC)
         addChild(storyboard!.instantiateViewController(withIdentifier: "overallNutritionData") as! TotalNutritionConsumedVC)
         
@@ -67,8 +69,13 @@ extension DailyInformationVC {
             make.leading.trailing.top.bottom.equalToSuperview()
         }
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print("")
+}
+
+extension DailyInformationVC: HomeVCDelegate {
+    func dataIsIn() {
+        print(children)
+        children.forEach {
+            ($0 as! DataHandlerVC).dataIsIn()
+        }
     }
 }

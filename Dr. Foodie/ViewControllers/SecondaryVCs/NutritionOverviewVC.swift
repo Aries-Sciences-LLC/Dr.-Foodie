@@ -19,6 +19,10 @@ import UIKit
 class NutritionOverviewVC: DRFVC {
 
     @IBOutlet weak var nutritionTable: UITableView!
+    @IBOutlet weak var waitingIndicator: UIActivityIndicatorView!
+    
+    @IBOutlet weak var nTTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var nTBottomConstraint: NSLayoutConstraint!
     
     private var names: [String]?
     private var image: UIImage?
@@ -27,12 +31,22 @@ class NutritionOverviewVC: DRFVC {
     public var parentVC: CategorySelectionVC?
     
     @IBAction func added(_ sender: Any!) {
-        dismiss(animated: true) {
-            self.parentVC?.cancel(UIButton())
-            let journal = JournalManager.Food(names: self.names!, image: self.image!, nutritionInformation: self.nutritionData!)
-            JournalManager.add(meal: journal)
+        (sender as! UIButton).setTitle("", for: .normal)
+        UIView.animate(withDuration: 0.3) { [self] in
+            waitingIndicator.alpha = 1
+        } completion: { [self] _ in
+            waitingIndicator.startAnimating()
+            JournalManager.add(meal: JournalManager.Food(names: self.names!, image: self.image!, nutritionInformation: self.nutritionData!))
             CloudKitManager.meals(action: .upload) {
-                QuickAddData.insert(new: QuickAddContainer(image: self.image!, called: self.names!.first!))
+                QuickAddData.insert(new: QuickAddContainer(image: self.image!, called: self.names!.first!)) {
+                    DispatchQueue.main.async {
+                        self.waitingIndicator.stopAnimating()
+                        dismiss(animated: true) {
+                            self.parentVC?.cancel(sender as? UIButton)
+                            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "updateSlider"), object: nil)
+                        }
+                    }
+                }
             }
         }
     }
@@ -196,6 +210,15 @@ extension NutritionOverviewVC: NutritionOverviewVCDelegate {
     
     func userReviewing(data: NutritionOutput) {
         nutritionData = data
-        nutritionTable.reloadData()
+        
+        UIView.animate(withDuration: 0.3) {
+            self.nTBottomConstraint.constant = self.view.bounds.height - 70 - self.nTTopConstraint.constant
+        } completion: { _ in
+            self.nutritionTable.reloadData()
+            
+            UIView.animate(withDuration: 0.3) {
+                self.nTBottomConstraint.constant = 15
+            }
+        }
     }
 }

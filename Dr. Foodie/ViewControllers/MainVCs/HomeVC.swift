@@ -21,10 +21,17 @@ struct Meal: CardSliderItem {
     let nutrition: NutritionOutput
 }
 
+// MARK: HomeVCDelegate
+protocol HomeVCDelegate {
+    func dataIsIn()
+}
+
+
 // MARK: Properties, IBOutlets, & IBActions
 class HomeVC: BaseVC {
     
     var meals: [Meal] = []
+    var historical: [[JournalManager.Food]] = []
     var nutritionOverviewDelegate: NutritionOverviewVCDelegate?
     var currentItem = 0
     var messageMode: MessageMode?
@@ -36,46 +43,26 @@ class HomeVC: BaseVC {
     @IBOutlet weak var emptyMessage: UILabel!
     @IBOutlet weak var todayPage: UIView!
     @IBOutlet weak var fullJournal: UITableView!
-    @IBOutlet weak var emptyArea: UIView!
-    @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet var cardsListener: UITapGestureRecognizer!
+    @IBOutlet weak var switcher: UISegmentedControl!
     
     @IBOutlet weak var fullX: NSLayoutConstraint!
     @IBOutlet weak var todayX: NSLayoutConstraint!
 
     var cardSlider: CardSliderViewController?
+    var booted: Bool = false
+    var notifier: NSObjectProtocol?
+    var delegate: HomeVCDelegate?
     
-    @IBAction func pageChanged(_ sender: UIPageControl) {
-        switch sender.currentPage {
+    @IBAction func pageChanged(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
         case 0:
-            leftSwipe(sender)
+            rightSwipe()
         case 1:
-            rightSwipe(sender)
+            leftSwipe()
         default:
             break
         }
-    }
-    
-    @IBAction func rightSwipe(_ sender: Any) {
-        cardsListener.isEnabled = true
-        todayX.constant = 0
-        fullX.constant = view.bounds.width
-        pageControl.currentPage = 0
-        UIView.animate(withDuration: 0.3) {
-            self.emptyMessage.alpha = self.messageMode == .both || self.messageMode == .meals ? 1 : 0
-        }
-        update()
-    }
-    
-    @IBAction func leftSwipe(_ sender: Any) {
-        cardsListener.isEnabled = false
-        todayX.constant = -view.bounds.width
-        fullX.constant = 20
-        pageControl.currentPage = 1
-        UIView.animate(withDuration: 0.3) {
-            self.emptyMessage.alpha = self.messageMode == .both || self.messageMode == .history ? 1 : 0
-        }
-        update()
     }
     
     @IBAction func pageSelected(_ sender: Any) {
@@ -88,29 +75,16 @@ extension HomeVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.gestureRecognizers?.forEach({ (recognizer) in
-            recognizer.isEnabled = false
-        })
+        switcher.setTitleTextAttributes([NSAttributedString.Key.font : UIFont(name: "Futura-Bold", size: 13) ?? UIFont.boldSystemFont(ofSize: 13)], for: .normal)
         
-        fullX.constant = view.bounds.width
+        rightSwipe()
         
         CloudKitManager.meals(action: .fetch) {
-            JournalManager.meals.forEach { (meal) in
-                self.meals.append(
-                    Meal(
-                        rating: nil,
-                        image: meal.image,
-                        title: meal.names.joined(separator: ", "),
-                        subtitle: meal.time.convertTo12hour(),
-                        description: nil,
-                        nutrition: meal.nutritionInformation
-                    )
-                )
-            }
-            
-            self.meals.reverse()
+            self.reload()
             
             DispatchQueue.main.async {
+                self.delegate?.dataIsIn()
+                
                 let shouldPopulateMeals = self.meals.count > 0
                 let shouldPopulateHistory = JournalManager.history.count > 0
                 
@@ -125,25 +99,15 @@ extension HomeVC {
                 UIView.animate(withDuration: 0.3) {
                     self.todayPage.alpha = shouldPopulateMeals ? 1 : 0
                     self.fullJournal.alpha = shouldPopulateHistory ? 1 : 0
-                    self.emptyArea.alpha = shouldPopulateHistory || shouldPopulateMeals ? 1 : 0
                     self.emptyMessage.alpha = shouldPopulateMeals ? 0 : 1
                 }
-                
-                self.view.gestureRecognizers?.forEach({ (recognizer) in
-                    recognizer.isEnabled = true
-                })
                 
                 if shouldPopulateHistory {
                     self.fullJournal.reloadData()
                 }
                 
                 if shouldPopulateMeals {
-                    self.cardSlider = CardSliderViewController.with(dataSource: self)
-                    self.cardSlider!.title = "Today's Journal"
-                    self.addChild(self.cardSlider!)
-                    self.todayPage.addSubview(self.cardSlider!.view)
-                    self.cardSlider!.collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .left, animated: true)
-                    self.cardSlider!.didMove(toParent: self)
+                    self.recreate()
                 }
             }
         }
@@ -152,18 +116,22 @@ extension HomeVC {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        rightSwipe(pageControl!)
-        todayPage.layoutSubviews()
-        cardSlider?.collectionView.reloadData()
-        update()
+        notifier = NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "updateSlider"), object: nil, queue: nil, using: { _ in
+            self.recreate()
+        })
     }
-
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         
         cardSlider?.collectionView.reloadData()
-        update()
     }
+    
+//    override func viewDidDisappear(_ animated: Bool) {
+//        super.viewDidDisappear(animated)
+//        
+//        NotificationCenter.default.removeObserver(notifier)
+//    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination.isKind(of: NutritionOverviewVC.self) {
@@ -172,10 +140,77 @@ extension HomeVC {
         }
     }
     
+    func rightSwipe() {
+        emptyMessage.text = "Why don't you go snap a pic of your first meal of the day!"
+        cardsListener.isEnabled = true
+        todayX.constant = 0
+        fullX.constant = view.bounds.width
+        switcher.selectedSegmentIndex = 0
+        UIView.animate(withDuration: 0.3) {
+            self.emptyMessage.alpha = self.messageMode == .both || self.messageMode == .meals ? 1 : 0
+        }
+        update()
+    }
+    
+    func leftSwipe() {
+        emptyMessage.text = "This is where all of your previous days go!"
+        cardsListener.isEnabled = false
+        todayX.constant = -view.bounds.width
+        fullX.constant = 20
+        switcher.selectedSegmentIndex = 1
+        UIView.animate(withDuration: 0.3) {
+            self.emptyMessage.alpha = self.messageMode == .both || self.messageMode == .history ? 1 : 0
+        }
+        update()
+    }
+    
+    public func reload() {
+        meals = []
+        historical = []
+        
+        JournalManager.meals.forEach { (meal) in
+            self.meals.append(convert(meal: meal))
+        }
+        
+        JournalManager.history.forEach { _ in
+            historical.append(JournalManager.getLatest())
+        }
+        
+        historical.insert(historical.popLast() ?? [], at: 0)
+        
+        meals.reverse()
+    }
+    
+    @objc public func recreate() {
+        
+        todayPage.subviews.forEach { (subview) in
+            subview.removeFromSuperview()
+        }
+        
+        self.reload()
+        
+        cardSlider = CardSliderViewController.with(dataSource: self)
+        cardSlider!.title = "Today's Journal"
+        addChild(self.cardSlider!)
+        todayPage.addSubview(cardSlider!.view)
+        cardSlider!.didMove(toParent: self)
+    }
+    
     private func update() {
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
         }
+    }
+    
+    private func convert(meal: JournalManager.Food) -> Meal {
+        return Meal(
+            rating: nil,
+            image: meal.image,
+            title: meal.names.joined(separator: ", "),
+            subtitle: meal.time.convertTo12hour(),
+            description: nil,
+            nutrition: meal.nutritionInformation
+        )
     }
 }
 
@@ -197,12 +232,12 @@ extension HomeVC: CardSliderDataSource {
 // MARK: UITableViewDataSource
 extension HomeVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return JournalManager.history.count
+        return historical.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "day") as! CompleteDayCell
-        cell.set(data: JournalManager.getLatest())
+        cell.set(data: historical[indexPath.item])
         cell.delegate = self
         return cell
     }
@@ -221,7 +256,7 @@ extension HomeVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = UILabel()
         header.text = "Your Journal"
-        header.font = UIFont(name: "Futura-Bold", size: 35)
+        header.font = UIFont(name: "Futura-Bold", size: 25)
         header.frame.origin = CGPoint(x: 20, y: 8)
         return header
     }
