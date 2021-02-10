@@ -70,7 +70,7 @@ extension SignUpAreaVC {
         case .update:
             finished.isEnabled = true
         case .signup:
-            finished.isEnabled = firstName.text != "" && lastName.text != "" && email.isEmail()
+            finished.isEnabled = firstName.text != "" && (email.isEmail() || email.text == "") // && lastName.text != "" && email.isEmail()
         case .none:
             break
         }

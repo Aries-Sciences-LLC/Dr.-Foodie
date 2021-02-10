@@ -19,6 +19,7 @@ import UIKit
 class NutritionOverviewVC: DRFVC {
 
     @IBOutlet weak var nutritionTable: UITableView!
+    @IBOutlet weak var setButton: UIButton!
     @IBOutlet weak var waitingIndicator: UIActivityIndicatorView!
     
     @IBOutlet weak var nTTopConstraint: NSLayoutConstraint!
@@ -43,7 +44,6 @@ class NutritionOverviewVC: DRFVC {
                         self.waitingIndicator.stopAnimating()
                         dismiss(animated: true) {
                             self.parentVC?.cancel(sender as? UIButton)
-                            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "updateSlider"), object: nil)
                         }
                     }
                 }
@@ -51,8 +51,10 @@ class NutritionOverviewVC: DRFVC {
         }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setButton.layer.borderColor = UIColor.white.cgColor
     }
 }
 

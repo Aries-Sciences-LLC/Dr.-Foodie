@@ -50,6 +50,10 @@ extension DailyInformationVC {
         addChild(storyboard!.instantiateViewController(withIdentifier: "overallNutritionData") as! TotalNutritionConsumedVC)
         
         sectionSegmentControl.setTitleTextAttributes([NSAttributedString.Key.font : UIFont(name: "Futura-Bold", size: 13) ?? UIFont.boldSystemFont(ofSize: 13)], for: .normal)
+        sectionSegmentControl.layer.shadowColor = sectionSegmentControl.tintColor.cgColor
+        sectionSegmentControl.layer.shadowOffset = CGSize(width: 3, height: 3)
+        sectionSegmentControl.layer.shadowRadius = 8
+        sectionSegmentControl.layer.shadowOpacity = 1
     }
     
     override func addChild(_ childController: UIViewController) {
@@ -73,7 +77,6 @@ extension DailyInformationVC {
 
 extension DailyInformationVC: HomeVCDelegate {
     func dataIsIn() {
-        print(children)
         children.forEach {
             ($0 as! DataHandlerVC).dataIsIn()
         }

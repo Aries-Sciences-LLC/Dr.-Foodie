@@ -20,6 +20,8 @@ class AuthorizationButtons: UIStackView {
     open var authorizationDelegate: AuthorizationButtonsDelegate?
     open var authorizationPresentationContext: ASAuthorizationControllerPresentationContextProviding?
     
+    let reachability = ReachabilityHandler()
+    
     required init(coder: NSCoder) {
         super.init(coder: coder)
         
@@ -38,6 +40,7 @@ class AuthorizationButtons: UIStackView {
         addArrangedSubview(signWithApple)
         signWithApple.snp.makeConstraints { (make) in
             make.width.equalToSuperview()
+            make.height.equalTo(40)
         }
         
         let dontSignIn = UIButton()
@@ -51,6 +54,11 @@ class AuthorizationButtons: UIStackView {
         dontSignIn.snp.makeConstraints { (make) in
             make.height.equalTo(30)
             make.width.equalToSuperview()
+        }
+        
+        reachability.handler = {
+            signWithApple.isEnabled = $0
+            dontSignIn.isEnabled = $0
         }
     }
 }

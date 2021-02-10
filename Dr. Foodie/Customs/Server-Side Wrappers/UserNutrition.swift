@@ -257,7 +257,7 @@ extension UserNutrition {
         
         var description: String {
             get {
-                return "\(name): \(value) \(units)"
+                return "\(name):\n\(value) \(units)"
             }
         }
     }
@@ -271,7 +271,7 @@ extension UserNutrition {
             get {
                 if let _suggestedValue = suggestedValue {
                     if fact.value > _suggestedValue {
-                        return "Doctors suggest that your daily intake be \(String(describing: suggestedValue)) \(fact.units). So... you might want to cut back on the \(fact.name.lowercased()) for today. And maybe be more mindful tomorrow. Maybe don't choose these foods for example: \(suggestedFoods ?? "(sorry, I don't have a list for you right now)")."
+                        return "Doctors suggest that your daily intake be \(suggestedValue ?? 0) \(fact.units). So... you might want to cut back on the \(fact.name.lowercased()) for today. And maybe be more mindful tomorrow. Maybe don't choose these foods for example: \(suggestedFoods ?? "(sorry, I don't have a list for you right now)")."
                     }
                     return "Looks like you haven't had much \(fact.name) so far. Be more mindful later today on what you're choosing to eat. I'd suggest having \(suggestedFoods ?? "(sorry, I don't have a list for you right now)")."
                 } else {

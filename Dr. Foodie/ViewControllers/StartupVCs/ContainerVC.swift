@@ -9,6 +9,12 @@
 import UIKit
 import CircularCarousel
 
+// MARK: ContainerVCDelegate
+protocol ContainerVCDelegate {
+    func wasSummonedUpon()
+    func isBeingShown()
+}
+
 // MARK: IBOutlets, Properties, Override Methods
 class ContainerVC: DRFVC {
 
@@ -18,7 +24,6 @@ class ContainerVC: DRFVC {
     @IBOutlet weak var whiteBottomView: UIView!
     @IBOutlet weak var navigationView: ContainerTableView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var emptyMessage: UIStackView!
     
     private var tableCarouselView: TableCarouselView?
     private var buttonCarouselView: ButtonCarouselView?
@@ -31,7 +36,6 @@ class ContainerVC: DRFVC {
 
         // Do any additional setup after loading the view.
         setupNavigation()
-        
         
         ["HomePage", "BussinessLocator", "AddMeal", "DailyInformation", "UserAccount"].forEach { (identifier) in
             let controller = storyboard!.instantiateViewController(withIdentifier: identifier)
@@ -48,10 +52,7 @@ class ContainerVC: DRFVC {
             
             UIView.animate(withDuration: 0.3) {
                 self.navigationView.alpha = 1
-                
-                if QuickAddData.containers.count == 0 {
-                    self.emptyMessage.alpha = 1
-                }
+                self.quickAdd.alpha = 1
             }
         }
         QuickAddData.display = self
@@ -123,6 +124,26 @@ extension ContainerVC {
     
     public func updateQuickAdd() {
         quickAdd.reloadData()
+    }
+    
+    @objc public func goToCamera(_ sender: Any?) {
+        self.buttonCarouselView?.carousel.scroll(toItemAtIndex: 2, animated: true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+            self.autoDisplayTable()
+        }
+    }
+    
+    @objc public func goToHome(_ sender: Any?) {
+        guard let homeVC = (children[0] as? HomeVC) else { return }
+        self.buttonCarouselView?.carousel.scroll(toItemAtIndex: 0, animated: true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+            self.autoDisplayTable()
+            homeVC.wasSummonedUpon()
+        }
+    }
+    
+    private func autoDisplayTable() {
+        navigationView.scrollToRow(at: IndexPath(item: 2, section: 0), at: .bottom, animated: true)
     }
 }
 
@@ -212,6 +233,8 @@ extension ContainerVC: UITableViewDataSource {
 // MARK: ButtonCarouselViewDelegate
 extension ContainerVC: ButtonCarouselViewDelegate {
     func buttonCarousel(_ carousel: ButtonCarouselView, buttonPressed button: UIButton) {
+        self.navigationView.scrollToRow(at: IndexPath(item: 1, section: 0), at: .top, animated: true)
+        (children.map({ return $0 as! DRFVC }))[carousel.selectedRoundedButtonIndex].updateContents()
     }
     
     func buttonCarousel(_ carousel: ButtonCarouselView, willScrollToIndex index: IndexPath) {
@@ -250,11 +273,15 @@ extension ContainerVC: TableCarouselViewDelegate {
 // MARK: UICollectionViewDelegateFlowLayout
 extension ContainerVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        var size = quickAdd.frame.width / 2
-        if let insets = (quickAdd.collectionViewLayout as? UICollectionViewFlowLayout)?.sectionInset {
-            size -= insets.left + insets.right
+        if indexPath.item == QuickAddData.containers.count {
+            return (CGSize(width: 200, height: 125))
+        } else {
+            var size = quickAdd.frame.width / 2
+            if let insets = (quickAdd.collectionViewLayout as? UICollectionViewFlowLayout)?.sectionInset {
+                size -= insets.left + insets.right
+            }
+            return CGSize(width: size, height: size)
         }
-        return CGSize(width: size, height: size)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
@@ -269,28 +296,47 @@ extension ContainerVC: UICollectionViewDelegateFlowLayout {
 // MARK: UICollectionViewDataSource
 extension ContainerVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return QuickAddData.containers.count
+        let total = QuickAddData.containers.count
+        return total == 0 ? 1 : total
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = quickAdd.dequeueReusableCell(withReuseIdentifier: "item", for: indexPath) as! QuickAddItem
-        cell.tag = indexPath.item
-        cell.insert(item: QuickAddData.containers[indexPath.item]) {
-            self.buttonCarouselView?.carousel.scroll(toItemAtIndex: 2, animated: true)
-            self.tableCarouselView?.carousel.scroll(toItemAtIndex: 2, animated: true)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-                self.navigationView.scrollToRow(at: IndexPath(item: 2, section: 0), at: .bottom, animated: true)
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                    self.children.forEach { (controller) in
-                        if controller.isKind(of: SnapMealVC.self) {
-                            (controller as! SnapMealVC).photoWasTaken(photo: cell.itemImage.image!)
-                            cell.listener.isEnabled = true
+        let total = QuickAddData.containers.count
+        if indexPath.item < total {
+            let cell = quickAdd.dequeueReusableCell(withReuseIdentifier: "item", for: indexPath) as! QuickAddItem
+            cell.tag = indexPath.item
+            cell.insert(item: QuickAddData.containers[indexPath.item]) {
+                self.buttonCarouselView?.carousel.scroll(toItemAtIndex: 2, animated: true)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                    self.navigationView.scrollToRow(at: IndexPath(item: 2, section: 0), at: .bottom, animated: true)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        self.children.forEach { (controller) in
+                            if controller.isKind(of: SnapMealVC.self) {
+                                (controller as! SnapMealVC).photoWasTaken(photo: cell.itemImage.image!)
+                                cell.listener.isEnabled = true
+                            }
                         }
                     }
                 }
             }
+            return cell
+        } else {
+            let cell = quickAdd.dequeueReusableCell(withReuseIdentifier: "placeholder", for: indexPath) as! PlaceholderCollectionViewCell
+            cell.handler = {
+                self.goToCamera(nil)
+            }
+            return cell
         }
-        return cell
+    }
+}
+
+// MARK: UIScrollViewDelegate
+extension ContainerVC: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView == navigationView {
+            guard let child = children[selectedItemIndex] as? ContainerVCDelegate else { return }
+            child.isBeingShown()
+        }
     }
 }
 

@@ -28,7 +28,9 @@ class EditCell: UICollectionReusableView {
 extension EditCell: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if let category = textField.text {
-            RestaurantCategories.add(with: category)
+            if !category.isEmpty {
+                RestaurantCategories.add(with: category)
+            }
             textField.resignFirstResponder()
             delegate?.finishedEditing()
         }

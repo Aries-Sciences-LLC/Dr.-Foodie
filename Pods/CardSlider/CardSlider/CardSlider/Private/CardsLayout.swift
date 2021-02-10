@@ -24,7 +24,7 @@ class CardsLayout: UICollectionViewLayout {
 	public var spacing: CGFloat = 35 {
 		didSet { invalidateLayout() }
 	}
-	public var visibleItemsCount: Int = 3 {
+	public var visibleItemsCount: Int = 4 {
 		didSet { invalidateLayout() }
 	}
 	

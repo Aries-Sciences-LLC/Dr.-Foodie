@@ -28,7 +28,7 @@ class CameraView: UIView {
         super.init(coder: coder)
         
         captureSession = AVCaptureSession()
-        captureSession.sessionPreset = .medium
+        captureSession.sessionPreset = .photo
         
         guard let backCamera = AVCaptureDevice.default(for: AVMediaType.video)
             else {

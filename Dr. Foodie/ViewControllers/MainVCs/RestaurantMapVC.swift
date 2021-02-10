@@ -51,6 +51,8 @@ extension RestaurantMapVC {
         DispatchQueue.main.async {
             self.locationManager.startUpdatingLocation()
         }
+        
+        categories.superview?.superview?.layer.borderColor = UIColor.white.cgColor
     }
     
     override func viewDidAppear(_ animated: Bool) {

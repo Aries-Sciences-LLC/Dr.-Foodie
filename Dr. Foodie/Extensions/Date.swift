@@ -17,7 +17,7 @@ extension Date {
     
     func convertTo12hour() -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "HH:mm a"
+        formatter.dateFormat = "h:mm a"
         return formatter.string(from: self)
     }
     

@@ -26,8 +26,8 @@ class NutritionFact: UIView {
         let attributedFactText = NSMutableAttributedString(string: factText)
         attributedFactText.addAttribute(.foregroundColor, value: UIColor.label, range: NSRange(location: 0, length: lastCheckpoint))
         attributedFactText.addAttribute(.foregroundColor, value: UIColor.gray, range: NSRange(location: firstCheckpoint, length: factText.count - firstCheckpoint))
-        attributedFactText.addAttribute(.font, value: UIFont(name: "Futura-Medium", size: 50) ?? UIFont.systemFont(ofSize: 50), range: NSRange(location: 0, length: firstCheckpoint))
-        attributedFactText.addAttribute(.font, value: UIFont(name: "Futura-Bold", size: 75) ?? UIFont.boldSystemFont(ofSize: 75), range: NSRange(location: firstCheckpoint, length: lastCheckpoint - firstCheckpoint))
+        attributedFactText.addAttribute(.font, value: UIFont(name: "Futura-Medium", size: 25) ?? UIFont.systemFont(ofSize: 25), range: NSRange(location: 0, length: firstCheckpoint))
+        attributedFactText.addAttribute(.font, value: UIFont(name: "Futura-Bold", size: 95) ?? UIFont.boldSystemFont(ofSize: 95), range: NSRange(location: firstCheckpoint, length: lastCheckpoint - firstCheckpoint))
         attributedFactText.addAttribute(.font, value: UIFont(name: "Futura-Medium", size: 25) ?? UIFont.systemFont(ofSize: 25), range: NSRange(location: lastCheckpoint, length: factText.count - lastCheckpoint))
         
         factLbl.attributedText = attributedFactText

@@ -1,12 +1,9 @@
 import UIKit
 
 /// Model for a card.
-public protocol CardSliderItem {
+@objc public protocol CardSliderItem {
     /// The image for the card.
     var image: UIImage { get }
-    
-    /// Rating from 0 to 5. If set to nil, rating view will not be displayed for the card.
-    var rating: Int? { get }
     
     /// Will be displayed in the title view below the card.
     var title: String { get }
@@ -18,7 +15,7 @@ public protocol CardSliderItem {
     var description: String? { get }
 }
 
-public protocol CardSliderDataSource: class {
+@objc public protocol CardSliderDataSource {
     /// CardSliderItem for the card at given index, counting from the top.
     func item(for index: Int) -> CardSliderItem
     
@@ -72,7 +69,7 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
         fatalError("Failed to initialize CardSliderViewController")
     }
     
-    public weak var dataSource: CardSliderDataSource!
+    @IBOutlet public weak var dataSource: CardSliderDataSource?
     override open func viewDidLoad() {
         super.viewDidLoad()
         collectionView.isPagingEnabled = true
@@ -94,8 +91,9 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
         self.prepareFirstCard()
     }
     
-    private func prepareFirstCard() {
+    open func prepareFirstCard() {
         guard let layout = collectionView.collectionViewLayout as? CardsLayout else { return }
+        guard let dataSource = dataSource else { return }
         let item = dataSource.item(for: dataSource.numberOfItems() - layout.currentPage - 1)
         cardTitleView.set(title: CardTitle(title: item.title, subtitle: item.subtitle))
     }
@@ -144,11 +142,12 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
     public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         guard scrollView == collectionView else { return }
         guard let layout = collectionView.collectionViewLayout as? CardsLayout else { return }
+        guard let dataSource = dataSource else { return }
         let item = dataSource.item(for: dataSource.numberOfItems() - layout.currentPage - 1)
         cardTitleView.set(title: CardTitle(title: item.title, subtitle: item.subtitle))
     }
     
-    private func resetCardAnimation() {
+    public func resetCardAnimation() {
         guard let snapshot = cardSnapshot else { return }
         animator?.stopAnimation(false)
         animator?.finishAnimation(at: .current)
@@ -170,6 +169,7 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
         let cardSnapshot = cell.renderSnapshot()
         self.cardSnapshot = cardSnapshot
         
+        guard let dataSource = dataSource else { return }
         descriptionLabel.text = dataSource.item(for: dataSource.numberOfItems() - indexPath.item - 1).description
         scrollStack.insertArrangedSubview(cardTitleSnapshot, at: 1)
         scrollView.isHidden = false
@@ -244,6 +244,7 @@ extension CardSliderViewController: UICollectionViewDelegate, UICollectionViewDa
     }
 
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        guard let dataSource = dataSource else { return 0 }
         return dataSource.numberOfItems()
     }
     
@@ -253,6 +254,7 @@ extension CardSliderViewController: UICollectionViewDelegate, UICollectionViewDa
     
     public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         guard let cell = cell as? CardSliderCell else { return }
+        guard let dataSource = dataSource else { return }
         let item = dataSource.item(for: dataSource.numberOfItems() - indexPath.item - 1)
         cell.imageView.image = item.image
         dataSource.userSwiped(to: indexPath.item)
@@ -272,10 +274,10 @@ extension CardSliderViewController: UICollectionViewDelegate, UICollectionViewDa
 // MARK: - CardsLayoutDelegate
 extension CardSliderViewController: CardsLayoutDelegate {
     func transition(between currentIndex: Int, and nextIndex: Int, progress: CGFloat) {
+        guard let dataSource = dataSource else { return }
         let currentItem = dataSource.item(for: dataSource.numberOfItems() - currentIndex - 1)
         let nextItem = dataSource.item(for: dataSource.numberOfItems() - nextIndex - 1)
         
-        ratingView.rating = (progress > 0.5 ? nextItem : currentItem).rating
         let currentTitle = CardTitle(title: currentItem.title, subtitle: currentItem.subtitle)
         let nextTitle = CardTitle(title: nextItem.title, subtitle: nextItem.subtitle)
         cardTitleView.transition(between: currentTitle, secondTitle: nextTitle, progress: progress)

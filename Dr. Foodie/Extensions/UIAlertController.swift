@@ -9,9 +9,9 @@
 import UIKit
 
 extension UIAlertController {
-    static func create(parent: UIViewController, title: String, message: String) {
+    static func create(parent: UIViewController?, title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        parent.present(alert, animated: true)
+        parent?.present(alert, animated: true)
     }
 }

@@ -15,6 +15,7 @@ class LoginVC: DRFVC {
     public var cancelHandler: (() -> Void)?
     private var createdCredentials: ASAuthorizationAppleIDCredential?
 
+    @IBOutlet weak var working: UIActivityIndicatorView!
     @IBOutlet weak var authentificationSection: AuthorizationButtons!
     
     @IBAction func hide(_ sender: Any) {
@@ -46,12 +47,23 @@ extension LoginVC {
             (segue.destination as! UserBodySelectionVC).delegate = self
             (segue.destination as! UserBodySelectionVC).style = .signup
         }
+        UIView.animate(withDuration: 0.3, animations: {
+            self.working.alpha = 1
+        }) { _ in
+            self.working.startAnimating()
+        }
     }
     
     func success() {
         DispatchQueue.main.async {
+            self.working.stopAnimating()
+            
             self.performSegue(withIdentifier: "LoginSuccessful", sender: self)
         }
+    }
+    
+    func userSkippedLogIn() {
+        performSegue(withIdentifier: "AlternativeSignup", sender: self)
     }
 }
 
@@ -63,16 +75,18 @@ extension LoginVC: AuthorizationButtonsDelegate {
             createdCredentials = credentials
             performSegue(withIdentifier: "bodySelectionShortcut", sender: self)
         default:
-            break
+            fallback()
         }
     }
     
     func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
         print(error)
+        fallback()
     }
     
-    func userSkippedLogIn() {
-        performSegue(withIdentifier: "AlternativeSignup", sender: self)
+    func fallback() {
+        UIAlertController.create(parent: self, title: "Hmm...", message: "Looks like there was a problem with your sign in. Please use the \"local\" option. Or try again later.")
+        working.stopAnimating()
     }
 }
 

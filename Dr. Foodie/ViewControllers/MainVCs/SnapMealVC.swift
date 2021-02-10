@@ -19,12 +19,31 @@ class SnapMealVC: BaseVC {
     @IBOutlet weak var activityIndicator: UIView!
     
     private let service = FoodRecognition()
+    private let reachability = ReachabilityHandler()
     
     private var delegate: SnapMealVCDelegate?
 }
 
 // MARK: Methods
 extension SnapMealVC {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        titleContainer.layer.borderColor = UIColor.white.cgColor
+        
+        reachability.handler = { [self] in
+            cameraView.captureBtn.isEnabled = $0
+            switch $0 {
+            case true:
+                cameraView.captureBtn.setImage(UIImage(systemName: "camera.fill"), for: .normal)
+            default:
+                cameraView.captureBtn.setImage(UIImage(systemName: "wifi.slash"), for: .normal)
+            }
+        }
+        
+        cameraView.captureBtn.layer.borderColor = UIColor.label.cgColor
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination.isKind(of: CategorySelectionVC.self) {
             (segue.destination as! CategorySelectionVC).parentVC = self

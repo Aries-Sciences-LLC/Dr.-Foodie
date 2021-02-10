@@ -57,6 +57,16 @@ final class RoundedButtonView: UIView {
         shadowView.addSubview(roundedView)
         backgroundColor = .clear
         insertSubview(shadowView, at: 0)
+        
+        selectedImageView.backgroundColor = .clear
+        unselectedImageView.backgroundColor = .clear
+        
+        selectedImageView.layer.shadowOpacity = 0.8
+        selectedImageView.layer.shadowRadius = 8
+        selectedImageView.layer.shadowColor = tintColor.cgColor
+        unselectedImageView.layer.shadowOpacity = 0.8
+        unselectedImageView.layer.shadowRadius = 8
+        unselectedImageView.layer.shadowColor = tintColor.cgColor
     }
     
     func triggerSelected() {
@@ -69,5 +79,12 @@ final class RoundedButtonView: UIView {
         UIView.animate(withDuration: 0.25, animations: { () -> Void in
             self.set(isSelected: false)
         })
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        
+        selectedImageView.layer.shadowColor = tintColor.cgColor
+        unselectedImageView.layer.shadowColor = tintColor.cgColor
     }
 }

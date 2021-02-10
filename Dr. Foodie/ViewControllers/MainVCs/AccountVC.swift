@@ -9,11 +9,14 @@
 import UIKit
 import LocalAuthentication
 
-// MARK: IBOutlets & IBActions
+// MARK: Properties, IBOutlets, & IBActions
 class AccountVC: BaseVC {
+    
+    let reachability = ReachabilityHandler()
 
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var email: UILabel!
+    @IBOutlet weak var edit: UIButton!
     
     @IBAction func signOut(_ sender: Any) {
         let context = LAContext()
@@ -53,6 +56,10 @@ extension AccountVC {
         // Do any additional setup after loading the view.
         
         fillValues()
+        
+        reachability.handler = {
+            self.edit.isEnabled = $0
+        }
     }
     
     private func fillValues() {

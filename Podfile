@@ -11,6 +11,7 @@ target 'Dr. Foodie' do
   pod 'SwiftProtobuf', '~> 1.0'
   pod 'SwiftNIO', '~> 2.23'
   pod 'gRPC-Swift', '~> 1.0.0-alpha.20'
+  pod 'ReachabilitySwift'
 
   # Pods for Dr. Foodie
 

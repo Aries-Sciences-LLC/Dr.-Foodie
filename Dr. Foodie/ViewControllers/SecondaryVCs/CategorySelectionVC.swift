@@ -34,6 +34,10 @@ class CategorySelectionVC: DRFVC {
     }
     
     @IBAction func cancel(_ sender: UIButton!) {
+        if parentVC?.parent is ContainerVC {
+            (parentVC?.parent as! ContainerVC).goToHome(nil)
+        }
+        
         dismiss(animated: true) {
             self.parentVC?.cameraView.captureSession.startRunning()
         }
@@ -46,6 +50,8 @@ extension CategorySelectionVC {
         super.viewDidLoad()
         
         pop()
+        
+        finishedBtn.layer.borderColor = UIColor.label.cgColor
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -96,5 +102,26 @@ extension CategorySelectionVC: SnapMealVCDelegate {
         self.image = image
         self.categories = categories
         collectionView.reloadData()
+        
+        if categories.predictions.first?.name == "No Data" {
+            let ac = UIAlertController(title: "Enter Name", message: "Sorry, the AI couldn't come up with anything just yet, why don't you just enter the name of the food that you were eating and we'll know for next time.", preferredStyle: .alert)
+            ac.addTextField { (tf) in
+                tf.placeholder = "Ex. \"Salmon\", not \"Salmon Tartar\""
+            }
+            
+            let action = UIAlertAction(title: "Submit", style: .default) { [unowned ac] _ in
+                self.delegate?.userSelectedCategories?(categories: [ac.textFields![0].text!], for: image)
+            }
+            
+            let cancel = UIAlertAction(title: "Cancel", style: .destructive) { _ in
+                self.dismiss(animated: true) {
+                    self.parentVC?.cameraView.captureSession.startRunning()
+                }
+            }
+            
+            ac.addAction(action)
+            ac.addAction(cancel)
+            present(ac, animated: true)
+        }
     }
 }

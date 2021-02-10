@@ -22,4 +22,8 @@ class DRFVC: UIViewController {
         let height = UIScreen.main.bounds.height - 1
         view.frame.size = CGSize(width: width, height: height)
     }
+    
+    open func updateContents() {
+        
+    }
 }

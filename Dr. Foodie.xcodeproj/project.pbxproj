@@ -64,7 +64,7 @@
 		F77676D125339B8C00E6C26A /* CarouselData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77676B825339B8A00E6C26A /* CarouselData.swift */; };
 		F77676D225339B8C00E6C26A /* ViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77676BA25339B8B00E6C26A /* ViewConstants.swift */; };
 		F77676D425339B8C00E6C26A /* TableCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77676BC25339B8B00E6C26A /* TableCarouselView.swift */; };
-		F77676D625339B8C00E6C26A /* UIView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77676BE25339B8B00E6C26A /* UIView+Tools.swift */; };
+		F77676D625339B8C00E6C26A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77676BE25339B8B00E6C26A /* UIView.swift */; };
 		F77676D725339B8C00E6C26A /* ButtonsCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77676BF25339B8B00E6C26A /* ButtonsCarouselView.swift */; };
 		F77676D925339B8C00E6C26A /* RoundedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77676C125339B8B00E6C26A /* RoundedButtonView.swift */; };
 		F77676DB25339B8C00E6C26A /* UITableView+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77676C325339B8B00E6C26A /* UITableView+Style.swift */; };
@@ -89,7 +89,12 @@
 		F7971BD3252AAB64006FED0C /* AuthorizationButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7971BD2252AAB64006FED0C /* AuthorizationButtons.swift */; };
 		F7971BD5252BF57C006FED0C /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7971BD4252BF57C006FED0C /* UIButton.swift */; };
 		F79BCB9B2574C25500918B92 /* UserBodySelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79BCB9A2574C25500918B92 /* UserBodySelectionVC.swift */; };
+		F7A95AEB25D0882500CFC746 /* ReachabilityObserverDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A95AEA25D0882500CFC746 /* ReachabilityObserverDelegate.swift */; };
+		F7A95AF025D088B700CFC746 /* ReachabilityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A95AEF25D088B700CFC746 /* ReachabilityHandler.swift */; };
 		F7B4891C25A7F2F4009B93F7 /* DataHandlerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B4891B25A7F2F4009B93F7 /* DataHandlerVC.swift */; };
+		F7B489CB25A83F5F009B93F7 /* PlaceholderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B489CA25A83F5F009B93F7 /* PlaceholderCollectionViewCell.swift */; };
+		F7CAA77625B7B4D00070D0B9 /* TodayJournalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAA77525B7B4D00070D0B9 /* TodayJournalVC.swift */; };
+		F7E9B6CD25AF892B0024EE21 /* ShadowLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E9B6CC25AF892B0024EE21 /* ShadowLabel.swift */; };
 		F7EB46122519ADDE00E25600 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EB46112519ADDE00E25600 /* HomeVC.swift */; };
 		F7EB46142519ADF600E25600 /* RestaurantMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EB46132519ADF600E25600 /* RestaurantMapVC.swift */; };
 		F7EB46162519AE4200E25600 /* SnapMealVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EB46152519AE4200E25600 /* SnapMealVC.swift */; };
@@ -216,7 +221,7 @@
 		F77676B825339B8A00E6C26A /* CarouselData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselData.swift; sourceTree = "<group>"; };
 		F77676BA25339B8B00E6C26A /* ViewConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
 		F77676BC25339B8B00E6C26A /* TableCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCarouselView.swift; sourceTree = "<group>"; };
-		F77676BE25339B8B00E6C26A /* UIView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Tools.swift"; sourceTree = "<group>"; };
+		F77676BE25339B8B00E6C26A /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		F77676BF25339B8B00E6C26A /* ButtonsCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsCarouselView.swift; sourceTree = "<group>"; };
 		F77676C125339B8B00E6C26A /* RoundedButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButtonView.swift; sourceTree = "<group>"; };
 		F77676C325339B8B00E6C26A /* UITableView+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Style.swift"; sourceTree = "<group>"; };
@@ -247,7 +252,12 @@
 		F7971BD2252AAB64006FED0C /* AuthorizationButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationButtons.swift; sourceTree = "<group>"; };
 		F7971BD4252BF57C006FED0C /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		F79BCB9A2574C25500918B92 /* UserBodySelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBodySelectionVC.swift; sourceTree = "<group>"; };
+		F7A95AEA25D0882500CFC746 /* ReachabilityObserverDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityObserverDelegate.swift; sourceTree = "<group>"; };
+		F7A95AEF25D088B700CFC746 /* ReachabilityHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityHandler.swift; sourceTree = "<group>"; };
 		F7B4891B25A7F2F4009B93F7 /* DataHandlerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHandlerVC.swift; sourceTree = "<group>"; };
+		F7B489CA25A83F5F009B93F7 /* PlaceholderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderCollectionViewCell.swift; sourceTree = "<group>"; };
+		F7CAA77525B7B4D00070D0B9 /* TodayJournalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayJournalVC.swift; sourceTree = "<group>"; };
+		F7E9B6CC25AF892B0024EE21 /* ShadowLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowLabel.swift; sourceTree = "<group>"; };
 		F7EB46112519ADDE00E25600 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		F7EB46132519ADF600E25600 /* RestaurantMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMapVC.swift; sourceTree = "<group>"; };
 		F7EB46152519AE4200E25600 /* SnapMealVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapMealVC.swift; sourceTree = "<group>"; };
@@ -391,6 +401,7 @@
 				F738E00D253A5F86000CC1C5 /* ShadowView.swift */,
 				F738E015253A9F38000CC1C5 /* CameraView.swift */,
 				F75FE6142573FC72005CE320 /* NutritionFacts.swift */,
+				F7E9B6CC25AF892B0024EE21 /* ShadowLabel.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -398,6 +409,7 @@
 		F738E00825392BFF000CC1C5 /* Server-Side Wrappers */ = {
 			isa = PBXGroup;
 			children = (
+				F7A95AF425D088BB00CFC746 /* Reachability */,
 				F70969BC253BD4DD00D3AA0B /* Clarifai API Wrapper */,
 				F738E00925392C11000CC1C5 /* CloudKitManager.swift */,
 				F7971BD0252AA3CF006FED0C /* User.swift */,
@@ -464,7 +476,7 @@
 		F748552425178F2900B31F0E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F77676BE25339B8B00E6C26A /* UIView+Tools.swift */,
+				F77676BE25339B8B00E6C26A /* UIView.swift */,
 				F748552525178F4E00B31F0E /* RangeReplaceableCollection.swift */,
 				F7971BD4252BF57C006FED0C /* UIButton.swift */,
 				F77676B42532AD5E00E6C26A /* EmailValidation.swift */,
@@ -593,6 +605,7 @@
 				F794944E253DC09400866A04 /* CompleteDayCell.swift */,
 				F7949450253DF36B00866A04 /* RestaurantCategoryCell.swift */,
 				F74D2418253E194A00E21E76 /* EditCell.swift */,
+				F7B489CA25A83F5F009B93F7 /* PlaceholderCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -607,8 +620,18 @@
 				F75FE60E2573FAB0005CE320 /* NutritionConsumedTodayVC.swift */,
 				F75FE6102573FB0F005CE320 /* TotalNutritionConsumedVC.swift */,
 				F7119AA3258F2FD000F9A284 /* NutritionOverviewVC.swift */,
+				F7CAA77525B7B4D00070D0B9 /* TodayJournalVC.swift */,
 			);
 			path = SecondaryVCs;
+			sourceTree = "<group>";
+		};
+		F7A95AF425D088BB00CFC746 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				F7A95AEA25D0882500CFC746 /* ReachabilityObserverDelegate.swift */,
+				F7A95AEF25D088B700CFC746 /* ReachabilityHandler.swift */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 		F7EB460F2519ADAE00E25600 /* StartupVCs */ = {
@@ -931,6 +954,8 @@
 				F75FE60F2573FAB1005CE320 /* NutritionConsumedTodayVC.swift in Sources */,
 				F75B4EA3253BEB150020E5B7 /* CategorySelectionVC.swift in Sources */,
 				F75FE60B256DEF07005CE320 /* ThirdPartyMapSelectorVC.swift in Sources */,
+				F7B489CB25A83F5F009B93F7 /* PlaceholderCollectionViewCell.swift in Sources */,
+				F7A95AF025D088B700CFC746 /* ReachabilityHandler.swift in Sources */,
 				F794944F253DC09400866A04 /* CompleteDayCell.swift in Sources */,
 				F70969CC253BD4EF00D3AA0B /* resources.pb.swift in Sources */,
 				F748551625167D8F00B31F0E /* PageIndicator.swift in Sources */,
@@ -939,6 +964,7 @@
 				F748551825167E9700B31F0E /* Pagination.swift in Sources */,
 				F748551425167C3F00B31F0E /* OnboardingItemInfo.swift in Sources */,
 				F70969C8253BD4EF00D3AA0B /* service.pb.swift in Sources */,
+				F7E9B6CD25AF892B0024EE21 /* ShadowLabel.swift in Sources */,
 				F75B4EA7253C8C0E0020E5B7 /* NutritionInformation.swift in Sources */,
 				F70969C9253BD4EF00D3AA0B /* service.grpc.swift in Sources */,
 				F77676D125339B8C00E6C26A /* CarouselData.swift in Sources */,
@@ -947,6 +973,7 @@
 				F75FE60D2572858D005CE320 /* UserNutrition.swift in Sources */,
 				F7EB46142519ADF600E25600 /* RestaurantMapVC.swift in Sources */,
 				F7119AA4258F2FD000F9A284 /* NutritionOverviewVC.swift in Sources */,
+				F7A95AEB25D0882500CFC746 /* ReachabilityObserverDelegate.swift in Sources */,
 				F7664FA5257EA863007EF77F /* UIApplication.swift in Sources */,
 				F77676D425339B8C00E6C26A /* TableCarouselView.swift in Sources */,
 				F77676D925339B8C00E6C26A /* RoundedButtonView.swift in Sources */,
@@ -959,10 +986,11 @@
 				F7488EC1252D5521005D3A62 /* CurvedHeaderView.swift in Sources */,
 				F738E010253A73A8000CC1C5 /* Date.swift in Sources */,
 				F7EB46162519AE4200E25600 /* SnapMealVC.swift in Sources */,
+				F7CAA77625B7B4D00070D0B9 /* TodayJournalVC.swift in Sources */,
 				F748551B2516B7EC00B31F0E /* OnboardingBoard.swift in Sources */,
 				F77676EB25353EF000E6C26A /* AccountVC.swift in Sources */,
 				F71198BB258AF78600F9A284 /* DRFVC.swift in Sources */,
-				F77676D625339B8C00E6C26A /* UIView+Tools.swift in Sources */,
+				F77676D625339B8C00E6C26A /* UIView.swift in Sources */,
 				F7EB46122519ADDE00E25600 /* HomeVC.swift in Sources */,
 				F75B4EAD253CF0A10020E5B7 /* JournalManager.swift in Sources */,
 				F77676E72533C4C200E6C26A /* NSObject.swift in Sources */,
@@ -1169,7 +1197,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Dr. Foodie/Registrations/Dr. Foodie.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = QXNMG5R4EQ;
 				INFOPLIST_FILE = "Dr. Foodie/Registrations/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1192,7 +1220,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Dr. Foodie/Registrations/Dr. Foodie.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = QXNMG5R4EQ;
 				INFOPLIST_FILE = "Dr. Foodie/Registrations/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
