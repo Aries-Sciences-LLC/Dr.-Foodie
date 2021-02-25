@@ -215,6 +215,16 @@ extension HomeVC: CompleteDayCellDelegate {
 extension HomeVC: ContainerVCDelegate {
     func wasSummonedUpon() {
         reload()
+        
+        let shouldPopulateMeals = JournalManager.meals.count > 0
+        let shouldPopulateHistory = JournalManager.history.count > 0
+        
+        UIView.animate(withDuration: 0.3) { [self] in
+            todayPage.alpha = shouldPopulateMeals ? 1 : 0
+            fullJournal.alpha = shouldPopulateHistory ? 1 : 0
+            emptyContainer.alpha = shouldPopulateMeals ? 0 : 1
+        }
+        
         children.forEach {
             // guard let child = $0 as? TodayJournalVC else { return }
             ($0 as? TodayJournalVC)?.updateDataSource()

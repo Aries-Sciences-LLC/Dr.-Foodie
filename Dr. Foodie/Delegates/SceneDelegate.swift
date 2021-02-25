@@ -21,7 +21,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             var initialViewController = storyboard.instantiateInitialViewController()
-            
             if UserDefaults.standard.object(forKey: User.key) != nil {
                 _ = User.authorized(account: (UserDefaults.standard.object(forKey: User.key) as! Data).unwrap())
                 initialViewController = storyboard.instantiateViewController(withIdentifier: "ContainerVC")

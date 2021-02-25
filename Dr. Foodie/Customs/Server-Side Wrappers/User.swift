@@ -65,7 +65,7 @@ class User: NSObject, NSCoding {
         
         super.init()
         
-        sync {
+        sync(new: !(email == "")) {
             completion()
         }
     }
@@ -98,7 +98,7 @@ class User: NSObject, NSCoding {
         
         id = key ?? createUniqueID()
         
-        sync {
+        sync(new: true) {
             completion()
         }
     }
@@ -123,15 +123,14 @@ class User: NSObject, NSCoding {
 extension User {
     private func createUniqueID() -> String {
         let code = Int.random(in: 10000..<100000)
-        let initials = "\(firstName.first!)\(lastName.first!)"
+        let initials = "\(firstName.first!)\(lastName.first ?? "A")"
         let date = Date.today()
         return "\(code).\(initials).\(date)"
     }
     
-    private func sync(completion: @escaping () -> Void) {
-        let mode: CloudKitManager.AccountAction = email == "" ? .login : .signup
-        CloudKitManager.account(for: self, action: mode) {
-            if mode == .signup {
+    private func sync(new account: Bool, completion: @escaping () -> Void) {
+        CloudKitManager.account(for: self, action: account ? .signup : .login) {
+            if account {
                 RestaurantCategories.create(with: ["sushi", "pizza", "deli", "café", "brasserie", "asian", "american"])
             }
             QuickAddData.fetch()

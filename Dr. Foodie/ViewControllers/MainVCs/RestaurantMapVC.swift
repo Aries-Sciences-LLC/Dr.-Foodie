@@ -145,7 +145,8 @@ extension RestaurantMapVC: EditCellDelegate {
 extension RestaurantMapVC: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         var counter = 0
-        for location in locations! {
+        guard let locations = locations else { return }
+        for location in locations {
             if location.placemark.coordinate.equals(view.annotation!.coordinate) {
                 selectedLocation = counter
                 break

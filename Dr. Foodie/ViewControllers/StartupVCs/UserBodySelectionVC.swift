@@ -43,7 +43,8 @@ class UserBodySelectionVC: DRFVC {
                     sex: self.sexOptions[selectedSex],
                     age: Int(self.age.text!)!,
                     weight: Int(self.weight.text!)!,
-                    height: selectedHeight + 24)
+                    height: selectedHeight + 24
+                )
             }
         }
     }

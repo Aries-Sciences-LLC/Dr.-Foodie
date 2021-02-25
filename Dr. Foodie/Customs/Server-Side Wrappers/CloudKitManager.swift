@@ -10,7 +10,9 @@ import CloudKit
 
 // MARK: Properties
 class CloudKitManager {
-    private static let DATABASE = CKContainer.default().publicCloudDatabase
+    private static var DATABASE: CKDatabase {
+        return CKContainer.default().publicCloudDatabase
+    }
 }
 
 // MARK: Action Enums
@@ -42,6 +44,8 @@ extension CloudKitManager {
             DATABASE.fetch(withRecordID: recordID) { (record, error) in
                 if let error = error {
                     print(error)
+                    account(for: user, action: .signup, completion: completion)
+                    return
                 }
                 
                 if let information = record {

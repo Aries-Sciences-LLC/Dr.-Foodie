@@ -17,8 +17,8 @@ protocol AuthorizationButtonsDelegate: ASAuthorizationControllerDelegate {
 
 // MARK: Properties
 class AuthorizationButtons: UIStackView {
-    open var authorizationDelegate: AuthorizationButtonsDelegate?
-    open var authorizationPresentationContext: ASAuthorizationControllerPresentationContextProviding?
+    var authorizationDelegate: AuthorizationButtonsDelegate?
+    var authorizationPresentationContext: ASAuthorizationControllerPresentationContextProviding?
     
     let reachability = ReachabilityHandler()
     
@@ -65,7 +65,7 @@ class AuthorizationButtons: UIStackView {
 
 // MARK: Methods
 extension AuthorizationButtons {
-    @objc internal func sendRequest(_ sender: UIButton!) {
+    @objc func sendRequest(_ sender: UIButton!) {
         let provider = ASAuthorizationAppleIDProvider()
         let request = provider.createRequest()
         request.requestedScopes = [.email, .fullName]
@@ -79,7 +79,7 @@ extension AuthorizationButtons {
         controller.performRequests()
     }
     
-    @objc internal func userSelectedLocalDataStorage(_ sender: UIButton!) {
+    @objc func userSelectedLocalDataStorage(_ sender: UIButton!) {
         if let delegate = authorizationDelegate {
             delegate.userSkippedLogIn()
         }

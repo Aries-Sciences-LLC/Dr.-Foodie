@@ -135,7 +135,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFo-dj-nrw">
                                                     <rect key="frame" x="0.0" y="44" width="374" height="36"/>
                                                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="13"/>
-                                                    <state key="normal" title="ALREADY HAVE AN ACCOUNT">
+                                                    <state key="normal" title="ALREADY KNOW WASSUP?">
                                                         <color key="titleColor" name="LabelColor"/>
                                                     </state>
                                                     <connections>
@@ -559,7 +559,7 @@
                                 </connections>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="XCT-oN-Deg">
-                                <rect key="frame" x="20" y="54" width="20" height="20"/>
+                                <rect key="frame" x="20" y="55" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="een-iV-Fgz"/>
@@ -569,8 +569,8 @@
                             <constraint firstItem="een-iV-Fgz" firstAttribute="trailing" secondItem="WUv-6x-8CO" secondAttribute="trailing" constant="20" id="7ao-2t-Whh"/>
                             <constraint firstItem="een-iV-Fgz" firstAttribute="bottom" secondItem="WUv-6x-8CO" secondAttribute="bottom" constant="8" id="7f5-Qx-rhf"/>
                             <constraint firstItem="een-iV-Fgz" firstAttribute="trailing" secondItem="Lvq-8o-JHW" secondAttribute="trailing" constant="20" id="7vB-aA-Jqr"/>
-                            <constraint firstItem="XCT-oN-Deg" firstAttribute="top" secondItem="een-iV-Fgz" secondAttribute="top" constant="10" id="RGd-5z-UZI"/>
                             <constraint firstItem="WUv-6x-8CO" firstAttribute="top" secondItem="Lvq-8o-JHW" secondAttribute="bottom" constant="8" id="Ymf-S7-97d"/>
+                            <constraint firstItem="XCT-oN-Deg" firstAttribute="centerY" secondItem="Lvq-8o-JHW" secondAttribute="centerY" id="f8x-hz-Bx8"/>
                             <constraint firstItem="XCT-oN-Deg" firstAttribute="leading" secondItem="een-iV-Fgz" secondAttribute="leading" constant="20" id="kfk-l5-fCi"/>
                             <constraint firstItem="WUv-6x-8CO" firstAttribute="leading" secondItem="een-iV-Fgz" secondAttribute="leading" constant="20" id="y6Q-lr-KbB"/>
                         </constraints>
@@ -3879,7 +3879,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="B7o-70-Gfd"/>
         <segue reference="lNm-fe-d5n"/>
-        <segue reference="sqh-Sm-zyZ"/>
+        <segue reference="907-lI-Lg5"/>
         <segue reference="pUL-qL-Fje"/>
     </inferredMetricsTieBreakers>
     <resources>
