@@ -4,7 +4,7 @@
 
 This an iOS app that is designed to be a seamless tool for anyone interested in making sure that they eat the best they can for their body. It works with iCloud and the Health app to be personally tuned and work best to the user's body. It works as both a calendar for the user's day-to-day meals, a map to suggest the best possible places for them to get the most nutrients, and a data section to show them what they need to eat and how much for the rest of the day.
 
-[![Video Demonstration](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=TNVQu_0D26o&t=52s "Ozan Mirza CAC 2020 Application - Dr. Foodie - AI Food Journal")
+[![Video Demonstration](https://files.catbox.moe/s8uh2l)](https://www.youtube.com/watch?v=TNVQu_0D26o&t=52s "Ozan Mirza CAC 2020 Application - Dr. Foodie - AI Food Journal")
 
 ![Taking a picture demo](https://github.com/Aries-Sciences-LLC/Dr.-Foodie/blob/master/advertising/iPhone%20XR%20mockups/finished/4.png)
 That's really all you have to do, snap a picture! Because our speedy Gonzalez AI predicts which food your eating and then asynchronously gets the nutrition data for your food.
