@@ -1,4 +1,4 @@
-![App Icon](https://cdn.dribbble.com/users/1659334/screenshots/6650523/dribbble.jpg)
+![App Icon](https://cdn.dribbble.com/users/1659334/screenshots/6650523/dribbble.jpg?compress=1&resize=800x600)
 # Dr.-Foodie
 ![Header Image](https://github.com/Aries-Sciences-LLC/Dr.-Foodie/blob/master/advertising/Ozan%20Mirza%202021%20Submission.png)
 
